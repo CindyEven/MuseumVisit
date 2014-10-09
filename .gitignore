@@ -17,4 +17,4 @@
 sysinfo.txt
 
 #Looks like its useless to commit these files so ...
-/*.meta
+/**/*.meta

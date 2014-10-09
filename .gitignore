@@ -16,5 +16,5 @@
 #Unity3D Generated File On Crash Reports
 sysinfo.txt
 
-#Looks like its useless to commit these files so ...
-/**/*.meta
+#include meta files
+!*.*.meta

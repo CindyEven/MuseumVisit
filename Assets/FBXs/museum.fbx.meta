@@ -6,14 +6,29 @@ ModelImporter:
     100000: Lamp
     100002: //RootNode
     100004: MuseumBuilding
+    100006: Ceiling
+    100008: Floor
+    100010: Walls
     400000: Lamp
     400002: //RootNode
     400004: MuseumBuilding
+    400006: Ceiling
+    400008: Floor
+    400010: Walls
     2300000: MuseumBuilding
     2300002: //RootNode
+    2300004: Ceiling
+    2300006: Floor
+    2300008: Walls
     3300000: MuseumBuilding
     3300002: //RootNode
+    3300004: Ceiling
+    3300006: Floor
+    3300008: Walls
     4300000: MuseumBuilding
+    4300002: Floor
+    4300004: Ceiling
+    4300006: Walls
     9500000: //RootNode
   materials:
     importMaterials: 1

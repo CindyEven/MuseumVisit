@@ -4,20 +4,19 @@ using System.Collections.Generic;
 
 public class Point : MonoBehaviour {
 
-	[SerializeField]
 	public Point[] ConnectedTo;
-	[SerializeField]
 	public Point parent;
-	[SerializeField]
-	public Vector3 pointPosition;
 
 	// Use this for initialization
 	void Start () {
-		pointPosition = transform.position;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		Debug.DrawLine (transform.position, parent.transform.position);
+		foreach(Point connected in ConnectedTo){
+			Debug.DrawLine(transform.position,connected.transform.position);
+		}
 	}
 }

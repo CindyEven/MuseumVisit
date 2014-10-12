@@ -28,9 +28,9 @@ public class SteeringBehaviorsBibi : MonoBehaviour {
 		sep = Separation (gameObject);
 		v3 = Alignment (gameObject);
 
-		Vector3 force = seek + coh + sep + v3;
+		Vector3 force = 1.5f*seek + coh + sep ;
 
-		if (Vector3.Distance (transform.position, destinations [i].transform.position) > 1f) {
+		if (Vector3.Distance (transform.position, destinations [i].transform.position) > 4f) {
 						transform.LookAt (destinations[i].transform.position);
 						rigidbody.AddForce(force);
 				} else {

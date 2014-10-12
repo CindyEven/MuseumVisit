@@ -766,6 +766,8 @@ GameObject:
   - 33: {fileID: 196720894}
   - 23: {fileID: 196720893}
   - 95: {fileID: 196720892}
+  - 114: {fileID: 196720896}
+  - 64: {fileID: 196720897}
   m_Layer: 0
   m_Name: painting
   m_TagString: Untagged
@@ -831,6 +833,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
+--- !u!114 &196720896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 196720891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb1ec804d466a14d824cdf425d9a86e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  position: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+  scale: {x: 0, y: 0, z: 0}
+  artist: "Diego v\xE9lasquez"
+  paintingName: "V\xE9nus \xE0 son miroir"
+  date: 1650
+--- !u!64 &196720897
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 196720891}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: f78ae229aafad784ebdb23b6439063e5, type: 3}
 --- !u!1 &321167857
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,6 +879,7 @@ GameObject:
   - 143: {fileID: 321167860}
   - 114: {fileID: 321167859}
   - 114: {fileID: 321167858}
+  - 114: {fileID: 321167866}
   m_Layer: 0
   m_Name: Visitor
   m_TagString: Untagged
@@ -1011,6 +1045,18 @@ Transform:
   - {fileID: 1645364093}
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!114 &321167866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: d1aa485c54a06e44c8c25dfb99693c37,
+    type: 2}
+  m_PrefabInternal: {fileID: 1257260645}
+  m_GameObject: {fileID: 321167857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a6829e1a2965b4496e1b7a023ac6f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &342646868
 GameObject:
   m_ObjectHideFlags: 0

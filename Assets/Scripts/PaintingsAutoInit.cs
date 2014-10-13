@@ -20,6 +20,7 @@ public class PaintingsAutoInit : MonoBehaviour {
 	}
 	// Following method load xml file from resouces folder under Assets
 	private void loadXMLFromAssest(){
+
 		xmlDoc = new XmlDocument();
 		textXml = (TextAsset)Resources.Load(fileName, typeof(TextAsset));
 		xmlDoc.LoadXml(textXml.text);
@@ -27,7 +28,7 @@ public class PaintingsAutoInit : MonoBehaviour {
 
 	// Following method reads the xml file and display its content 
 	private void readXml(){
-		string name="", position="", rotation="", scale="", artist="", paintingName="", year="";
+		string name="", position="", rotation="", scale="", artist="", paintingName="", year="", material="";
 		foreach(XmlElement node in xmlDoc.SelectNodes("SceneObjects/Paintings/Painting")){
 			name = node.GetAttribute("name");
 			XmlNode transformNode = node.SelectSingleNode("Transform");
@@ -42,13 +43,17 @@ public class PaintingsAutoInit : MonoBehaviour {
 				paintingName = infoNode.SelectSingleNode("PaintingName").InnerText;
 				year = infoNode.SelectSingleNode("Year").InnerText;
 			}
-			instanciateNewPainting(name,position,rotation,scale,artist,paintingName,year);
-			name=""; position=""; rotation=""; scale=""; artist=""; paintingName=""; year="";
+			XmlNode materialNode = node.SelectSingleNode("Material");
+			if(materialNode != null){
+				material = materialNode.InnerText;
+			}
+			instanciateNewPainting(name,position,rotation,scale,artist,paintingName,year,material);
+			name=""; position=""; rotation=""; scale=""; artist=""; paintingName=""; year=""; material="";
 		}
 	}
 
 	private void instanciateNewPainting(string name,string positionString, string rotationString, string scaleString,
-	                                    string artist, string paintingName,string year){
+	                                    string artist, string paintingName,string year,string material){
 		GameObject go = (GameObject)Instantiate(Resources.Load("Painting", typeof(GameObject)));
 		go.name = name;
 		go.transform.position = StringToVect3 (positionString);
@@ -62,6 +67,7 @@ public class PaintingsAutoInit : MonoBehaviour {
 		} else {
 			paint.year = int.Parse (year);
 		}
+		Debug.Log (material);
 	}
 
 	private Vector3 StringToVect3 (string stringValue){

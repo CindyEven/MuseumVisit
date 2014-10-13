@@ -11,7 +11,7 @@ public class SteeringBehaviorsBibi : MonoBehaviour {
 	float distanceMin = 2.0f;
 	float alignCoef = 0.12f;
 	float cohesionCoef = 0.01f;
-	float maxSpeed = 30.0f;
+	float maxSpeed = 20.0f;
 	public GameObject[] destinations;
 	int i = 0;
 	// Use this for initialization
@@ -26,17 +26,19 @@ public class SteeringBehaviorsBibi : MonoBehaviour {
 	void Update () {
 		seek = (destinations[i].transform.position - transform.position).normalized*maxSpeed;
 		seek = seek - (rigidbody.velocity);
-		Vector3 coh, sep, al;
+		Vector3 coh=Vector3.zero, sep=Vector3.zero, al=Vector3.zero;
 		//transform.Translate (mainDirection * 0.01f);
-		coh = Cohesion (gameObject);
-		sep = Separation (gameObject);
-		al = Alignment (gameObject);
+		if (myBoids.Count != 0) {
+			coh = Cohesion (gameObject);
+			sep = Separation (gameObject);
+			al = Alignment (gameObject);
+		}
 
-		Vector3 force = seek + coh + sep;
+		Vector3 force = 1.5f*seek + coh + sep + al;
 
 		if (Vector3.Distance (transform.position, destinations[i].transform.position) > 6f) {
-						//transform.LookAt (destinations[i].transform.position);
-						rigidbody.AddForce(force);
+				transform.LookAt (transform.position+(rigidbody.velocity+(force/rigidbody.mass)*Time.deltaTime)*Time.deltaTime);
+				rigidbody.AddForce(force);
 				} else {
 						if (i < destinations.Length - 1) {
 								i++;
@@ -49,17 +51,15 @@ public class SteeringBehaviorsBibi : MonoBehaviour {
 	Vector3 Separation(GameObject me){
 		Vector3 c = Vector3.zero;
 		for (int y = 0; y < myBoids.Count ; y++) {
-			c -= ((myBoids[y].transform.position - me.transform.position).normalized )/Mathf.Abs(Vector3.Distance(myBoids[y].transform.position, me.transform.position));
+			c += ((me.transform.position - myBoids[y].transform.position).normalized)/Mathf.Abs(Vector3.Distance(myBoids[y].transform.position, me.transform.position));
 		}
-		return c*6f;
+		return c*6.0f;
 	}
 
 	Vector3 Alignment(GameObject me){
 		Vector3 velocityAverage = Vector3.zero;
-		foreach (GameObject boid in boids) {
-			if(!boid.Equals(me)){
-				velocityAverage += (destinations[i].transform.position - boid.transform.position).normalized;
-			}
+		for (int y = 0; y < myBoids.Count ; y++) {
+			velocityAverage += myBoids[y].rigidbody.velocity;
 		}
 		velocityAverage = velocityAverage / (myBoids.Count);
 		return (velocityAverage - me.rigidbody.velocity);
@@ -70,12 +70,8 @@ public class SteeringBehaviorsBibi : MonoBehaviour {
 		for (int y = 0; y < myBoids.Count ; y++) {
 				gravityCenter += myBoids[y].transform.position;
 		}
-		if (gravityCenter != Vector3.zero) {
-			gravityCenter = gravityCenter / myBoids.Count;
-			return ((((gravityCenter - me.transform.position).normalized * 30.0f)) - me.rigidbody.velocity);
-		} else {
-			return Vector3.zero;
-		}
+		gravityCenter = gravityCenter / myBoids.Count;
+		return ((((gravityCenter - me.transform.position).normalized * 20.0f)) - me.rigidbody.velocity);
 	}
 
 	void OnTriggerEnter(Collider other) {

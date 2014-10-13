@@ -1,0 +1,25 @@
+<SceneObjects>
+	<Paintings>
+		<Painting name = "painting1">
+			<Transform>
+				<Position>1.0,1.0,0.0</Position>
+				<Rotation>0.0,0.0,0.0</Rotation>
+				<Scale>1.22,1.77,1.0</Scale>
+			</Transform>
+			</Material>PBaroque1Mat</Material>
+			<Informations>
+				<ArtisticMovement>Baroque<ArtisticMovement>
+				<Artist>Diego vélasquez</Artist>
+				<PaintingName>Vénus à son miroir</PaintingName>
+				<Year>1650</Year>
+			</Informations>
+		</Painting>
+		<Painting name = "painting2">
+			<Transform>
+				<Position>2.0,2.0,0.0</Position>
+				<Rotation>0.0,90.0,90.0</Rotation>
+				<Scale>1.0,1.0,1.0</Scale>
+			</Transform>
+		</Painting>	
+	</Paintings>
+</SceneObjects>

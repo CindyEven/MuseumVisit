@@ -20,7 +20,7 @@ public class ShowPaintingInfo : MonoBehaviour {
 			Transform objectHit = hit.transform;
 			if (objectHit.GetComponent<Painting>()&& Vector3.Distance(transform.position,objectHit.transform.position)<3.0f){
 				Debug.Log("Artist : "+objectHit.GetComponent<Painting>().artist);
-				text = "Artiste : "+objectHit.GetComponent<Painting>().artist + "\nOeuvre : " + objectHit.GetComponent<Painting>().paintingName + "\nAnnée : "+objectHit.GetComponent<Painting>().date;
+				text = "Artiste : "+objectHit.GetComponent<Painting>().artist + "\nOeuvre : " + objectHit.GetComponent<Painting>().paintingName + "\nAnnée : "+objectHit.GetComponent<Painting>().year;
 				showGUI = true;
 			}else{
 				showGUI = false;

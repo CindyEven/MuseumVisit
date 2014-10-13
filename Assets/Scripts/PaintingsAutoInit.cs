@@ -67,7 +67,11 @@ public class PaintingsAutoInit : MonoBehaviour {
 		} else {
 			paint.year = int.Parse (year);
 		}
-		Debug.Log (material);
+		Material newMat = Resources.Load("Materials/Paintings/"+material) as Material;
+		Material[] mats = go.renderer.materials;
+		mats [1] = newMat;
+		go.renderer.materials = mats;
+		Debug.Log("Materials/Paintings/"+material);
 	}
 
 	private Vector3 StringToVect3 (string stringValue){

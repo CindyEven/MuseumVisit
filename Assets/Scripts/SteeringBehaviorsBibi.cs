@@ -34,7 +34,7 @@ public class SteeringBehaviorsBibi : MonoBehaviour {
 			al = Alignment (gameObject);
 		}
 
-		Vector3 force = 1.5f*seek + coh + sep + al;
+		Vector3 force = 1.5f*seek + coh + 5.0f*sep + al;
 
 		if (Vector3.Distance (transform.position, destinations[i].transform.position) > 6f) {
 				transform.LookAt (transform.position+(rigidbody.velocity+(force/rigidbody.mass)*Time.deltaTime)*Time.deltaTime);
@@ -53,7 +53,7 @@ public class SteeringBehaviorsBibi : MonoBehaviour {
 		for (int y = 0; y < myBoids.Count ; y++) {
 			c += ((me.transform.position - myBoids[y].transform.position).normalized)/Mathf.Abs(Vector3.Distance(myBoids[y].transform.position, me.transform.position));
 		}
-		return c*6.0f;
+		return c;
 	}
 
 	Vector3 Alignment(GameObject me){

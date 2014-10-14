@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Point : MonoBehaviour {
 
-	public Point[] ConnectedTo;
+	public List<Point> ConnectedTo;
 	public Point parent;
 
 	// Use this for initialization
@@ -14,7 +14,6 @@ public class Point : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
 		foreach(Point connected in ConnectedTo){
 			Debug.DrawLine(transform.position,connected.transform.position);
 		}

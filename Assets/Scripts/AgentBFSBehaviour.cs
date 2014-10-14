@@ -117,7 +117,7 @@ public static class BreadthFirstSearch
 		}
 
 		Queue<Point> queue = new Queue<Point> ();
-		Point[] children = start.ConnectedTo;
+		List<Point> children = start.ConnectedTo;
 
 		foreach (Point p in children) {
 			queue.Enqueue (p);

@@ -8,11 +8,17 @@ using System.Xml.Linq;
 public class PaintingsAutoInitInspector : Editor {
 
 	private string path;
-	private string fileName;
+	private string fileName = "paintingList";
 	private XmlDocument xmlDoc;
 	private TextAsset textXml;
 	
 	public override void OnInspectorGUI () {
+		GameObject go = GameObject.FindObjectOfType<PaintingsAutoInit>().gameObject;
+		go.name = "Paintings";
+		go.transform.position = Vector3.zero;
+		go.transform.rotation = Quaternion.identity;
+		go.transform.localScale = Vector3.one;
+
         if(GUILayout.Button("Instanciate Paintings")){
 			loadXMLFromAssest();
 			readXml();
@@ -22,15 +28,6 @@ public class PaintingsAutoInitInspector : Editor {
 			loadXMLFromAssest();
 			modifyXml();
 		}
-	}
-	
-	void Awake(){
-		fileName = "paintingList";
-		GameObject go = GameObject.Find(PaintingsAutoInit.FindObjectOfType().name);
-		go.transform.position = Vector3.zero;
-		go.transform.rotation = Quaternion.identity;
-		go.transform.localScale = Vector3.one;
-		go.name = "Paintings";
 	}
 	
 	// Following method load xml file from resouces folder under Assets

@@ -19,18 +19,20 @@ public class PaintingsAutoInitInspector : Editor {
 		}
 
 		if(GUILayout.Button("Save modifs")){
-
+			loadXMLFromAssest();
+			modifyXml();
 		}
 	}
 	
 	void Awake(){
 		fileName = "paintingList";
+		GameObject go = GameObject.Find(PaintingsAutoInit.FindObjectOfType().name);
+		go.transform.position = Vector3.zero;
+		go.transform.rotation = Quaternion.identity;
+		go.transform.localScale = Vector3.one;
+		go.name = "Paintings";
 	}
 	
-/*	void Start (){
-		loadXMLFromAssest();
-		readXml();
-	}*/
 	// Following method load xml file from resouces folder under Assets
 	private void loadXMLFromAssest(){
 		
@@ -65,9 +67,27 @@ public class PaintingsAutoInitInspector : Editor {
 		}
 	}
 	
+	private void modifyXml(){
+		string position="", rotation="", scale="";
+		foreach(XmlElement node in xmlDoc.SelectNodes("SceneObjects/Paintings/Painting")){
+			Debug.Log(node.GetAttribute("name"));
+			Transform newTransform = GameObject.Find(node.GetAttribute("name")).transform;
+			XmlNode transformNode = node.SelectSingleNode("Transform");
+			if(transformNode != null){
+				Debug.Log(newTransform.position.ToString());
+				char[] charsToTrim = { ' ', '(', ')'};
+				transformNode.SelectSingleNode("Position").InnerText = newTransform.position.ToString().Trim(charsToTrim);
+				transformNode.SelectSingleNode("Scale").InnerText = newTransform.localScale.ToString().Trim(charsToTrim);
+				transformNode.SelectSingleNode("Rotation").InnerText = newTransform.rotation.eulerAngles.ToString().Trim(charsToTrim);
+			}
+		}
+		xmlDoc.Save(Application.dataPath +"/Resources/"+fileName+".xml");
+	}
+	
 	private void instanciateNewPainting(string name,string positionString, string rotationString, string scaleString,
 	                                    string artist, string paintingName,string year,string material){
 		GameObject go = (GameObject)Instantiate(Resources.Load("Painting", typeof(GameObject)));
+		go.transform.parent = GameObject.Find ("Paintings").transform;
 		go.name = name;
 		go.transform.position = StringToVect3 (positionString);
 		go.transform.rotation = Quaternion.Euler (StringToVect3 (rotationString));

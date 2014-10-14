@@ -1,31 +1,44 @@
 ﻿using UnityEngine;
+using UnityEditor;
 using System.Collections;
 using System.Xml;
 using System.Xml.Linq;
 
-public class PaintingsAutoInit : MonoBehaviour {
-	/*
+[CustomEditor (typeof(PaintingsAutoInit))]
+public class PaintingsAutoInitInspector : Editor {
+
 	private string path;
 	private string fileName;
 	private XmlDocument xmlDoc;
 	private TextAsset textXml;
+	
+	public override void OnInspectorGUI () {
+        if(GUILayout.Button("Instanciate Paintings")){
+			loadXMLFromAssest();
+			readXml();
+		}
 
+		if(GUILayout.Button("Save modifs")){
+
+		}
+	}
+	
 	void Awake(){
 		fileName = "paintingList";
 	}
 	
-	void Start (){
+/*	void Start (){
 		loadXMLFromAssest();
 		readXml();
-	}
+	}*/
 	// Following method load xml file from resouces folder under Assets
 	private void loadXMLFromAssest(){
-
+		
 		xmlDoc = new XmlDocument();
 		textXml = (TextAsset)Resources.Load(fileName, typeof(TextAsset));
 		xmlDoc.LoadXml(textXml.text);
 	}
-
+	
 	// Following method reads the xml file and display its content 
 	private void readXml(){
 		string name="", position="", rotation="", scale="", artist="", paintingName="", year="", material="";
@@ -51,7 +64,7 @@ public class PaintingsAutoInit : MonoBehaviour {
 			name=""; position=""; rotation=""; scale=""; artist=""; paintingName=""; year=""; material="";
 		}
 	}
-
+	
 	private void instanciateNewPainting(string name,string positionString, string rotationString, string scaleString,
 	                                    string artist, string paintingName,string year,string material){
 		GameObject go = (GameObject)Instantiate(Resources.Load("Painting", typeof(GameObject)));
@@ -68,16 +81,15 @@ public class PaintingsAutoInit : MonoBehaviour {
 			paint.year = int.Parse (year);
 		}
 		Material newMat = Resources.Load("Materials/Paintings/"+material) as Material;
-		Material[] mats = go.renderer.materials;
+		Material[] mats = go.renderer.sharedMaterials;
 		mats [1] = newMat;
 		go.renderer.materials = mats;
 		Debug.Log("Materials/Paintings/"+material);
 	}
-
+	
 	private Vector3 StringToVect3 (string stringValue){
 		string[] valuesString = stringValue.Split (',');
 		Vector3 vect3Value = new Vector3 (float.Parse (valuesString [0]), float.Parse (valuesString [1]), float.Parse (valuesString [2]));
 		return vect3Value;
 	}
-*/
 }

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SceneObjects>
+  <Points>
+    <Point name="DoorAB">
+      <Transform>
+        <Position>7.120459, 0.500000, -21.090350</Position>
+      </Transform>
+      <Connected>
+        <To>DoorBA</To>
+      </Connected>
+    </Point>
+    <Point name="DoorBA">
+      <Transform>
+        <Position>12.961120, 0.500000, -21.090300</Position>
+      </Transform>
+      <Connected>
+        <To>CenterB</To>
+        <To>DoorAB</To>
+        <To>Tab1</To>
+        <To>Tab2</To>
+        <To>Tab3</To>
+      </Connected>
+    </Point>
+    <Point name="DoorBD">
+      <Transform>
+        <Position>16.750800, 0.500000, -2.741517</Position>
+      </Transform>
+      <Connected>
+        <To>CenterB</To>
+        <To>Tab3</To>
+        <To>Tab4</To>
+      </Connected>
+    </Point>
+    <Point name="DoorBE">
+      <Transform>
+        <Position>3.919745, 0.500000, -2.509062</Position>
+      </Transform>
+      <Connected>
+        <To>CenterB</To>
+      </Connected>
+    </Point>
+    <Point name="DoorBC">
+      <Transform>
+        <Position>2.478569, 0.500000, -7.018537</Position>
+      </Transform>
+      <Connected>
+        <To>DoorCB</To>
+        <To>CenterB</To>
+      </Connected>
+    </Point>
+    <Point name="DoorCB">
+      <Transform>
+        <Position>-2.873539, 0.500000, -6.909307</Position>
+      </Transform>
+      <Connected>
+        <To>CenterC</To>
+        <To>DoorBC</To>
+      </Connected>
+    </Point>
+    <Point name="DoorCE">
+      <Transform>
+        <Position>-3.528849, 0.500000, -2.066908</Position>
+      </Transform>
+      <Connected>
+        <To>CenterC</To>
+      </Connected>
+    </Point>
+    <Point name="DoorCF">
+      <Transform>
+        <Position>-17.109420, 0.500000, -1.994102</Position>
+      </Transform>
+      <Connected>
+        <To>CenterC</To>
+        <To>Tab5</To>
+        <To>Tab6</To>
+      </Connected>
+    </Point>
+    <Point name="CenterB">
+      <Transform>
+        <Position>16.146420, 0.500000, -11.249050</Position>
+      </Transform>
+      <Connected>
+        <To>DoorBD</To>
+        <To>DoorBE</To>
+        <To>DoorBC</To>
+        <To>Tab1</To>
+        <To>Tab2</To>
+        <To>Tab3</To>
+        <To>Tab4</To>
+        <To>DoorBA</To>
+      </Connected>
+    </Point>
+    <Point name="CenterC">
+      <Transform>
+        <Position>-15.106940, 0.500000, -10.805060</Position>
+      </Transform>
+      <Connected>
+        <To>DoorCE</To>
+        <To>DoorCF</To>
+        <To>Tab5</To>
+        <To>Tab6</To>
+        <To>Tab7</To>
+        <To>DoorCB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab1">
+      <Transform>
+        <Position>19.620560, 0.500000, -24.092490</Position>
+      </Transform>
+      <Connected>
+        <To>CenterB</To>
+        <To>DoorBA</To>
+        <To>Tab2</To>
+        <To>Tab3</To>
+      </Connected>
+    </Point>
+    <Point name="Tab2">
+      <Transform>
+        <Position>23.823640, 0.500000, -19.862120</Position>
+      </Transform>
+      <Connected>
+        <To>CenterB</To>
+        <To>DoorBA</To>
+        <To>Tab1</To>
+        <To>Tab3</To>
+        <To>Tab4</To>
+      </Connected>
+    </Point>
+    <Point name="Tab3">
+      <Transform>
+        <Position>23.878220, 0.500000, -13.912300</Position>
+      </Transform>
+      <Connected>
+        <To>CenterB</To>
+        <To>DoorBA</To>
+        <To>Tab1</To>
+        <To>Tab2</To>
+        <To>Tab4</To>
+        <To>DoorBD</To>
+      </Connected>
+    </Point>
+    <Point name="Tab4">
+      <Transform>
+        <Position>23.769080, 0.500000, -5.042140</Position>
+      </Transform>
+      <Connected>
+        <To>CenterB</To>
+        <To>DoorBD</To>
+        <To>Tab3</To>
+      </Connected>
+    </Point>
+    <Point name="Tab5">
+      <Transform>
+        <Position>-23.335330, 0.500000, -9.931252</Position>
+      </Transform>
+      <Connected>
+        <To>CenterC</To>
+        <To>DoorCF</To>
+        <To>Tab6</To>
+        <To>Tab7</To>
+      </Connected>
+    </Point>
+    <Point name="Tab6">
+      <Transform>
+        <Position>-23.699420, 0.500000, -20.562940</Position>
+      </Transform>
+      <Connected>
+        <To>CenterC</To>
+        <To>Tab5</To>
+        <To>Tab7</To>
+      </Connected>
+    </Point>
+    <Point name="Tab7">
+      <Transform>
+        <Position>-16.781740, 0.500000, -23.584890</Position>
+      </Transform>
+      <Connected>
+        <To>CenterC</To>
+        <To>Tab5</To>
+        <To>Tab6</To>
+      </Connected>
+    </Point>
+  </Points>
+</SceneObjects>

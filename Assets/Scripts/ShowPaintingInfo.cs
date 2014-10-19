@@ -19,7 +19,6 @@ public class ShowPaintingInfo : MonoBehaviour {
 		if (Physics.Raycast(ray, out hit)) {
 			Transform objectHit = hit.transform;
 			if (objectHit.GetComponent<Painting>()&& Vector3.Distance(transform.position,objectHit.transform.position)<3.0f){
-				Debug.Log("Artist : "+objectHit.GetComponent<Painting>().artist);
 				text = "Artiste : "+objectHit.GetComponent<Painting>().artist + "\nOeuvre : " + objectHit.GetComponent<Painting>().paintingName + "\nAnnée : "+objectHit.GetComponent<Painting>().year;
 				showGUI = true;
 			}else{

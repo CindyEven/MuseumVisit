@@ -8,6 +8,7 @@ public class Painting : MonoBehaviour {
 	public string artist;
 	public string paintingName;
 	public int year;
+	public string style;
 
 	void Awake(){
 

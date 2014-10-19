@@ -1,25 +1,704 @@
 <SceneObjects>
-	<Paintings>
-		<Painting name = "painting1">
-			<Transform>
-				<Position>1.0,1.0,0.0</Position>
-				<Rotation>0.0,0.0,0.0</Rotation>
-				<Scale>1.22,1.77,1.0</Scale>
-			</Transform>
-			<Material>PBaroque1Mat</Material>
-			<Informations>
-				<ArtisticMovement>Baroque</ArtisticMovement>
-				<Artist>Diego vélasquez</Artist>
-				<PaintingName>Vénus à son miroir</PaintingName>
-				<Year>1650</Year>
-			</Informations>
-		</Painting>
-		<Painting name = "painting2">
-			<Transform>
-				<Position>2.0,2.0,0.0</Position>
-				<Rotation>0.0,90.0,90.0</Rotation>
-				<Scale>1.0,1.0,1.0</Scale>
-			</Transform>
-		</Painting>	
-	</Paintings>
+  <Paintings>
+    <Painting name="painting1">
+      <Transform>
+        <Position>0.203727, 2.000000, -2.734337</Position>
+        <Rotation>0.000000, 90.000040, 0.000000</Rotation>
+        <Scale>1.770000, 1.220000, 1.000000</Scale>
+      </Transform>
+      <Material>PBaroque1Mat</Material>
+      <Informations>
+        <ArtisticMovement>Baroque</ArtisticMovement>
+        <Artist>Diego vélasquez</Artist>
+        <PaintingName>Vénus à son miroir</PaintingName>
+        <Year>1650</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting2">
+      <Transform>
+        <Position>21.232820, 2.000000, -0.245320</Position>
+        <Rotation>0.000000, 180.000000, 0.000000</Rotation>
+        <Scale>0.780000, 0.870000, 1.000000</Scale>
+      </Transform>
+      <Material>PBaroque2Mat</Material>
+      <Informations>
+        <ArtisticMovement>Baroque</ArtisticMovement>
+        <Artist>Frans Hals</Artist>
+        <PaintingName>La bohémienne</PaintingName>
+        <Year>1630</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting3">
+      <Transform>
+        <Position>13.557730, 2.000000, -24.923590</Position>
+        <Rotation>0.000000, 0.000000, 0.000000</Rotation>
+        <Scale>0.730000, 0.980000, 1.000000</Scale>
+      </Transform>
+      <Material>PBaroque3Mat</Material>
+      <Informations>
+        <ArtisticMovement>Baroque</ArtisticMovement>
+        <Artist>Jan Brueghel dit de Velours</Artist>
+        <PaintingName>Le Grand Bouquet</PaintingName>
+        <Year>1607</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting4">
+      <Transform>
+        <Position>4.803233, 2.000000, -14.941150</Position>
+        <Rotation>0.000000, 0.000000, 0.000000</Rotation>
+        <Scale>1.200000, 1.350000, 1.000000</Scale>
+      </Transform>
+      <Material>PBaroque4Mat</Material>
+      <Informations>
+        <ArtisticMovement>Baroque</ArtisticMovement>
+        <Artist>Johannes Vermeer</Artist>
+        <PaintingName>La Jeune Fille à la perle</PaintingName>
+        <Year>1665</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting5">
+      <Transform>
+        <Position>24.875600, 2.000000, -20.792460</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>1.870000, 1.450000, 1.000000</Scale>
+      </Transform>
+      <Material>PBaroque5Mat</Material>
+      <Informations>
+        <ArtisticMovement>Baroque</ArtisticMovement>
+        <Artist>Giovanni Francesco Barbieri dit le Guerchin</Artist>
+        <PaintingName>Herminie et Tancrède</PaintingName>
+        <Year>1619</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting6">
+      <Transform>
+        <Position>24.875600, 2.000000, -13.901590</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>1.960000, 2.860000, 1.000000</Scale>
+      </Transform>
+      <Material>PBaroque6Mat</Material>
+      <Informations>
+        <ArtisticMovement>Baroque</ArtisticMovement>
+        <Artist>Orazio Lomi Gentileschi</Artist>
+        <PaintingName>Annonciation</PaintingName>
+        <Year>1623</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting7">
+      <Transform>
+        <Position>24.875600, 2.000000, -5.095706</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>4.230000, 2.750000, 1.000000</Scale>
+      </Transform>
+      <Material>PBaroque7Mat</Material>
+      <Informations>
+        <ArtisticMovement>Baroque</ArtisticMovement>
+        <Artist>Pierre de Cortone</Artist>
+        <PaintingName>L'Enlèvement des Sabines</PaintingName>
+        <Year>1627</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting8">
+      <Transform>
+        <Position>19.846100, 2.000000, -24.923590</Position>
+        <Rotation>0.000000, 0.000000, 0.000000</Rotation>
+        <Scale>1.180000, 0.685000, 1.000000</Scale>
+      </Transform>
+      <Material>PBaroque8Mat</Material>
+      <Informations>
+        <ArtisticMovement>Baroque</ArtisticMovement>
+        <Artist>Pierre Paul Rubens</Artist>
+        <PaintingName>Tête de Méduse</PaintingName>
+        <Year>1618</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting9">
+      <Transform>
+        <Position>10.656830, 2.000000, -0.245320</Position>
+        <Rotation>0.000000, 180.000000, 0.000000</Rotation>
+        <Scale>2.165000, 1.695000, 1.000000</Scale>
+      </Transform>
+      <Material>PBaroque9Mat</Material>
+      <Informations>
+        <ArtisticMovement>Baroque</ArtisticMovement>
+        <Artist>Rembrandt</Artist>
+        <PaintingName>La leçon d'anatomie du docteur Tulp</PaintingName>
+        <Year>1632</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting10">
+      <Transform>
+        <Position>0.203727, 2.000000, -12.370090</Position>
+        <Rotation>0.000000, 90.000040, 0.000000</Rotation>
+        <Scale>1.120000, 1.280000, 1.000000</Scale>
+      </Transform>
+      <Material>PBaroque10Mat</Material>
+      <Informations>
+        <ArtisticMovement>Baroque</ArtisticMovement>
+        <Artist>Willem Kalf</Artist>
+        <PaintingName>Nature morte au nautile</PaintingName>
+        <Year>1662</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting11">
+      <Transform>
+        <Position>-10.011780, 2.000000, -20.426700</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>1.286000, 1.607000, 1.000000</Scale>
+      </Transform>
+      <Material>PCubisme11Mat</Material>
+      <Informations>
+        <ArtisticMovement>Cubisme</ArtisticMovement>
+        <Artist>Robert Delaunay</Artist>
+        <PaintingName>Le Champs de Mars</PaintingName>
+        <Year>1911</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting12">
+      <Transform>
+        <Position>-5.285531, 2.000000, -14.942730</Position>
+        <Rotation>0.000000, 0.000000, 0.000000</Rotation>
+        <Scale>0.895000, 1.305000, 1.000000</Scale>
+      </Transform>
+      <Material>PCubisme2Mat</Material>
+      <Informations>
+        <ArtisticMovement>Cubisme</ArtisticMovement>
+        <Artist>Fernand Léger</Artist>
+        <PaintingName>Femme avec un chat</PaintingName>
+        <Year>1921</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting13">
+      <Transform>
+        <Position>-8.047771, 2.000000, -0.263299</Position>
+        <Rotation>0.000000, 180.000000, 0.000000</Rotation>
+        <Scale>0.730000, 1.300000, 1.000000</Scale>
+      </Transform>
+      <Material>PCubisme3Mat</Material>
+      <Informations>
+        <ArtisticMovement>Cubisme</ArtisticMovement>
+        <Artist>Georges Braque</Artist>
+        <PaintingName>Homme à la guitare</PaintingName>
+        <Year>1914</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting14">
+      <Transform>
+        <Position>-21.326940, 2.000000, -0.263299</Position>
+        <Rotation>0.000000, 180.000000, 0.000000</Rotation>
+        <Scale>1.413000, 0.986000, 1.000000</Scale>
+      </Transform>
+      <Material>PCubisme4Mat</Material>
+      <Informations>
+        <ArtisticMovement>Cubisme</ArtisticMovement>
+        <Artist>Georges Braque</Artist>
+        <PaintingName>Le quotidien</PaintingName>
+        <Year>1913</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting15">
+      <Transform>
+        <Position>-12.085910, 2.000000, -0.263299</Position>
+        <Rotation>0.000000, 180.000000, 0.000000</Rotation>
+        <Scale>0.666600, 0.810000, 1.000000</Scale>
+      </Transform>
+      <Material>PCubisme5Mat</Material>
+      <Informations>
+        <ArtisticMovement>Cubisme</ArtisticMovement>
+        <Artist>Georges Braque</Artist>
+        <PaintingName>Violon et chandelier</PaintingName>
+        <Year>1910</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting16">
+      <Transform>
+        <Position>-15.219040, 2.000000, -24.899560</Position>
+        <Rotation>0.000000, 0.000000, 0.000000</Rotation>
+        <Scale>0.660000, 0.810000, 1.000000</Scale>
+      </Transform>
+      <Material>PCubisme6Mat</Material>
+      <Informations>
+        <ArtisticMovement>Cubisme</ArtisticMovement>
+        <Artist>Juan Gris</Artist>
+        <PaintingName>Fantomas</PaintingName>
+        <Year>1913</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting17">
+      <Transform>
+        <Position>-20.452370, 2.000000, -24.911780</Position>
+        <Rotation>0.000000, 0.000000, 0.000000</Rotation>
+        <Scale>0.740000, 0.930000, 1.000000</Scale>
+      </Transform>
+      <Material>PCubisme7Mat</Material>
+      <Informations>
+        <ArtisticMovement>Cubisme</ArtisticMovement>
+        <Artist>Juan Gris</Artist>
+        <PaintingName>Portrait de Picasso</PaintingName>
+        <Year>1912</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting18">
+      <Transform>
+        <Position>-24.706370, 2.190561, -16.695830</Position>
+        <Rotation>0.000000, 90.000070, 0.000000</Rotation>
+        <Scale>7.800000, 3.000000, 1.000000</Scale>
+      </Transform>
+      <Material>PCubisme8Mat</Material>
+      <Informations>
+        <ArtisticMovement>Cubisme</ArtisticMovement>
+        <Artist>Pablo Picasso</Artist>
+        <PaintingName>Guernica</PaintingName>
+        <Year>1937</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting19">
+      <Transform>
+        <Position>-24.695550, 2.000000, -5.992091</Position>
+        <Rotation>0.000000, 90.000070, 0.000000</Rotation>
+        <Scale>2.340000, 2.440000, 1.000000</Scale>
+      </Transform>
+      <Material>PCubisme9Mat</Material>
+      <Informations>
+        <ArtisticMovement>Cubisme</ArtisticMovement>
+        <Artist>Pablo Picasso</Artist>
+        <PaintingName>Les demoiselles d'Avignon</PaintingName>
+        <Year>1907</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting20">
+      <Transform>
+        <Position>-0.056133, 2.000000, -12.038920</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>0.920000, 0.730000, 1.000000</Scale>
+      </Transform>
+      <Material>PCubisme10Mat</Material>
+      <Informations>
+        <ArtisticMovement>Cubisme</ArtisticMovement>
+        <Artist>Paul Cézanne</Artist>
+        <PaintingName>Nature morte</PaintingName>
+        <Year>1895</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting21">
+      <Transform>
+        <Position>-21.564490, 2.000000, 0.038568</Position>
+        <Rotation>0.000000, 0.000000, 0.000000</Rotation>
+        <Scale>0.600000, 0.770000, 1.000000</Scale>
+      </Transform>
+      <Material>PFuturisme1Mat</Material>
+      <Informations>
+        <ArtisticMovement>Futurisme</ArtisticMovement>
+        <Artist>Carlo Carrà</Artist>
+        <PaintingName>Démonstration</PaintingName>
+        <Year>1914</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting22">
+      <Transform>
+        <Position>-24.691750, 2.000000, 12.706600</Position>
+        <Rotation>0.000000, 90.000080, 0.000000</Rotation>
+        <Scale>1.987000, 2.591000, 1.000000</Scale>
+      </Transform>
+      <Material>PFuturisme2Mat</Material>
+      <Informations>
+        <ArtisticMovement>Futurisme</ArtisticMovement>
+        <Artist>Carlo Carrà</Artist>
+        <PaintingName>Les funérailles de l'anarchiste Galli</PaintingName>
+        <Year>1910</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting23">
+      <Transform>
+        <Position>-24.702190, 2.000000, 4.560393</Position>
+        <Rotation>0.000000, 90.000080, 0.000000</Rotation>
+        <Scale>1.521311, 1.244457, 1.000000</Scale>
+      </Transform>
+      <Material>PFuturisme3Mat</Material>
+      <Informations>
+        <ArtisticMovement>Futurisme</ArtisticMovement>
+        <Artist>Giacomo Balla</Artist>
+        <PaintingName>Dynamique d'un chien en laisse</PaintingName>
+        <Year>1912</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting24">
+      <Transform>
+        <Position>-24.708550, 2.000000, 19.973230</Position>
+        <Rotation>0.000000, 90.000080, 0.000000</Rotation>
+        <Scale>1.463146, 1.187481, 1.000000</Scale>
+      </Transform>
+      <Material>PFuturisme4Mat</Material>
+      <Informations>
+        <ArtisticMovement>Futurisme</ArtisticMovement>
+        <Artist>Giacomo Balla</Artist>
+        <PaintingName>Vitesse de l'automobile</PaintingName>
+        <Year>1913</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting25">
+      <Transform>
+        <Position>-20.450150, 2.000000, 24.643330</Position>
+        <Rotation>0.000000, 180.000000, 0.000000</Rotation>
+        <Scale>1.825072, 1.216715, 1.000000</Scale>
+      </Transform>
+      <Material>PFuturisme5Mat</Material>
+      <Informations>
+        <ArtisticMovement>Futurisme</ArtisticMovement>
+        <Artist>Giacomo Balla</Artist>
+        <PaintingName>Vol d'une hirondelle</PaintingName>
+        <Year>1913</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting26">
+      <Transform>
+        <Position>-12.981390, 2.000000, 24.664920</Position>
+        <Rotation>0.000000, 180.000000, 0.000000</Rotation>
+        <Scale>0.719707, 0.954394, 1.000000</Scale>
+      </Transform>
+      <Material>PFuturisme6Mat</Material>
+      <Informations>
+        <ArtisticMovement>Futurisme</ArtisticMovement>
+        <Artist>Gino Serverini</Artist>
+        <PaintingName>Danseuse bleue</PaintingName>
+        <Year>1912</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting27">
+      <Transform>
+        <Position>-8.513543, 2.000000, 21.314480</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>0.885000, 1.158000, 1.000000</Scale>
+      </Transform>
+      <Material>PFuturisme7Mat</Material>
+      <Informations>
+        <ArtisticMovement>Futurisme</ArtisticMovement>
+        <Artist>Gino Serverini</Artist>
+        <PaintingName>Train blindé en action</PaintingName>
+        <Year>1915</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting28">
+      <Transform>
+        <Position>-8.513829, 2.000000, 16.530890</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>1.400000, 2.200000, 1.000000</Scale>
+      </Transform>
+      <Material>PFuturisme8Mat</Material>
+      <Informations>
+        <ArtisticMovement>Futurisme</ArtisticMovement>
+        <Artist>Luigi Russolo</Artist>
+        <PaintingName>La Musique</PaintingName>
+        <Year>1911</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting29">
+      <Transform>
+        <Position>-8.538515, 2.000000, 5.487129</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>2.010000, 1.930000, 1.000000</Scale>
+      </Transform>
+      <Material>PFuturisme9Mat</Material>
+      <Informations>
+        <ArtisticMovement>Futurisme</ArtisticMovement>
+        <Artist>Umberto Boccioni</Artist>
+        <PaintingName>Dynamisme d'un footballeur</PaintingName>
+        <Year>1912</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting30">
+      <Transform>
+        <Position>-12.233600, 2.000000, 0.022205</Position>
+        <Rotation>0.000000, 0.000000, 0.000000</Rotation>
+        <Scale>1.450000, 1.100000, 1.000000</Scale>
+      </Transform>
+      <Material>PFuturisme10Mat</Material>
+      <Informations>
+        <ArtisticMovement>Futurisme</ArtisticMovement>
+        <Artist>Umberto Boccioni</Artist>
+        <PaintingName>Le rire</PaintingName>
+        <Year>1911</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting31">
+      <Transform>
+        <Position>0.000000, 2.000000, 0.020106</Position>
+        <Rotation>0.000000, 0.000000, 0.000000</Rotation>
+        <Scale>0.940000, 1.300000, 1.000000</Scale>
+      </Transform>
+      <Material>PRomantisme1Mat</Material>
+      <Informations>
+        <ArtisticMovement>Romantisme</ArtisticMovement>
+        <Artist>Antoine Jean Gros</Artist>
+        <PaintingName>Bonaparte au Pont d'Arcole</PaintingName>
+        <Year>1796</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting32">
+      <Transform>
+        <Position>-8.290297, 2.000000, 4.474148</Position>
+        <Rotation>0.000000, 90.000070, 0.000000</Rotation>
+        <Scale>1.700000, 1.080000, 1.000000</Scale>
+      </Transform>
+      <Material>PRomantisme2Mat</Material>
+      <Informations>
+        <ArtisticMovement>Romantisme</ArtisticMovement>
+        <Artist>Caspar Friedrich</Artist>
+        <PaintingName>Matin dans le Riesengebirge</PaintingName>
+        <Year>1810</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting33">
+      <Transform>
+        <Position>-8.284553, 2.000000, 9.100994</Position>
+        <Rotation>0.000000, 90.000070, 0.000000</Rotation>
+        <Scale>0.748000, 0.944000, 1.000000</Scale>
+      </Transform>
+      <Material>PRomantisme3Mat</Material>
+      <Informations>
+        <ArtisticMovement>Romantisme</ArtisticMovement>
+        <Artist>Caspar Friedrich</Artist>
+        <PaintingName>Le Voyageur au-dessus de la mer de nuages</PaintingName>
+        <Year>1818</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting34">
+      <Transform>
+        <Position>-8.271027, 2.000000, 18.935700</Position>
+        <Rotation>0.000000, 90.000070, 0.000000</Rotation>
+        <Scale>3.200000, 2.600000, 1.000000</Scale>
+      </Transform>
+      <Material>PRomantisme4Mat</Material>
+      <Informations>
+        <ArtisticMovement>Romantisme</ArtisticMovement>
+        <Artist>Eugène Delacroix</Artist>
+        <PaintingName>La Liberté guidant le peuple</PaintingName>
+        <Year>1830</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting35">
+      <Transform>
+        <Position>7.406699, 2.000000, 18.432770</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>3.470000, 2.680000, 1.000000</Scale>
+      </Transform>
+      <Material>PRomantisme5Mat</Material>
+      <Informations>
+        <ArtisticMovement>Romantisme</ArtisticMovement>
+        <Artist>Goya</Artist>
+        <PaintingName>Les fusillades du 3 mai</PaintingName>
+        <Year>1814</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting36">
+      <Transform>
+        <Position>-7.269072, 2.000000, 0.015800</Position>
+        <Rotation>0.000000, 0.000000, 0.000000</Rotation>
+        <Scale>0.946991, 1.050299, 1.000000</Scale>
+      </Transform>
+      <Material>PRomantisme6Mat</Material>
+      <Informations>
+        <ArtisticMovement>Romantisme</ArtisticMovement>
+        <Artist>Horace Vernet</Artist>
+        <PaintingName>La ballade de Lénore</PaintingName>
+        <Year>1839</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting37">
+      <Transform>
+        <Position>7.410944, 2.000000, 3.453624</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>1.850000, 1.300000, 1.000000</Scale>
+      </Transform>
+      <Material>PRomantisme7Mat</Material>
+      <Informations>
+        <ArtisticMovement>Romantisme</ArtisticMovement>
+        <Artist>John Constable</Artist>
+        <PaintingName>La charette de foin</PaintingName>
+        <Year>1819</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting38">
+      <Transform>
+        <Position>7.409584, 2.000000, 7.842936</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>1.154540, 0.814970, 1.000000</Scale>
+      </Transform>
+      <Material>PRomantisme8Mat</Material>
+      <Informations>
+        <ArtisticMovement>Romantisme</ArtisticMovement>
+        <Artist>William Blake</Artist>
+        <PaintingName>Béatrice et Dante</PaintingName>
+        <Year>1827</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting39">
+      <Transform>
+        <Position>-3.127164, 2.000000, 24.665310</Position>
+        <Rotation>0.000000, 180.000000, 0.000000</Rotation>
+        <Scale>1.218000, 0.910000, 1.000000</Scale>
+      </Transform>
+      <Material>PRomantisme9Mat</Material>
+      <Informations>
+        <ArtisticMovement>Romantisme</ArtisticMovement>
+        <Artist>William Turner</Artist>
+        <PaintingName>Neige, pluie et vitesse</PaintingName>
+        <Year>1844</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting40">
+      <Transform>
+        <Position>3.433324, 2.000000, 24.650350</Position>
+        <Rotation>0.000000, 180.000000, 0.000000</Rotation>
+        <Scale>1.219000, 0.914000, 1.000000</Scale>
+      </Transform>
+      <Material>PRomantisme10Mat</Material>
+      <Informations>
+        <ArtisticMovement>Romantisme</ArtisticMovement>
+        <Artist>William Turner</Artist>
+        <PaintingName>Tempête et neige en mer</PaintingName>
+        <Year>1842</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting41">
+      <Transform>
+        <Position>7.676502, 2.000000, 3.039472</Position>
+        <Rotation>0.000000, 90.000030, 0.000000</Rotation>
+        <Scale>0.920000, 0.760000, 1.000000</Scale>
+      </Transform>
+      <Material>PSurrealisme1Mat</Material>
+      <Informations>
+        <ArtisticMovement>Surréalisme</ArtisticMovement>
+        <Artist>Joan Miro</Artist>
+        <PaintingName>L'étoile du matin - Constellations</PaintingName>
+        <Year>1933</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting42">
+      <Transform>
+        <Position>7.673619, 2.000000, 7.121017</Position>
+        <Rotation>0.000000, 90.000030, 0.000000</Rotation>
+        <Scale>1.142000, 1.460000, 1.000000</Scale>
+      </Transform>
+      <Material>PSurrealisme2Mat</Material>
+      <Informations>
+        <ArtisticMovement>Surréalisme</ArtisticMovement>
+        <Artist>Joan Miro</Artist>
+        <PaintingName>Tête de paysan catalan</PaintingName>
+        <Year>1924</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting43">
+      <Transform>
+        <Position>7.675395, 2.000000, 19.664590</Position>
+        <Rotation>0.000000, 90.000030, 0.000000</Rotation>
+        <Scale>1.460000, 1.140000, 1.000000</Scale>
+      </Transform>
+      <Material>PSurrealisme3Mat</Material>
+      <Informations>
+        <ArtisticMovement>Surréalisme</ArtisticMovement>
+        <Artist>Max Ernst</Artist>
+        <PaintingName>L'Ange du foyer</PaintingName>
+        <Year>1937</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting44">
+      <Transform>
+        <Position>11.165040, 2.000000, 24.627390</Position>
+        <Rotation>0.000000, 180.000000, 0.000000</Rotation>
+        <Scale>0.975000, 1.305000, 1.000000</Scale>
+      </Transform>
+      <Material>PSurrealisme4Mat</Material>
+      <Informations>
+        <ArtisticMovement>Surréalisme</ArtisticMovement>
+        <Artist>Max Ernst</Artist>
+        <PaintingName>La femme équivoque</PaintingName>
+        <Year>1923</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting45">
+      <Transform>
+        <Position>16.888380, 2.000000, 24.623030</Position>
+        <Rotation>0.000000, 180.000000, 0.000000</Rotation>
+        <Scale>1.315375, 1.016708, 1.000000</Scale>
+      </Transform>
+      <Material>PSurrealisme5Mat</Material>
+      <Informations>
+        <ArtisticMovement>Surréalisme</ArtisticMovement>
+        <Artist>René Magritte</Artist>
+        <PaintingName>La trahison des images</PaintingName>
+        <Year>1948</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting46">
+      <Transform>
+        <Position>22.086480, 2.000000, 24.625150</Position>
+        <Rotation>0.000000, 180.000000, 0.000000</Rotation>
+        <Scale>1.037538, 0.767494, 1.000000</Scale>
+      </Transform>
+      <Material>PSurrealisme6Mat</Material>
+      <Informations>
+        <ArtisticMovement>Surréalisme</ArtisticMovement>
+        <Artist>René Magritte</Artist>
+        <PaintingName>Les Amants</PaintingName>
+        <Year>1928</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting47">
+      <Transform>
+        <Position>24.893210, 2.000000, 19.641540</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>1.458287, 1.473017, 1.000000</Scale>
+      </Transform>
+      <Material>PSurrealisme7Mat</Material>
+      <Informations>
+        <ArtisticMovement>Surréalisme</ArtisticMovement>
+        <Artist>Salvador Dali</Artist>
+        <PaintingName>Prémonition de la Guerre Civile</PaintingName>
+        <Year>1936</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting48">
+      <Transform>
+        <Position>24.894000, 2.000000, 11.983750</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>1.320000, 0.960000, 1.000000</Scale>
+      </Transform>
+      <Material>PSurrealisme8Mat</Material>
+      <Informations>
+        <ArtisticMovement>Surréalisme</ArtisticMovement>
+        <Artist>Salvador Dali</Artist>
+        <PaintingName>Persistance de la mémoire</PaintingName>
+        <Year>1931</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting49">
+      <Transform>
+        <Position>24.883760, 2.000000, 4.081656</Position>
+        <Rotation>0.000000, 270.000000, 0.000000</Rotation>
+        <Scale>0.820000, 1.020000, 1.000000</Scale>
+      </Transform>
+      <Material>PSurrealisme9Mat</Material>
+      <Informations>
+        <ArtisticMovement>Surréalisme</ArtisticMovement>
+        <Artist>Salvador Dali</Artist>
+        <PaintingName>Rêve causé par le vol d'une abeille</PaintingName>
+        <Year>1944</Year>
+      </Informations>
+    </Painting>
+    <Painting name="painting50">
+      <Transform>
+        <Position>10.829080, 2.000000, 0.007240</Position>
+        <Rotation>0.000000, 0.000000, 0.000000</Rotation>
+        <Scale>0.730000, 0.920000, 1.000000</Scale>
+      </Transform>
+      <Material>PSurrealisme10Mat</Material>
+      <Informations>
+        <ArtisticMovement>Surréalisme</ArtisticMovement>
+        <Artist>Yves Tanguy</Artist>
+        <PaintingName>Jour de lenteur</PaintingName>
+        <Year>1937</Year>
+      </Informations>
+    </Painting>
+  </Paintings>
 </SceneObjects>

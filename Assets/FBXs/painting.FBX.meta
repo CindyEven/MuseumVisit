@@ -4,15 +4,25 @@ ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Canvas
+    100004: Frame
     400000: //RootNode
+    400002: Canvas
+    400004: Frame
     2300000: //RootNode
+    2300002: Canvas
+    2300004: Frame
     3300000: //RootNode
+    3300002: Canvas
+    3300004: Frame
     4300000: Box001
+    4300002: Canvas
+    4300004: Frame
     9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
-    materialSearch: 1
+    materialSearch: 2
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0

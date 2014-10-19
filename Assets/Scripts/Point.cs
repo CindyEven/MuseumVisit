@@ -6,7 +6,8 @@ public class Point : MonoBehaviour {
 
 	public List<Point> ConnectedTo;
 	public Point parent;
-
+	public float scoreG;
+	public float score;
 	// Use this for initialization
 	void Start () {
 

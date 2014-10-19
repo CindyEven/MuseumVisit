@@ -3,7 +3,7 @@
   <Points>
     <Point name="DoorAB">
       <Transform>
-        <Position>7.120459, 0.500000, -21.090350</Position>
+        <Position>7.935856, 0.500000, -20.449680</Position>
       </Transform>
       <Connected>
         <To>DoorBA</To>
@@ -11,68 +11,300 @@
     </Point>
     <Point name="DoorBA">
       <Transform>
-        <Position>12.961120, 0.500000, -21.090300</Position>
+        <Position>11.970990, 0.500000, -20.333140</Position>
       </Transform>
       <Connected>
-        <To>CenterB</To>
-        <To>DoorAB</To>
-        <To>Tab1</To>
-        <To>Tab2</To>
+        <To>Tab6</To>
+        <To>Tab5</To>
+        <To>Tab4</To>
         <To>Tab3</To>
+        <To>Tab2</To>
+        <To>Tab1</To>
+        <To>CenterB</To>
+        <To>DoorBD</To>
+        <To>DoorAB</To>
       </Connected>
     </Point>
     <Point name="DoorBD">
       <Transform>
-        <Position>16.750800, 0.500000, -2.741517</Position>
+        <Position>16.781160, 0.500000, -2.941424</Position>
       </Transform>
       <Connected>
-        <To>CenterB</To>
-        <To>Tab3</To>
+        <To>Tab10</To>
+        <To>Tab9</To>
+        <To>Tab8</To>
+        <To>Tab7</To>
+        <To>Tab6</To>
+        <To>Tab5</To>
         <To>Tab4</To>
+        <To>Tab3</To>
+        <To>Tab2</To>
+        <To>Tab1</To>
+        <To>CenterB</To>
+        <To>DoorDB</To>
+        <To>DoorBC</To>
+        <To>DoorBE</To>
+        <To>DoorBA</To>
       </Connected>
     </Point>
     <Point name="DoorBE">
       <Transform>
-        <Position>3.919745, 0.500000, -2.509062</Position>
+        <Position>4.105742, 0.500000, -2.465451</Position>
       </Transform>
       <Connected>
+      	<To>Tab10</To>
+        <To>Tab9</To>
+        <To>Tab8</To>
+        <To>Tab7</To>
+        <To>Tab6</To>
+        <To>Tab5</To>
+        <To>Tab4</To>
+        <To>Tab3</To>
         <To>CenterB</To>
+        <To>DoorEB</To>
+        <To>DoorBC</To>
+        <To>DoorBD</To>
       </Connected>
     </Point>
     <Point name="DoorBC">
       <Transform>
-        <Position>2.478569, 0.500000, -7.018537</Position>
+        <Position>2.257418, 0.500000, -7.395182</Position>
       </Transform>
       <Connected>
-        <To>DoorCB</To>
+      	<To>Tab10</To>
+        <To>Tab9</To>
+        <To>Tab8</To>
+        <To>Tab7</To>
+        <To>Tab6</To>
+        <To>Tab5</To>
+        <To>Tab4</To>
+        <To>Tab3</To>
         <To>CenterB</To>
+        <To>DoorCB</To>
+        <To>DoorBE</To>
+        <To>DoorBD</To>
       </Connected>
     </Point>
     <Point name="DoorCB">
       <Transform>
-        <Position>-2.873539, 0.500000, -6.909307</Position>
+        <Position>-1.825164, 0.500000, -7.375249</Position>
       </Transform>
       <Connected>
+        <To>Tab20</To>
+        <To>Tab19</To>
+        <To>Tab15</To>
+        <To>Tab14</To>
+        <To>Tab13</To>
+        <To>Tab12</To>
+        <To>Tab11</To>
         <To>CenterC</To>
+        <To>DoorCF</To>
+        <To>DoorCE</To>
         <To>DoorBC</To>
       </Connected>
     </Point>
     <Point name="DoorCE">
       <Transform>
-        <Position>-3.528849, 0.500000, -2.066908</Position>
+        <Position>-3.972829, 0.500000, -2.510459</Position>
       </Transform>
       <Connected>
+        <To>Tab20</To>
+        <To>Tab19</To>
+        <To>Tab16</To>
+        <To>Tab15</To>
+        <To>Tab14</To>
+        <To>Tab12</To>
+        <To>Tab11</To>
         <To>CenterC</To>
+        <To>DoorEC</To>
+        <To>DoorCF</To>
+        <To>DoorCB</To>
       </Connected>
     </Point>
     <Point name="DoorCF">
       <Transform>
-        <Position>-17.109420, 0.500000, -1.994102</Position>
+        <Position>-16.328310, 0.500000, -1.958633</Position>
       </Transform>
       <Connected>
+        <To>Tab20</To>
+        <To>Tab19</To>
+        <To>Tab18</To>
+        <To>Tab17</To>
+        <To>Tab16</To>
+        <To>Tab15</To>
+        <To>Tab14</To>
+        <To>Tab13</To>
+        <To>Tab12</To>
+        <To>Tab11</To>
         <To>CenterC</To>
-        <To>Tab5</To>
-        <To>Tab6</To>
+        <To>DoorFC</To>
+        <To>DoorCE</To>
+        <To>DoorCB</To>
+      </Connected>
+    </Point>
+    <Point name="DoorDB">
+      <Transform>
+        <Position>16.753450, 0.500000, 2.182670</Position>
+      </Transform>
+      <Connected>
+        <To>Tab30</To>
+        <To>Tab29</To>
+        <To>Tab28</To>
+        <To>Tab27</To>
+        <To>Tab26</To>
+        <To>Tab25</To>
+        <To>Tab24</To>
+        <To>Tab23</To>
+        <To>Tab22</To>
+        <To>Tab21</To>
+        <To>CenterD</To>
+        <To>DoorDE</To>
+        <To>DoorBD</To>
+      </Connected>
+    </Point>
+    <Point name="DoorDE">
+      <Transform>
+        <Position>9.643502, 0.500000, 12.469550</Position>
+      </Transform>
+      <Connected>
+        <To>Tab30</To>
+        <To>Tab29</To>
+        <To>Tab28</To>
+        <To>Tab27</To>
+        <To>Tab26</To>
+        <To>Tab25</To>
+        <To>Tab24</To>
+        <To>Tab23</To>
+        <To>Tab22</To>
+        <To>Tab21</To>
+        <To>CenterD</To>
+        <To>DoorED</To>
+        <To>DoorDB</To>
+      </Connected>
+    </Point>
+    <Point name="DoorED">
+      <Transform>
+        <Position>4.987790, 0.500000, 12.407900</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab39</To>
+        <To>Tab38</To>
+        <To>Tab37</To>
+        <To>Tab36</To>
+        <To>Tab35</To>
+        <To>Tab34</To>
+        <To>Tab33</To>
+        <To>Tab32</To>
+        <To>Tab31</To>
+        <To>CenterE</To>
+        <To>DoorEF</To>
+        <To>DoorEC</To>
+        <To>DoorEB</To>
+        <To>DoorDE</To>
+      </Connected>
+    </Point>
+    <Point name="DoorEB">
+      <Transform>
+        <Position>4.030571, 0.500000, 2.112052</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab39</To>
+        <To>Tab38</To>
+        <To>Tab37</To>
+        <To>Tab36</To>
+        <To>Tab35</To>
+        <To>Tab34</To>
+        <To>Tab33</To>
+        <To>Tab32</To>
+        <To>Tab31</To>
+        <To>CenterE</To>
+        <To>DoorEF</To>
+        <To>DoorEC</To>
+        <To>DoorED</To>
+        <To>DoorBE</To>
+      </Connected>
+    </Point>
+    <Point name="DoorEC">
+      <Transform>
+        <Position>-3.688534, 0.500000, 1.666607</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab39</To>
+        <To>Tab38</To>
+        <To>Tab37</To>
+        <To>Tab36</To>
+        <To>Tab35</To>
+        <To>Tab33</To>
+        <To>Tab32</To>
+        <To>Tab31</To>
+        <To>CenterE</To>
+        <To>DoorEF</To>
+        <To>DoorEB</To>
+        <To>DoorED</To>
+        <To>DoorCE</To>
+      </Connected>
+    </Point>
+    <Point name="DoorEF">
+      <Transform>
+        <Position>-6.257317, 0.500000, 12.286550</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab39</To>
+        <To>Tab38</To>
+        <To>Tab37</To>
+        <To>Tab36</To>
+        <To>Tab34</To>
+        <To>Tab33</To>
+        <To>Tab32</To>
+        <To>Tab31</To>
+        <To>CenterE</To>
+        <To>DoorFE</To>
+        <To>DoorEC</To>
+        <To>DoorEB</To>
+        <To>DoorED</To>
+      </Connected>
+    </Point>
+    <Point name="DoorFE">
+      <Transform>
+        <Position>-10.356780, 0.500000, 12.203760</Position>
+      </Transform>
+      <Connected>
+        <To>Tab50</To>
+        <To>Tab49</To>
+        <To>Tab48</To>
+        <To>Tab47</To>
+        <To>Tab46</To>
+        <To>Tab45</To>
+        <To>Tab44</To>
+        <To>Tab43</To>
+        <To>Tab42</To>
+        <To>Tab41</To>
+        <To>CenterF</To>
+        <To>DoorFC</To>
+        <To>DoorEF</To>
+      </Connected>
+    </Point>
+    <Point name="DoorFC">
+      <Transform>
+        <Position>-16.482850, 0.500000, 1.637993</Position>
+      </Transform>
+      <Connected>
+        <To>Tab50</To>
+        <To>Tab49</To>
+        <To>Tab48</To>
+        <To>Tab47</To>
+        <To>Tab46</To>
+        <To>Tab45</To>
+        <To>Tab44</To>
+        <To>Tab43</To>
+        <To>Tab42</To>
+        <To>CenterF</To>
+        <To>DoorFE</To>
+        <To>DoorCF</To>
       </Connected>
     </Point>
     <Point name="CenterB">
@@ -80,104 +312,1023 @@
         <Position>16.146420, 0.500000, -11.249050</Position>
       </Transform>
       <Connected>
-        <To>DoorBD</To>
-        <To>DoorBE</To>
-        <To>DoorBC</To>
-        <To>Tab1</To>
-        <To>Tab2</To>
-        <To>Tab3</To>
+        <To>Tab10</To>
+        <To>Tab9</To>
+        <To>Tab8</To>
+        <To>Tab7</To>
+        <To>Tab6</To>
+        <To>Tab5</To>
         <To>Tab4</To>
+        <To>Tab3</To>
+        <To>Tab2</To>
+        <To>Tab1</To>
+        <To>DoorBC</To>
+        <To>DoorBE</To>
+        <To>DoorBD</To>
         <To>DoorBA</To>
       </Connected>
     </Point>
     <Point name="CenterC">
       <Transform>
-        <Position>-15.106940, 0.500000, -10.805060</Position>
+        <Position>-16.903850, 0.500000, -11.952160</Position>
       </Transform>
       <Connected>
-        <To>DoorCE</To>
+        <To>Tab20</To>
+        <To>Tab19</To>
+        <To>Tab18</To>
+        <To>Tab17</To>
+        <To>Tab16</To>
+        <To>Tab15</To>
+        <To>Tab14</To>
+        <To>Tab13</To>
+        <To>Tab12</To>
+        <To>Tab11</To>
         <To>DoorCF</To>
-        <To>Tab5</To>
-        <To>Tab6</To>
-        <To>Tab7</To>
+        <To>DoorCE</To>
         <To>DoorCB</To>
+      </Connected>
+    </Point>
+    <Point name="CenterD">
+      <Transform>
+        <Position>17.282990, 0.500000, 12.400950</Position>
+      </Transform>
+      <Connected>
+        <To>Tab30</To>
+        <To>Tab29</To>
+        <To>Tab28</To>
+        <To>Tab27</To>
+        <To>Tab26</To>
+        <To>Tab25</To>
+        <To>Tab24</To>
+        <To>Tab23</To>
+        <To>Tab22</To>
+        <To>Tab21</To>
+        <To>DoorDE</To>
+        <To>DoorDB</To>
+      </Connected>
+    </Point>
+    <Point name="CenterE">
+      <Transform>
+        <Position>-0.284628, 0.500000, 12.331850</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab39</To>
+        <To>Tab38</To>
+        <To>Tab37</To>
+        <To>Tab36</To>
+        <To>Tab35</To>
+        <To>Tab34</To>
+        <To>Tab33</To>
+        <To>Tab32</To>
+        <To>Tab31</To>
+        <To>DoorEF</To>
+        <To>DoorEC</To>
+        <To>DoorEB</To>
+        <To>DoorED</To>
+      </Connected>
+    </Point>
+    <Point name="CenterF">
+      <Transform>
+        <Position>-17.056530, 0.500000, 12.425230</Position>
+      </Transform>
+      <Connected>
+        <To>Tab50</To>
+        <To>Tab49</To>
+        <To>Tab48</To>
+        <To>Tab47</To>
+        <To>Tab46</To>
+        <To>Tab45</To>
+        <To>Tab44</To>
+        <To>Tab43</To>
+        <To>Tab42</To>
+        <To>Tab41</To>
+        <To>DoorFC</To>
+        <To>DoorFE</To>
       </Connected>
     </Point>
     <Point name="Tab1">
       <Transform>
-        <Position>19.620560, 0.500000, -24.092490</Position>
+        <Position>13.579760, 0.500000, -23.953150</Position>
       </Transform>
       <Connected>
-        <To>CenterB</To>
-        <To>DoorBA</To>
-        <To>Tab2</To>
+        <To>Tab6</To>
+        <To>Tab5</To>
+        <To>Tab4</To>
         <To>Tab3</To>
+        <To>Tab2</To>
+        <To>CenterB</To>
+        <To>DoorBD</To>
+        <To>DoorBA</To>
       </Connected>
     </Point>
     <Point name="Tab2">
       <Transform>
-        <Position>23.823640, 0.500000, -19.862120</Position>
+        <Position>19.941280, 0.500000, -24.043100</Position>
       </Transform>
       <Connected>
-        <To>CenterB</To>
-        <To>DoorBA</To>
-        <To>Tab1</To>
-        <To>Tab3</To>
+     	<To>Tab7</To>
+        <To>Tab6</To>
+        <To>Tab5</To>
         <To>Tab4</To>
+        <To>Tab3</To>
+        <To>Tab1</To>
+        <To>CenterB</To>
+        <To>DoorBE</To>
+        <To>DoorBD</To>
+        <To>DoorBA</To>
       </Connected>
     </Point>
     <Point name="Tab3">
       <Transform>
-        <Position>23.878220, 0.500000, -13.912300</Position>
+        <Position>24.134970, 0.500000, -21.155050</Position>
       </Transform>
       <Connected>
-        <To>CenterB</To>
-        <To>DoorBA</To>
-        <To>Tab1</To>
-        <To>Tab2</To>
+      	<To>Tab8</To>
+        <To>Tab7</To>
+        <To>Tab6</To>
+        <To>Tab5</To>
         <To>Tab4</To>
+        <To>Tab2</To>
+        <To>Tab1</To>
+        <To>CenterB</To>
+        <To>DoorBE</To>
         <To>DoorBD</To>
+        <To>DoorBA</To>
       </Connected>
     </Point>
     <Point name="Tab4">
       <Transform>
-        <Position>23.769080, 0.500000, -5.042140</Position>
+        <Position>24.200320, 0.500000, -14.078070</Position>
       </Transform>
       <Connected>
-        <To>CenterB</To>
-        <To>DoorBD</To>
+        <To>Tab10</To>
+        <To>Tab9</To>
+        <To>Tab8</To>
+        <To>Tab7</To>
+        <To>Tab6</To>
+        <To>Tab5</To>
         <To>Tab3</To>
+        <To>Tab2</To>
+        <To>Tab1</To>
+        <To>CenterB</To>
+        <To>DoorBC</To>
+        <To>DoorBE</To>
+        <To>DoorBD</To>
+        <To>DoorBA</To>
       </Connected>
     </Point>
     <Point name="Tab5">
       <Transform>
-        <Position>-23.335330, 0.500000, -9.931252</Position>
+        <Position>24.124940, 0.500000, -5.515024</Position>
       </Transform>
       <Connected>
-        <To>CenterC</To>
-        <To>DoorCF</To>
-        <To>Tab6</To>
+        <To>Tab10</To>
+        <To>Tab9</To>
+        <To>Tab8</To>
         <To>Tab7</To>
+        <To>Tab6</To>
+        <To>Tab4</To>
+        <To>Tab3</To>
+        <To>Tab2</To>
+        <To>Tab1</To>
+        <To>CenterB</To>
+        <To>DoorBC</To>
+        <To>DoorBE</To>
+        <To>DoorBD</To>
+        <To>DoorBA</To>
       </Connected>
     </Point>
     <Point name="Tab6">
       <Transform>
-        <Position>-23.699420, 0.500000, -20.562940</Position>
+        <Position>21.176080, 0.500000, -1.002190</Position>
       </Transform>
       <Connected>
-        <To>CenterC</To>
-        <To>Tab5</To>
+     	<To>Tab10</To>
+        <To>Tab9</To>
+        <To>Tab8</To>
         <To>Tab7</To>
+        <To>Tab5</To>
+        <To>Tab4</To>
+        <To>Tab3</To>
+        <To>Tab2</To>
+        <To>Tab1</To>
+        <To>CenterB</To>
+        <To>DoorBC</To>
+        <To>DoorBE</To>
+        <To>DoorBD</To>
+        <To>DoorBA</To>
       </Connected>
     </Point>
     <Point name="Tab7">
       <Transform>
-        <Position>-16.781740, 0.500000, -23.584890</Position>
+        <Position>10.298230, 0.500000, -1.096028</Position>
       </Transform>
       <Connected>
-        <To>CenterC</To>
-        <To>Tab5</To>
+        <To>Tab10</To>
+        <To>Tab9</To>
+        <To>Tab8</To>
         <To>Tab6</To>
+        <To>Tab5</To>
+        <To>Tab4</To>
+        <To>Tab3</To>
+        <To>Tab2</To>
+        <To>Tab1</To>
+        <To>CenterB</To>
+        <To>DoorBC</To>
+        <To>DoorBE</To>
+        <To>DoorBD</To>
+      </Connected>
+    </Point>
+    <Point name="Tab8">
+      <Transform>
+        <Position>1.101730, 0.500000, -2.865484</Position>
+      </Transform>
+      <Connected>
+      	<To>Tab10</To>
+        <To>Tab9</To>
+        <To>Tab7</To>
+        <To>Tab6</To>
+        <To>Tab5</To>
+        <To>Tab4</To>
+        <To>Tab3</To>
+        <To>CenterB</To>
+        <To>DoorBC</To>
+        <To>DoorBE</To>
+        <To>DoorBD</To>
+      </Connected>
+    </Point>
+    <Point name="Tab9">
+      <Transform>
+        <Position>0.996090, 0.500000, -12.701020</Position>
+      </Transform>
+      <Connected>
+      	<To>Tab10</To>
+        <To>Tab8</To>
+        <To>Tab7</To>
+        <To>Tab6</To>
+        <To>Tab5</To>
+        <To>Tab4</To>
+        <To>CenterB</To>
+        <To>DoorBC</To>
+        <To>DoorBE</To>
+        <To>DoorBD</To>
+      </Connected>
+    </Point>
+    <Point name="Tab10">
+      <Transform>
+        <Position>4.909134, 0.500000, -14.192240</Position>
+      </Transform>
+      <Connected>
+      	<To>Tab9</To>
+        <To>Tab8</To>
+        <To>Tab7</To>
+        <To>Tab6</To>
+        <To>Tab5</To>
+        <To>Tab4</To>
+        <To>CenterB</To>
+        <To>DoorBD</To>
+        <To>DoorBE</To>
+        <To>DoorBC</To>
+      </Connected>
+    </Point>
+    <Point name="Tab11">
+      <Transform>
+        <Position>-7.970421, 0.500000, -1.131170</Position>
+      </Transform>
+      <Connected>
+        <To>Tab20</To>
+        <To>Tab19</To>
+        <To>Tab17</To>
+        <To>Tab16</To>
+        <To>Tab15</To>
+        <To>Tab14</To>
+        <To>Tab13</To>
+        <To>Tab12</To>
+        <To>CenterC</To>
+        <To>DoorCF</To>
+        <To>DoorCE</To>
+        <To>DoorCB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab12">
+      <Transform>
+        <Position>-12.250530, 0.500000, -1.203976</Position>
+      </Transform>
+      <Connected>
+        <To>Tab20</To>
+        <To>Tab19</To>
+        <To>Tab17</To>
+        <To>Tab16</To>
+        <To>Tab15</To>
+        <To>Tab14</To>
+        <To>Tab13</To>
+        <To>Tab11</To>
+        <To>CenterC</To>
+        <To>DoorCF</To>
+        <To>DoorCE</To>
+        <To>DoorCB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab13">
+      <Transform>
+        <Position>-21.787830, 0.500000, -1.138645</Position>
+      </Transform>
+      <Connected>
+        <To>Tab20</To>
+        <To>Tab19</To>
+        <To>Tab18</To>
+        <To>Tab17</To>
+        <To>Tab16</To>
+        <To>Tab15</To>
+        <To>Tab14</To>
+        <To>Tab12</To>
+        <To>Tab11</To>
+        <To>CenterC</To>
+        <To>DoorCF</To>
+        <To>DoorCB</To>
+        <To>DoorCE</To>
+      </Connected>
+    </Point>
+    <Point name="Tab14">
+      <Transform>
+        <Position>-23.997600, 0.500000, -6.003695</Position>
+      </Transform>
+      <Connected>
+        <To>Tab20</To>
+        <To>Tab19</To>
+        <To>Tab18</To>
+        <To>Tab17</To>
+        <To>Tab16</To>
+        <To>Tab15</To>
+        <To>Tab13</To>
+        <To>Tab12</To>
+        <To>Tab11</To>
+        <To>CenterC</To>
+        <To>DoorCF</To>
+        <To>DoorCE</To>
+      </Connected>
+    </Point>
+    <Point name="Tab15">
+      <Transform>
+        <Position>-23.974340, 0.500000, -17.068370</Position>
+      </Transform>
+      <Connected>
+        <To>Tab18</To>
+        <To>Tab17</To>
+        <To>Tab16</To>
+        <To>Tab14</To>
+        <To>Tab13</To>
+        <To>Tab12</To>
+        <To>Tab11</To>
+        <To>CenterC</To>
+        <To>DoorCF</To>
+        <To>DoorCE</To>
+        <To>DoorCB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab16">
+      <Transform>
+        <Position>-20.433180, 0.500000, -24.302460</Position>
+      </Transform>
+      <Connected>
+        <To>Tab18</To>
+        <To>Tab17</To>
+        <To>Tab15</To>
+        <To>Tab14</To>
+        <To>Tab13</To>
+        <To>Tab12</To>
+        <To>Tab11</To>
+        <To>CenterC</To>
+        <To>DoorCF</To>
+        <To>DoorCE</To>
+      </Connected>
+    </Point>
+    <Point name="Tab17">
+      <Transform>
+        <Position>-15.091110, 0.500000, -24.186770</Position>
+      </Transform>
+      <Connected>
+        <To>Tab18</To>
+        <To>Tab16</To>
+        <To>Tab15</To>
+        <To>Tab14</To>
+        <To>Tab13</To>
+        <To>Tab12</To>
+        <To>Tab11</To>
+        <To>CenterC</To>
+        <To>DoorCF</To>
+      </Connected>
+    </Point>
+    <Point name="Tab18">
+      <Transform>
+        <Position>-10.604720, 0.500000, -20.759310</Position>
+      </Transform>
+      <Connected>
+      	<To>Tab17</To>
+        <To>Tab16</To>
+        <To>Tab15</To>
+        <To>Tab14</To>
+        <To>Tab13</To>
+        <To>CenterC</To>
+        <To>DoorCF</To>
+      </Connected>
+    </Point>
+    <Point name="Tab19">
+      <Transform>
+        <Position>-5.054691, 0.500000, -14.195630</Position>
+      </Transform>
+      <Connected>
+        <To>Tab20</To>
+        <To>Tab14</To>
+        <To>Tab13</To>
+        <To>Tab12</To>
+        <To>Tab11</To>
+        <To>CenterC</To>
+        <To>DoorCF</To>
+        <To>DoorCE</To>
+        <To>DoorCB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab20">
+      <Transform>
+        <Position>-0.841163, 0.500000, -12.317440</Position>
+      </Transform>
+      <Connected>
+        <To>Tab19</To>
+        <To>Tab14</To>
+        <To>Tab13</To>
+        <To>Tab12</To>
+        <To>Tab11</To>
+        <To>CenterC</To>
+        <To>DoorCF</To>
+        <To>DoorCE</To>
+        <To>DoorCB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab21">
+      <Transform>
+        <Position>23.570190, 0.500000, 3.705473</Position>
+      </Transform>
+      <Connected>
+        <To>Tab29</To>
+        <To>Tab28</To>
+        <To>Tab27</To>
+        <To>Tab26</To>
+        <To>Tab25</To>
+        <To>Tab24</To>
+        <To>Tab23</To>
+        <To>CenterD</To>
+        <To>DoorDE</To>
+        <To>DoorDB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab22">
+      <Transform>
+        <Position>24.000690, 0.500000, 11.984140</Position>
+      </Transform>
+      <Connected>
+        <To>Tab30</To>
+        <To>Tab29</To>
+        <To>Tab27</To>
+        <To>Tab26</To>
+        <To>Tab25</To>
+        <To>Tab24</To>
+        <To>Tab23</To>
+        <To>CenterD</To>
+        <To>DoorDE</To>
+        <To>DoorDB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab23">
+      <Transform>
+        <Position>23.933470, 0.500000, 19.615100</Position>
+      </Transform>
+      <Connected>
+        <To>Tab30</To>
+        <To>Tab29</To>
+        <To>Tab28</To>
+        <To>Tab27</To>
+        <To>Tab26</To>
+        <To>Tab25</To>
+        <To>Tab24</To>
+        <To>Tab22</To>
+        <To>Tab21</To>
+        <To>CenterD</To>
+        <To>DoorDE</To>
+        <To>DoorDB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab24">
+      <Transform>
+        <Position>22.342450, 0.500000, 23.709540</Position>
+      </Transform>
+      <Connected>
+        <To>Tab30</To>
+        <To>Tab29</To>
+        <To>Tab28</To>
+        <To>Tab27</To>
+        <To>Tab26</To>
+        <To>Tab25</To>
+        <To>Tab23</To>
+        <To>Tab22</To>
+        <To>Tab21</To>
+        <To>CenterD</To>
+        <To>DoorDE</To>
+        <To>DoorDB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab25">
+      <Transform>
+        <Position>17.159820, 0.500000, 23.698200</Position>
+      </Transform>
+      <Connected>
+        <To>Tab30</To>
+        <To>Tab29</To>
+        <To>Tab27</To>
+        <To>Tab26</To>
+        <To>Tab24</To>
+        <To>Tab23</To>
+        <To>Tab22</To>
+        <To>Tab21</To>
+        <To>CenterD</To>
+        <To>DoorDE</To>
+        <To>DoorDB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab26">
+      <Transform>
+        <Position>11.139110, 0.500000, 23.965030</Position>
+      </Transform>
+      <Connected>
+        <To>Tab30</To>
+        <To>Tab29</To>
+        <To>Tab25</To>
+        <To>Tab24</To>
+        <To>Tab23</To>
+        <To>Tab22</To>
+        <To>Tab21</To>
+        <To>CenterD</To>
+        <To>DoorDE</To>
+        <To>DoorDB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab27">
+      <Transform>
+        <Position>8.528984, 0.500000, 19.489560</Position>
+      </Transform>
+      <Connected>
+        <To>Tab30</To>
+        <To>Tab29</To>
+        <To>Tab26</To>
+        <To>Tab25</To>
+        <To>Tab24</To>
+        <To>Tab23</To>
+        <To>Tab22</To>
+        <To>Tab21</To>
+        <To>CenterD</To>
+        <To>DoorDE</To>
+        <To>DoorDB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab28">
+      <Transform>
+        <Position>8.502140, 0.500000, 6.899433</Position>
+      </Transform>
+      <Connected>
+        <To>Tab30</To>
+        <To>Tab29</To>
+        <To>Tab27</To>
+        <To>Tab26</To>
+        <To>Tab25</To>
+        <To>Tab24</To>
+        <To>Tab23</To>
+        <To>Tab21</To>
+        <To>CenterD</To>
+        <To>DoorDE</To>
+        <To>DoorDB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab29">
+      <Transform>
+        <Position>8.395811, 0.500000, 2.965712</Position>
+      </Transform>
+      <Connected>
+        <To>Tab30</To>
+        <To>Tab28</To>
+        <To>Tab27</To>
+        <To>Tab26</To>
+        <To>Tab25</To>
+        <To>Tab24</To>
+        <To>Tab23</To>
+        <To>Tab22</To>
+        <To>Tab21</To>
+        <To>CenterD</To>
+        <To>DoorDE</To>
+        <To>DoorDB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab30">
+      <Transform>
+        <Position>10.833550, 0.500000, 0.803935</Position>
+      </Transform>
+      <Connected>
+        <To>Tab29</To>
+        <To>Tab28</To>
+        <To>Tab27</To>
+        <To>Tab26</To>
+        <To>Tab25</To>
+        <To>Tab24</To>
+        <To>Tab23</To>
+        <To>Tab21</To>
+        <To>CenterD</To>
+        <To>DoorDE</To>
+        <To>DoorDB</To>
+      </Connected>
+    </Point>
+    <Point name="Tab31">
+      <Transform>
+        <Position>0.074631, 0.500000, 0.865098</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab39</To>
+        <To>Tab38</To>
+        <To>Tab37</To>
+        <To>Tab36</To>
+        <To>Tab35</To>
+        <To>Tab34</To>
+        <To>Tab33</To>
+        <To>Tab32</To>
+        <To>CenterE</To>
+        <To>DoorEF</To>
+        <To>DoorEC</To>
+        <To>DoorEB</To>
+        <To>DoorED</To>
+      </Connected>
+    </Point>
+    <Point name="Tab32">
+      <Transform>
+        <Position>6.264093, 0.500000, 3.314965</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab39</To>
+        <To>Tab37</To>
+        <To>Tab36</To>
+        <To>Tab35</To>
+        <To>Tab34</To>
+        <To>CenterE</To>
+        <To>DoorEF</To>
+        <To>DoorEC</To>
+        <To>DoorEB</To>
+        <To>DoorED</To>
+      </Connected>
+    </Point>
+    <Point name="Tab33">
+      <Transform>
+        <Position>6.298258, 0.500000, 7.630002</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab39</To>
+        <To>Tab38</To>
+        <To>Tab37</To>
+        <To>Tab36</To>
+        <To>Tab35</To>
+        <To>Tab34</To>
+        <To>Tab32</To>
+        <To>CenterE</To>
+        <To>DoorEF</To>
+        <To>DoorEC</To>
+        <To>DoorEB</To>
+        <To>DoorED</To>
+      </Connected>
+    </Point>
+    <Point name="Tab34">
+      <Transform>
+        <Position>6.566959, 0.500000, 18.435020</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab39</To>
+        <To>Tab38</To>
+        <To>Tab37</To>
+        <To>Tab36</To>
+        <To>Tab35</To>
+        <To>Tab33</To>
+        <To>Tab32</To>
+        <To>Tab31</To>
+        <To>CenterE</To>
+        <To>DoorEF</To>
+        <To>DoorEC</To>
+        <To>DoorEB</To>
+        <To>DoorED</To>
+      </Connected>
+    </Point>
+    <Point name="Tab35">
+      <Transform>
+        <Position>3.525504, 0.500000, 23.927370</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab39</To>
+        <To>Tab38</To>
+        <To>Tab37</To>
+        <To>Tab36</To>
+        <To>Tab34</To>
+        <To>Tab33</To>
+        <To>Tab32</To>
+        <To>Tab31</To>
+        <To>CenterE</To>
+        <To>DoorEF</To>
+        <To>DoorEC</To>
+        <To>DoorEB</To>
+        <To>DoorED</To>
+      </Connected>
+    </Point>
+    <Point name="Tab36">
+      <Transform>
+        <Position>-3.221377, 0.500000, 23.970750</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab39</To>
+        <To>Tab38</To>
+        <To>Tab37</To>
+        <To>Tab35</To>
+        <To>Tab34</To>
+        <To>Tab33</To>
+        <To>Tab32</To>
+        <To>Tab31</To>
+        <To>CenterE</To>
+        <To>DoorEF</To>
+        <To>DoorEC</To>
+        <To>DoorEB</To>
+        <To>DoorED</To>
+      </Connected>
+    </Point>
+    <Point name="Tab37">
+      <Transform>
+        <Position>-7.162354, 0.500000, 18.979140</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab39</To>
+        <To>Tab38</To>
+        <To>Tab35</To>
+        <To>Tab34</To>
+        <To>Tab33</To>
+        <To>Tab32</To>
+        <To>Tab31</To>
+        <To>CenterE</To>
+        <To>DoorEF</To>
+        <To>DoorEC</To>
+        <To>DoorEB</To>
+        <To>DoorED</To>
+      </Connected>
+    </Point>
+    <Point name="Tab38">
+      <Transform>
+        <Position>-7.301088, 0.500000, 8.999508</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab39</To>
+        <To>Tab35</To>
+        <To>Tab34</To>
+        <To>Tab33</To>
+        <To>Tab31</To>
+        <To>CenterE</To>
+        <To>DoorEF</To>
+        <To>DoorEC</To>
+        <To>DoorEB</To>
+        <To>DoorED</To>
+      </Connected>
+    </Point>
+    <Point name="Tab39">
+      <Transform>
+        <Position>-7.503043, 0.500000, 4.082632</Position>
+      </Transform>
+      <Connected>
+        <To>Tab40</To>
+        <To>Tab38</To>
+        <To>Tab37</To>
+        <To>Tab35</To>
+        <To>Tab34</To>
+        <To>Tab33</To>
+        <To>Tab32</To>
+        <To>Tab31</To>
+        <To>CenterE</To>
+        <To>DoorEF</To>
+        <To>DoorEC</To>
+        <To>DoorEB</To>
+        <To>DoorED</To>
+      </Connected>
+    </Point>
+    <Point name="Tab40">
+      <Transform>
+        <Position>-7.256017, 0.500000, 0.903433</Position>
+      </Transform>
+      <Connected>
+        <To>Tab39</To>
+        <To>Tab38</To>
+        <To>Tab37</To>
+        <To>Tab36</To>
+        <To>Tab35</To>
+        <To>Tab34</To>
+        <To>Tab33</To>
+        <To>Tab32</To>
+        <To>Tab31</To>
+        <To>CenterE</To>
+        <To>DoorEF</To>
+        <To>DoorEC</To>
+        <To>DoorEB</To>
+        <To>DoorED</To>
+      </Connected>
+    </Point>
+    <Point name="Tab41">
+      <Transform>
+        <Position>-12.025040, 0.500000, 0.760362</Position>
+      </Transform>
+      <Connected>
+        <To>Tab49</To>
+        <To>Tab48</To>
+        <To>Tab47</To>
+        <To>Tab46</To>
+        <To>Tab45</To>
+        <To>Tab44</To>
+        <To>Tab43</To>
+        <To>Tab42</To>
+        <To>CenterF</To>
+        <To>DoorFC</To>
+        <To>DoorFE</To>
+      </Connected>
+    </Point>
+    <Point name="Tab42">
+      <Transform>
+        <Position>-9.291210, 0.500000, 5.225282</Position>
+      </Transform>
+      <Connected>
+        <To>Tab50</To>
+        <To>Tab49</To>
+        <To>Tab48</To>
+        <To>Tab47</To>
+        <To>Tab46</To>
+        <To>Tab45</To>
+        <To>Tab44</To>
+        <To>Tab43</To>
+        <To>Tab41</To>
+        <To>CenterF</To>
+        <To>DoorFC</To>
+        <To>DoorFE</To>
+      </Connected>
+    </Point>
+    <Point name="Tab43">
+      <Transform>
+        <Position>-9.247217, 0.500000, 16.462980</Position>
+      </Transform>
+      <Connected>
+        <To>Tab50</To>
+        <To>Tab49</To>
+        <To>Tab48</To>
+        <To>Tab47</To>
+        <To>Tab46</To>
+        <To>Tab45</To>
+        <To>Tab44</To>
+        <To>Tab42</To>
+        <To>Tab41</To>
+        <To>CenterF</To>
+        <To>DoorFC</To>
+        <To>DoorFE</To>
+      </Connected>
+    </Point>
+    <Point name="Tab44">
+      <Transform>
+        <Position>-9.328012, 0.500000, 21.132560</Position>
+      </Transform>
+      <Connected>
+        <To>Tab50</To>
+        <To>Tab49</To>
+        <To>Tab48</To>
+        <To>Tab47</To>
+        <To>Tab46</To>
+        <To>Tab45</To>
+        <To>Tab42</To>
+        <To>Tab41</To>
+        <To>CenterF</To>
+        <To>DoorFC</To>
+        <To>DoorFE</To>
+      </Connected>
+    </Point>
+    <Point name="Tab45">
+      <Transform>
+        <Position>-13.015220, 0.500000, 23.559890</Position>
+      </Transform>
+      <Connected>
+        <To>Tab50</To>
+        <To>Tab49</To>
+        <To>Tab48</To>
+        <To>Tab47</To>
+        <To>Tab46</To>
+        <To>Tab44</To>
+        <To>Tab43</To>
+        <To>Tab42</To>
+        <To>Tab41</To>
+        <To>CenterF</To>
+        <To>DoorFC</To>
+        <To>DoorFE</To>
+      </Connected>
+    </Point>
+    <Point name="Tab46">
+      <Transform>
+        <Position>-20.714250, 0.500000, 23.701780</Position>
+      </Transform>
+      <Connected>
+        <To>Tab50</To>
+        <To>Tab49</To>
+        <To>Tab48</To>
+        <To>Tab47</To>
+        <To>Tab45</To>
+        <To>Tab44</To>
+        <To>Tab43</To>
+        <To>Tab42</To>
+        <To>Tab41</To>
+        <To>CenterF</To>
+        <To>DoorFC</To>
+        <To>DoorFE</To>
+      </Connected>
+    </Point>
+    <Point name="Tab47">
+      <Transform>
+        <Position>-23.844430, 0.500000, 19.810670</Position>
+      </Transform>
+      <Connected>
+        <To>Tab50</To>
+        <To>Tab49</To>
+        <To>Tab48</To>
+        <To>Tab46</To>
+        <To>Tab45</To>
+        <To>Tab44</To>
+        <To>Tab43</To>
+        <To>Tab42</To>
+        <To>Tab41</To>
+        <To>CenterF</To>
+        <To>DoorFC</To>
+        <To>DoorFE</To>
+      </Connected>
+    </Point>
+    <Point name="Tab48">
+      <Transform>
+        <Position>-24.007070, 0.500000, 12.558000</Position>
+      </Transform>
+      <Connected>
+        <To>Tab50</To>
+        <To>Tab49</To>
+        <To>Tab47</To>
+        <To>Tab46</To>
+        <To>Tab45</To>
+        <To>Tab44</To>
+        <To>Tab43</To>
+        <To>Tab42</To>
+        <To>CenterF</To>
+        <To>DoorFC</To>
+        <To>DoorFE</To>
+      </Connected>
+    </Point>
+    <Point name="Tab49">
+      <Transform>
+        <Position>-23.832730, 0.500000, 4.344586</Position>
+      </Transform>
+      <Connected>
+        <To>Tab50</To>
+        <To>Tab48</To>
+        <To>Tab47</To>
+        <To>Tab46</To>
+        <To>Tab45</To>
+        <To>Tab44</To>
+        <To>Tab43</To>
+        <To>Tab42</To>
+        <To>CenterF</To>
+        <To>DoorFC</To>
+        <To>DoorFE</To>
+      </Connected>
+    </Point>
+    <Point name="Tab50">
+      <Transform>
+        <Position>-21.590980, 0.500000, 0.916291</Position>
+      </Transform>
+      <Connected>
+        <To>Tab49</To>
+        <To>Tab47</To>
+        <To>Tab46</To>
+        <To>Tab45</To>
+        <To>Tab44</To>
+        <To>Tab43</To>
+        <To>Tab42</To>
+        <To>CenterF</To>
+        <To>DoorFC</To>
+        <To>DoorFE</To>
       </Connected>
     </Point>
   </Points>

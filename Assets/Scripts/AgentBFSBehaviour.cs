@@ -20,7 +20,7 @@ public class AgentBFSBehaviour : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		painting = (int)Random.Range(0, 6);
+		painting = (int)Random.Range(0, posPainting.Length-1);
 		targetPoint = posPainting [painting];
 		path = BreadthFirstSearch.search(startPoint, targetPoint).ToArray(); 
 		visiteurs = new List<GameObject> ();
@@ -42,7 +42,7 @@ public class AgentBFSBehaviour : MonoBehaviour {
 			al = Alignment (gameObject);
 		}
 		
-		Vector3 force = 1.5f*seek + 10.0f*sep + al + coh;
+		Vector3 force = 1.5f*seek + sep + al +coh;
 		Vector3 direction = transform.position + (rigidbody.velocity + (force / rigidbody.mass) * Time.deltaTime) * Time.deltaTime;
 		transform.LookAt (new Vector3(direction.x,0,direction.z));
 		rigidbody.AddForce(new Vector3(force.x,0,force.z));
@@ -52,7 +52,7 @@ public class AgentBFSBehaviour : MonoBehaviour {
 				i++;
 			}else{
 				startPoint = path[i];
-				painting = (int)Random.Range(0, 6);
+				painting = (int)Random.Range(0, posPainting.Length-1);
 				targetPoint = posPainting [painting];
 				i=0;
 				path = BreadthFirstSearch.search(startPoint, targetPoint).ToArray(); 

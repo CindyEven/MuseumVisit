@@ -59,7 +59,7 @@ public class AgentAStarBehaviour : MonoBehaviour {
 		}
 		Vector3 force = 1.25f*seek + 1.5f*sep + 0.25f*coh + al;
 		Vector3 direction = transform.position + (rigidbody.velocity + (force / rigidbody.mass) * Time.deltaTime) * Time.deltaTime;
-		transform.LookAt (new Vector3(direction.x,0,direction.z));
+		transform.LookAt (direction);
 		rigidbody.AddForce(new Vector3(force.x,0,force.z));
 		
 		if((position - transform.position).sqrMagnitude < 1.5f){

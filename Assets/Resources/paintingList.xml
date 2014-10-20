@@ -270,14 +270,14 @@
       <Transform>
         <Position>-0.056133, 2.000000, -12.038920</Position>
         <Rotation>0.000000, 270.000000, 0.000000</Rotation>
-        <Scale>0.920000, 0.730000, 1.000000</Scale>
+        <Scale>1.460000, 0.970000, 1.000000</Scale>
       </Transform>
       <Material>PCubisme10Mat</Material>
       <Informations>
         <ArtisticMovement>Cubisme</ArtisticMovement>
-        <Artist>Paul Cézanne</Artist>
-        <PaintingName>Nature morte</PaintingName>
-        <Year>1895</Year>
+        <Artist>Marius Zabinski</Artist>
+        <PaintingName>Quest</PaintingName>
+        <Year>2014</Year>
       </Informations>
     </Painting>
     <Painting name="painting21">

@@ -13,7 +13,7 @@ public class SteeringBehaviour : MonoBehaviour {
 	public float alCoef = 1.0f;
 
 	public float maxSpeed = 4.0f;
-	public float slowDistance = 6.0f;
+	public float slowDistance = 2.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -33,7 +33,7 @@ public class SteeringBehaviour : MonoBehaviour {
 
 		if(visiteurs.Count > 0){
 
-			force += sepCoef * Separation(me,visiteurs);
+			force -= sepCoef * Separation(me,visiteurs);
 		}
 
 		if(visiteursWithSameDestination.Count > 0){
@@ -95,11 +95,15 @@ public class SteeringBehaviour : MonoBehaviour {
 			if(isVisible(me,visiteurs[y])){
 
 				velocityAverage += visiteurs[y].rigidbody.velocity;
+				nbTarget++;
 			}
 		}
-
-		velocityAverage = velocityAverage / nbTarget;
-		return (velocityAverage - me.rigidbody.velocity);
+		if (nbTarget != 0) {
+			velocityAverage = velocityAverage / nbTarget;
+			return (velocityAverage - me.rigidbody.velocity);
+		} else {
+			return velocityAverage;
+		}
 	}
 	
 	Vector3 Cohesion(GameObject me,List<GameObject> visiteurs){
@@ -115,9 +119,12 @@ public class SteeringBehaviour : MonoBehaviour {
 				nbTarget++;
 			}
 		}
-
-		gravityCenter = gravityCenter / nbTarget;
-		return ((((gravityCenter - me.transform.position).normalized * maxSpeed)) - me.rigidbody.velocity);
+		if (nbTarget != 0){
+			gravityCenter = gravityCenter / nbTarget;
+			return ((((gravityCenter - me.transform.position).normalized * maxSpeed)) - me.rigidbody.velocity);
+		}else{
+			return gravityCenter;
+		}
 	}
 
 	bool isVisible(GameObject me, GameObject target){

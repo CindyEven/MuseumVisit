@@ -6,19 +6,19 @@ public class ShowPaintingInfo : MonoBehaviour {
 	private bool showGUI = false;
 	private string text;
 
-	// Use this for initialization
-	void Start () {
-
-	}
-	
 	// Update is called once per frame
 	void Update () {
-		RaycastHit hit;
+		// Create a ray from the mouse cursor on screen in the direction of the camera.
 		Ray ray = GetComponentInChildren<Camera>().camera.ScreenPointToRay(Input.mousePosition);
-		
+
+		// Create a RaycastHit variable to store information about what was hit by the ray.
+		RaycastHit hit;
+		// Perform the raycast and if it hits something ...
 		if (Physics.Raycast(ray, out hit)) {
 			Transform objectHit = hit.transform;
+			// And if it is a Painting ...
 			if (objectHit.GetComponent<Painting>()&& Vector3.Distance(transform.position,objectHit.transform.position)<3.0f){
+				// We show the informations about the Painting.
 				text = "Artiste : "+objectHit.GetComponent<Painting>().artist + "\nOeuvre : " + objectHit.GetComponent<Painting>().paintingName + "\nAnnée : "+objectHit.GetComponent<Painting>().year;
 				showGUI = true;
 			}else{

@@ -76,11 +76,9 @@ public class PointAutoInitInspector : Editor {
 	private void modifyXml(){
 		string position="";
 		foreach(XmlElement node in xmlDoc.SelectNodes("SceneObjects/Points/Point")){
-			Debug.Log(node.GetAttribute("name"));
 			Transform newTransform = GameObject.Find(node.GetAttribute("name")).transform;
 			XmlNode transformNode = node.SelectSingleNode("Transform");
 			if(transformNode != null){
-				Debug.Log(newTransform.position.ToString());
 				char[] charsToTrim = { ' ', '(', ')'};
 				transformNode.SelectSingleNode("Position").InnerText = newTransform.position.ToString("f6").Trim(charsToTrim);
 			}
@@ -90,7 +88,6 @@ public class PointAutoInitInspector : Editor {
 
 	private void saveLink(){
 		foreach (XmlElement node in xmlDoc.SelectNodes("SceneObjects/Points/Point")) {
-			Debug.Log (node.GetAttribute ("name"));
 			bool alreadyConnected = false;
 			List<Point> connectedTo = GameObject.Find (node.GetAttribute ("name")).GetComponent<Point> ().ConnectedTo;
 			XmlNode connectedNode = node.SelectSingleNode ("Connected");
@@ -127,8 +124,6 @@ public class PointAutoInitInspector : Editor {
 		GameObject goTo = GameObject.Find (connectedTo);
 		Point point = go.GetComponent<Point>();
 		point.ConnectedTo.Add (goTo.GetComponent<Point> ());
-		Debug.DrawLine(go.transform.position,goTo.transform.position);
-		Debug.Log("link between"+name+"and"+connectedTo);
 	}
 	
 	private Vector3 StringToVect3 (string stringValue){

@@ -2021,6 +2021,7 @@ GameObject:
   - 4: {fileID: 283321419}
   - 33: {fileID: 283321421}
   - 23: {fileID: 283321420}
+  - 64: {fileID: 283321422}
   m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
@@ -2074,6 +2075,19 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 84652441}
   m_GameObject: {fileID: 283321418}
+  m_Mesh: {fileID: 4300000, guid: b6f1a3c7b34b9bb44b2c842deeaa5319, type: 3}
+--- !u!64 &283321422
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 283321418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: b6f1a3c7b34b9bb44b2c842deeaa5319, type: 3}
 --- !u!1 &301237282
 GameObject:
@@ -11352,6 +11366,7 @@ GameObject:
   - 4: {fileID: 1748764619}
   - 33: {fileID: 1748764618}
   - 23: {fileID: 1748764617}
+  - 64: {fileID: 1748764620}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -11405,6 +11420,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1019522056}
   m_RootOrder: 1
+--- !u!64 &1748764620
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1748764616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300002, guid: b6f1a3c7b34b9bb44b2c842deeaa5319, type: 3}
 --- !u!1 &1752713571
 GameObject:
   m_ObjectHideFlags: 0

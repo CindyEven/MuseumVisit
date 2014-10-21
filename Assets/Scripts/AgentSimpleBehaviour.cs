@@ -10,9 +10,6 @@ public class AgentSimpleBehaviour : MonoBehaviour {
 	
 	public Painting targetPainting;
 	
-	List<GameObject> visiteurs;
-	List<GameObject> visiteursWithSameDestination;
-	
 	List<Point> path;
 
 	int indexPath = 0;
@@ -28,9 +25,6 @@ public class AgentSimpleBehaviour : MonoBehaviour {
 		startPoint = FindTheNearestPoint (gameObject);
 		path = AStar.search(startPoint, targetPoint);
 		nextDestination = path [indexPath];
-		
-		visiteurs = new List<GameObject> ();
-		visiteursWithSameDestination = new List<GameObject> ();
 	}
 	
 	// Update is called once per frame

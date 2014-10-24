@@ -6,11 +6,14 @@ public class AgentSimpleBehaviour : MonoBehaviour {
 
 	Point startPoint;
 	Point targetPoint;
-	Point nextDestination;
-	
-	public Painting targetPainting;
-	
-	List<Point> path;
+	Point nextDestination = null;
+
+	Painting oldPainting;
+
+	static int algo = 1;
+	static Painting targetPainting = null;
+
+	List<Point> path = null;
 
 	int indexPath = 0;
 
@@ -20,15 +23,23 @@ public class AgentSimpleBehaviour : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-
-		targetPoint = FindTheNearestPoint (targetPainting.gameObject);
-		startPoint = FindTheNearestPoint (gameObject);
-		path = AStar.search(startPoint, targetPoint);
-		nextDestination = path [indexPath];
+		oldPainting = targetPainting;
+		//targetPoint = FindTheNearestPoint (targetPainting.gameObject);
+		//startPoint = FindTheNearestPoint (gameObject);
+		//path = AStar.search(startPoint, targetPoint);
+		//nextDestination = path [indexPath];
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (oldPainting != targetPainting){
+			CalculPath();
+		}else if (nextDestination == null){
+			return;
+		}
+
+		oldPainting = targetPainting;
 
 		Vector3 position = nextDestination.transform.position;
 
@@ -80,5 +91,32 @@ public class AgentSimpleBehaviour : MonoBehaviour {
 		}
 		
 		return nearPoint;
+	}
+
+	void CalculPath(){
+		startPoint = FindTheNearestPoint (gameObject);
+		targetPoint = FindTheNearestPoint (targetPainting.gameObject);
+
+		switch(algo){
+			case 0:
+				path = BreadthFirstSearch.search(startPoint,targetPoint);
+				break;
+			case 1:
+				path = AStar.search(startPoint, targetPoint);
+				break;
+			case 2:
+				path = AStarWithoutLink.search(startPoint, targetPoint);
+				break;
+		}
+
+		indexPath = 0;
+		nextDestination = path [indexPath];
+	}
+	public static void setTargetPainting(Painting newpaint){
+		targetPainting = newpaint;
+	}
+
+	public static void setAlgo(int a){
+		algo = a;
 	}
 }

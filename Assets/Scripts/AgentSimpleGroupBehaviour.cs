@@ -8,9 +8,12 @@ public class AgentSimpleGroupBehaviour : MonoBehaviour {
 	Point targetPoint;
 	Point nextDestination;
 	
-	public Painting targetPainting;
+	Painting oldPainting;
 	
-	List<Point> path;
+	static int algo = 1;
+	static Painting targetPainting = null;
+	
+	List<Point> path = null;
 
 	public List<GameObject> visiteurs;
 
@@ -28,14 +31,24 @@ public class AgentSimpleGroupBehaviour : MonoBehaviour {
 
 		visiteurs = new List<GameObject> ();
 
-		targetPoint = FindTheNearestPoint (targetPainting.gameObject);
+		oldPainting = targetPainting;
+		/*targetPoint = FindTheNearestPoint (targetPainting.gameObject);
 		startPoint = FindTheNearestPoint (gameObject);
 		path = AStar.search(startPoint, targetPoint);
-		nextDestination = path [indexPath];
+		nextDestination = path [indexPath];*/
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		
+		if (oldPainting != targetPainting){
+			CalculPath();
+		}else if (nextDestination == null){
+			return;
+		}
+
+		oldPainting = targetPainting;
 
 		if(isBlock()){
 			startPoint = FindTheNearestPoint (gameObject);
@@ -94,6 +107,26 @@ public class AgentSimpleGroupBehaviour : MonoBehaviour {
 		return false;
 	}
 
+	void CalculPath(){
+		startPoint = FindTheNearestPoint (gameObject);
+		targetPoint = FindTheNearestPoint (targetPainting.gameObject);
+		
+		switch(algo){
+		case 0:
+			path = BreadthFirstSearch.search(startPoint,targetPoint);
+			break;
+		case 1:
+			path = AStar.search(startPoint, targetPoint);
+			break;
+		case 2:
+			path = AStarWithoutLink.search(startPoint, targetPoint);
+			break;
+		}
+		
+		indexPath = 0;
+		nextDestination = path [indexPath];
+	}
+
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Agent" && !gameObject.Equals(other.gameObject)) {
 			
@@ -123,5 +156,13 @@ public class AgentSimpleGroupBehaviour : MonoBehaviour {
 			
 			visiteurs.Remove (other.gameObject);
 		}
+	}
+
+	public static void setTargetPainting(Painting newpaint){
+		targetPainting = newpaint;
+	}
+	
+	public static void setAlgo(int a){
+		algo = a;
 	}
 }

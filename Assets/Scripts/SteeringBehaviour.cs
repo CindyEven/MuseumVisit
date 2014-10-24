@@ -7,10 +7,10 @@ public class SteeringBehaviour : MonoBehaviour {
 	Vector3 force;
 	Vector3 direction;
 
-	public float seekCoef = 1.25f;
-	public float sepCoef = 1.20f;
-	public float cohCoef = 0.60f;
-	public float alCoef = 1.0f;
+	static float seekCoef = 1.25f;
+	static float sepCoef = 1.20f;
+	static float cohCoef = 0.60f;
+	static float alCoef = 1.0f;
 
 	public float maxSpeed = 4.0f;
 	public float slowDistance = 2.0f;
@@ -139,6 +139,13 @@ public class SteeringBehaviour : MonoBehaviour {
 		}
 
 		return false;
+	}
+
+	public static void updateSteeringCoeff(float seek, float sep, float coh, float al){
+		seekCoef = seek;
+		sepCoef = sep;
+		cohCoef = coh;
+		alCoef = al;
 	}
 	
 }

@@ -41,5 +41,8 @@ public class Menu : MonoBehaviour {
 		if(GUI.Button(new Rect(20,280,Screen.width-40,30), "6) Créer une visite (3)")) {
 			Application.LoadLevel("Scene_visit3");
 		}
+
+		// Label with our names
+		GUI.Label (new Rect (20,320,Screen.width-40,50), "Cindy Even et Guillaume Biannic\nModule CRV, décembre 2014");
 	}
 }

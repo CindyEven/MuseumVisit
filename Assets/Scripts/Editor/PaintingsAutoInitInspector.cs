@@ -66,7 +66,6 @@ public class PaintingsAutoInitInspector : Editor {
 	}
 	
 	private void modifyXml(){
-		string position="", rotation="", scale="";
 		foreach(XmlElement node in xmlDoc.SelectNodes("SceneObjects/Paintings/Painting")){
 			Transform newTransform = GameObject.Find(node.GetAttribute("name")).transform;
 			XmlNode transformNode = node.SelectSingleNode("Transform");

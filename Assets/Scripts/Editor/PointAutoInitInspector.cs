@@ -74,7 +74,6 @@ public class PointAutoInitInspector : Editor {
 	}
 
 	private void modifyXml(){
-		string position="";
 		foreach(XmlElement node in xmlDoc.SelectNodes("SceneObjects/Points/Point")){
 			Transform newTransform = GameObject.Find(node.GetAttribute("name")).transform;
 			XmlNode transformNode = node.SelectSingleNode("Transform");

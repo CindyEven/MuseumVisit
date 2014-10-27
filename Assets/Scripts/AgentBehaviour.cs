@@ -7,7 +7,7 @@ public class AgentBehaviour : MonoBehaviour {
 	Point startPoint;
 	Point targetPoint;
 	Point nextDestination;
-	Point previousDestination;
+//	Point previousDestination;
 
 	Painting targetPainting;
 	Painting[] listPainting;
@@ -61,7 +61,7 @@ public class AgentBehaviour : MonoBehaviour {
 			if(indexPath < path.Count-1){
 
 				indexPath++;
-				previousDestination = nextDestination;
+//				previousDestination = nextDestination;
 				nextDestination = path [indexPath];
 				
 			}else{

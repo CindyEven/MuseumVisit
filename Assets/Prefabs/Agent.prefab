@@ -13,6 +13,7 @@ GameObject:
   - 23: {fileID: 2300000}
   - 54: {fileID: 5400000}
   - 135: {fileID: 13500002}
+  - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   m_Layer: 2
   m_Name: Agent
@@ -83,13 +84,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dd3354371d5340458e535a177a8576b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ca1c55b38420a64e80228a70051741c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seek: {x: 0, y: 0, z: 0}
-  visiteurs: []
-  visiteursWithSameDestination: []
-  path: []
+  maxSpeed: 4
+  slowDistance: 2
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea59bffbb1e80241bd46bf74a1e413c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distArrive: 1.5
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

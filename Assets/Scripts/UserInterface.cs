@@ -28,11 +28,11 @@ public class UserInterface : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			if (!showOptions) {
 				camVisitor.GetComponent<MouseLook> ().enabled = false;
-				GameObject.Find ("Visitor").GetComponent<MouseLook> ().enabled = false;
+				GameObject.Find ("Visitor").GetComponent<VisitorMouvement> ().enabled = false;
 				showOptions = true;
 			} else {
 				camVisitor.GetComponent<MouseLook> ().enabled = true;
-				GameObject.Find ("Visitor").GetComponent<MouseLook> ().enabled = true;
+				GameObject.Find ("Visitor").GetComponent<VisitorMouvement> ().enabled = true;
 				showOptions = false;
 			}
 		}

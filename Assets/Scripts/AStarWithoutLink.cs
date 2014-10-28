@@ -84,13 +84,8 @@ public static class AStarWithoutLink{
 
 		if (!Physics.Raycast (A, B - A, Vector3.Distance (A, B)+1)) {
 
-			if (!Physics.Raycast (A, right - A, Vector3.Distance (A, B)+1.0f)) {
+			return true;
 
-				if (!Physics.Raycast (A, left - A, Vector3.Distance (A, B)+1.0f)) {
-
-					return true;
-				}
-			}
 		}
 
 		return false;

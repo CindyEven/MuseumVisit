@@ -126,13 +126,17 @@ public class UserInterface : MonoBehaviour {
 		AgentSimpleGroupBehaviour.setAlgo (algoSelected);
 		GUI.Label(new Rect(10,175,230,30),"Modification des coeficients :");
 		GUI.Label(new Rect(10,200,230,30),"Seek");
-		seekCoef = GUI.HorizontalSlider (new Rect (100, 205, 100, 30), seekCoef, 0.0f, 5.0f);
+		GUI.Label (new Rect (200, 200, 60, 30), seekCoef.ToString("f2"));
+		seekCoef = GUI.HorizontalSlider (new Rect (90, 205, 100, 30), seekCoef, 0.0f, 5.0f);
 		GUI.Label(new Rect(10,225,230,30),"Séparation");
-		sepCoef = GUI.HorizontalSlider (new Rect (100, 230, 100, 30), sepCoef, 0.0f, 5.0f);
+		GUI.Label (new Rect (200, 225, 60, 30), sepCoef.ToString("f2"));
+		sepCoef = GUI.HorizontalSlider (new Rect (90, 230, 100, 30), sepCoef, 0.0f, 5.0f);
 		GUI.Label(new Rect(10,250,230,30),"Cohésion");
-		cohesionCoef = GUI.HorizontalSlider (new Rect (100, 255, 100, 30), cohesionCoef, 0.0f, 5.0f);
+		GUI.Label (new Rect (200, 250, 60, 30), cohesionCoef.ToString("f2"));
+		cohesionCoef = GUI.HorizontalSlider (new Rect (90, 255, 100, 30), cohesionCoef, 0.0f, 5.0f);
 		GUI.Label(new Rect(10,275,230,30),"Alignement");
-		alignCoef = GUI.HorizontalSlider (new Rect (100, 280, 100, 30), alignCoef, 0.0f, 5.0f);
+		GUI.Label (new Rect (200, 275, 60, 30), alignCoef.ToString("f2"));
+		alignCoef = GUI.HorizontalSlider (new Rect (90, 280, 100, 30), alignCoef, 0.0f, 5.0f);
 		SteeringBehaviour.updateSteeringCoeff (seekCoef, sepCoef, cohesionCoef, alignCoef);
 		GUI.DragWindow();
 	}

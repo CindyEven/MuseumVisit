@@ -9,5 +9,6 @@ public class Painting : MonoBehaviour {
 	public string paintingName;
 	public int year;
 	public string style;
+	public float fitness = 1.0f;
 
 }

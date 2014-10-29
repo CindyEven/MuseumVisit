@@ -9,7 +9,7 @@ public class UserInterface : MonoBehaviour {
 
 	private Rect windowRect1 = new Rect (20, 50, 250, 180);
 	private Rect windowRect2 = new Rect (20, 50, 250, 380);
-	public Rect windowRect3a = new Rect (20, 50, 250, 310);
+	private Rect windowRect3 = new Rect (20, 50, 250, 300);
 //	private Rect windowRect3b = new Rect (20, 50, 250, 310);
 
 
@@ -88,7 +88,7 @@ public class UserInterface : MonoBehaviour {
 			newAgent.name = agentPrefab.name;
 			newAgent.transform.parent = agentsParent.transform;
 			int i = newAgent.transform.GetSiblingIndex ();
-			newAgent.transform.position = new Vector3((-9f+(i%10)*2),1f,(-15.5f-(i/10)));
+			newAgent.transform.position = new Vector3((-6.5f+(i/10)*1.5f),1f,(-15.5f-(i%10)));
 		}
 	}
 
@@ -107,7 +107,10 @@ public class UserInterface : MonoBehaviour {
 				windowRect2 = GUI.Window (0, windowRect2, OptionsWindowFunction2, "Options");
 				break;
 			case 3: // Scene_q3a
-				windowRect3a = GUI.Window (0, windowRect3a, OptionsWindowFunction3a, "Options");
+				windowRect3 = GUI.Window (0, windowRect3, OptionsWindowFunction3, "Options");
+				break;
+			case 4: // Scene_q3b
+				windowRect3 = GUI.Window (0, windowRect3, OptionsWindowFunction3, "Options");
 				break;
 			default:
 				//Console.WriteLine("Default case");
@@ -170,8 +173,35 @@ public class UserInterface : MonoBehaviour {
 		GUI.DragWindow();
 	}
 
-	void OptionsWindowFunction3a (int windowID) {
+	void OptionsWindowFunction3 (int windowID) {
 		GlobalOptions ();
+		GUI.Label(new Rect(10,95,230,30),"Nombre de visiteurs : ");
+		GUI.Label (new Rect (100, 120, 60, 30), nbAgents.ToString());
+		nbAgents = (int) GUI.HorizontalSlider (new Rect (10, 125, 80, 30), nbAgents, 1, 100);
+		if (GUI.Button (new Rect (130,120,90,20), "Appliquer")) {
+			NbAgentsUpdate();
+		}
+		GUI.Label(new Rect(10,145,230,30),"Modification des coeficients :");
+		GUI.Label(new Rect(10,170,230,30),"Seek");
+		GUI.Label (new Rect (200, 170, 60, 30), seekCoef.ToString("f2"));
+		GUI.Label(new Rect(10,195,230,30),"Séparation");
+		GUI.Label (new Rect (200, 195, 60, 30), sepCoef.ToString("f2"));
+		GUI.Label(new Rect(10,220,230,30),"Cohésion");
+		GUI.Label (new Rect (200, 220, 60, 30), cohesionCoef.ToString("f2"));
+		GUI.Label(new Rect(10,245,230,30),"Alignement");
+		GUI.Label (new Rect (200, 245, 60, 30), alignCoef.ToString("f2"));
+		if (GUI.Button (new Rect (10,270,60,20), "Reset")) {
+			seekCoef = GUI.HorizontalSlider (new Rect (90, 175, 100, 30), seekCoefDefault, 0.0f, 5.0f);
+			sepCoef = GUI.HorizontalSlider (new Rect (90, 200, 100, 30), sepCoefDefault, 0.0f, 5.0f);
+			cohesionCoef = GUI.HorizontalSlider (new Rect (90, 225, 100, 30), cohesionCoefDefault, 0.0f, 5.0f);
+			alignCoef = GUI.HorizontalSlider (new Rect (90, 250, 100, 30), alignCoefDefault, 0.0f, 5.0f);
+		}else{
+			seekCoef = GUI.HorizontalSlider (new Rect (90, 175, 100, 30), seekCoef, 0.0f, 5.0f);
+			sepCoef = GUI.HorizontalSlider (new Rect (90, 200, 100, 30), sepCoef, 0.0f, 5.0f);
+			cohesionCoef = GUI.HorizontalSlider (new Rect (90, 225, 100, 30), cohesionCoef, 0.0f, 5.0f);
+			alignCoef = GUI.HorizontalSlider (new Rect (90, 250, 100, 30), alignCoef, 0.0f, 5.0f);
+		}
+		SteeringBehaviour.updateSteeringCoeff (seekCoef, sepCoef, cohesionCoef, alignCoef);
 		GUI.DragWindow();
 	}
 

@@ -386,6 +386,7 @@ MonoBehaviour:
   paintingName: Femme avec un chat
   year: 1921
   style: Cubisme
+  fitness: 1
 --- !u!1 &35334902
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,6 +974,7 @@ MonoBehaviour:
   paintingName: "Persistance de la m\xE9moire"
   year: 1931
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &137042804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,6 +1119,7 @@ MonoBehaviour:
   paintingName: Violon et chandelier
   year: 1910
   style: Cubisme
+  fitness: 1
 --- !u!1 &138091669
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,6 +1484,7 @@ MonoBehaviour:
   paintingName: "Train blind\xE9 en action"
   year: 1915
   style: Futurisme
+  fitness: 1
 --- !u!1001 &193572290
 Prefab:
   m_ObjectHideFlags: 0
@@ -1927,6 +1931,7 @@ MonoBehaviour:
   paintingName: Les fusillades du 3 mai
   year: 1814
   style: Romantisme
+  fitness: 1
 --- !u!1 &277103466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,6 +1990,7 @@ MonoBehaviour:
   paintingName: "V\xE9nus \xE0 son miroir"
   year: 1650
   style: Baroque
+  fitness: 1
 --- !u!1 &279575402
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,6 +2209,7 @@ MonoBehaviour:
   paintingName: "La ballade de L\xE9nore"
   year: 1839
   style: Romantisme
+  fitness: 1
 --- !u!1 &305923439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,6 +2268,7 @@ MonoBehaviour:
   paintingName: Annonciation
   year: 1623
   style: Baroque
+  fitness: 1
 --- !u!1 &319187422
 GameObject:
   m_ObjectHideFlags: 0
@@ -2302,12 +2310,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camVisitor: {fileID: 416642171}
   camGlobal: {fileID: 571915181}
+  agentPrefab: {fileID: 0}
   windowRect3a:
     serializedVersion: 2
     x: 20
     y: 50
     width: 250
     height: 310
+  seekCoefDefault: 1.25
+  sepCoefDefault: 1.20000005
+  cohesionCoefDefault: .600000024
+  alignCoefDefault: 1
 --- !u!1 &336488526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2504,6 +2517,7 @@ MonoBehaviour:
   paintingName: "La Libert\xE9 guidant le peuple"
   year: 1830
   style: Romantisme
+  fitness: 1
 --- !u!1 &354200331
 GameObject:
   m_ObjectHideFlags: 0
@@ -2722,6 +2736,7 @@ MonoBehaviour:
   paintingName: Dynamique d'un chien en laisse
   year: 1912
   style: Futurisme
+  fitness: 1
 --- !u!1 &416642166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2884,6 +2899,7 @@ MonoBehaviour:
   paintingName: Portrait de Picasso
   year: 1912
   style: Cubisme
+  fitness: 1
 --- !u!1 &441338044
 GameObject:
   m_ObjectHideFlags: 0
@@ -3025,6 +3041,7 @@ MonoBehaviour:
   paintingName: "R\xEAve caus\xE9 par le vol d'une abeille"
   year: 1944
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &449837049
 GameObject:
   m_ObjectHideFlags: 0
@@ -3279,6 +3296,7 @@ MonoBehaviour:
   paintingName: "La Jeune Fille \xE0 la perle"
   year: 1665
   style: Baroque
+  fitness: 1
 --- !u!1 &477978138
 GameObject:
   m_ObjectHideFlags: 0
@@ -3558,6 +3576,7 @@ MonoBehaviour:
   paintingName: "La femme \xE9quivoque"
   year: 1923
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &512237265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3728,6 +3747,7 @@ MonoBehaviour:
   paintingName: Quest
   year: 2014
   style: Cubisme
+  fitness: 1
 --- !u!1 &528119159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3786,6 +3806,7 @@ MonoBehaviour:
   paintingName: La charette de foin
   year: 1819
   style: Romantisme
+  fitness: 1
 --- !u!1 &531884044
 GameObject:
   m_ObjectHideFlags: 0
@@ -4167,6 +4188,7 @@ MonoBehaviour:
   paintingName: Jour de lenteur
   year: 1937
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &566608680
 GameObject:
   m_ObjectHideFlags: 0
@@ -4849,6 +4871,7 @@ MonoBehaviour:
   paintingName: Danseuse bleue
   year: 1912
   style: Futurisme
+  fitness: 1
 --- !u!1 &654983226
 GameObject:
   m_ObjectHideFlags: 0
@@ -5083,6 +5106,7 @@ MonoBehaviour:
   paintingName: Les Amants
   year: 1928
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &692298240
 GameObject:
   m_ObjectHideFlags: 0
@@ -5309,6 +5333,7 @@ MonoBehaviour:
   paintingName: Matin dans le Riesengebirge
   year: 1810
   style: Romantisme
+  fitness: 1
 --- !u!1 &735084547
 GameObject:
   m_ObjectHideFlags: 0
@@ -5448,7 +5473,7 @@ Transform:
   m_PrefabInternal: {fileID: 1482585232}
   m_GameObject: {fileID: 778345902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.07804775, y: 1.30263615, z: -22.2660294}
+  m_LocalPosition: {x: -8.66614342, y: 1.30263615, z: -20.167408}
   m_LocalScale: {x: .600000024, y: 1.29999995, z: .600000024}
   m_Children:
   - {fileID: 416642172}
@@ -5585,6 +5610,7 @@ MonoBehaviour:
   paintingName: "T\xEAte de M\xE9duse"
   year: 1618
   style: Baroque
+  fitness: 1
 --- !u!1 &781286936
 GameObject:
   m_ObjectHideFlags: 0
@@ -5699,6 +5725,7 @@ MonoBehaviour:
   paintingName: Le Grand Bouquet
   year: 1607
   style: Baroque
+  fitness: 1
 --- !u!1 &799041171
 GameObject:
   m_ObjectHideFlags: 0
@@ -5897,6 +5924,7 @@ MonoBehaviour:
   paintingName: Nature morte au nautile
   year: 1662
   style: Baroque
+  fitness: 1
 --- !u!1 &808037290
 GameObject:
   m_ObjectHideFlags: 0
@@ -6319,6 +6347,7 @@ MonoBehaviour:
   paintingName: "D\xE9monstration"
   year: 1914
   style: Futurisme
+  fitness: 1
 --- !u!1 &879213200
 GameObject:
   m_ObjectHideFlags: 0
@@ -6464,6 +6493,7 @@ MonoBehaviour:
   paintingName: Vitesse de l'automobile
   year: 1913
   style: Futurisme
+  fitness: 1
 --- !u!1 &911229224
 GameObject:
   m_ObjectHideFlags: 0
@@ -6522,6 +6552,7 @@ MonoBehaviour:
   paintingName: Vol d'une hirondelle
   year: 1913
   style: Futurisme
+  fitness: 1
 --- !u!1 &916762799
 GameObject:
   m_ObjectHideFlags: 0
@@ -6970,6 +7001,7 @@ MonoBehaviour:
   paintingName: Le Champs de Mars
   year: 1911
   style: Cubisme
+  fitness: 1
 --- !u!1 &1019522055
 GameObject:
   m_ObjectHideFlags: 0
@@ -7425,6 +7457,7 @@ MonoBehaviour:
   paintingName: Bonaparte au Pont d'Arcole
   year: 1796
   style: Romantisme
+  fitness: 1
 --- !u!1 &1099560771
 GameObject:
   m_ObjectHideFlags: 0
@@ -7622,6 +7655,7 @@ MonoBehaviour:
   paintingName: "L'\xE9toile du matin - Constellations"
   year: 1933
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &1128149400
 GameObject:
   m_ObjectHideFlags: 0
@@ -8098,6 +8132,7 @@ MonoBehaviour:
   paintingName: Le quotidien
   year: 1913
   style: Cubisme
+  fitness: 1
 --- !u!1 &1239921852
 GameObject:
   m_ObjectHideFlags: 0
@@ -9018,6 +9053,7 @@ MonoBehaviour:
   paintingName: Le Voyageur au-dessus de la mer de nuages
   year: 1818
   style: Romantisme
+  fitness: 1
 --- !u!1 &1357176761
 GameObject:
   m_ObjectHideFlags: 0
@@ -9214,6 +9250,7 @@ MonoBehaviour:
   paintingName: "Pr\xE9monition de la Guerre Civile"
   year: 1936
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &1384323456
 GameObject:
   m_ObjectHideFlags: 0
@@ -10139,34 +10176,6 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -7.07804775
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.30263615
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -22.2660294
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
@@ -10289,6 +10298,7 @@ MonoBehaviour:
   paintingName: La trahison des images
   year: 1948
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &1499164915
 GameObject:
   m_ObjectHideFlags: 0
@@ -10433,6 +10443,7 @@ MonoBehaviour:
   paintingName: "Herminie et Tancr\xE8de"
   year: 1619
   style: Baroque
+  fitness: 1
 --- !u!1 &1521029438
 GameObject:
   m_ObjectHideFlags: 0
@@ -10744,6 +10755,7 @@ MonoBehaviour:
   paintingName: "Les fun\xE9railles de l'anarchiste Galli"
   year: 1910
   style: Futurisme
+  fitness: 1
 --- !u!1 &1575578274
 GameObject:
   m_ObjectHideFlags: 0
@@ -11224,6 +11236,7 @@ MonoBehaviour:
   paintingName: L'Ange du foyer
   year: 1937
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &1687341416
 GameObject:
   m_ObjectHideFlags: 0
@@ -11282,6 +11295,7 @@ MonoBehaviour:
   paintingName: "Homme \xE0 la guitare"
   year: 1914
   style: Cubisme
+  fitness: 1
 --- !u!1 &1688026590
 GameObject:
   m_ObjectHideFlags: 0
@@ -11480,6 +11494,7 @@ MonoBehaviour:
   paintingName: Les demoiselles d'Avignon
   year: 1907
   style: Cubisme
+  fitness: 1
 --- !u!1 &1732202848
 GameObject:
   m_ObjectHideFlags: 0
@@ -11710,6 +11725,7 @@ MonoBehaviour:
   paintingName: Fantomas
   year: 1913
   style: Cubisme
+  fitness: 1
 --- !u!1 &1748677697
 GameObject:
   m_ObjectHideFlags: 0
@@ -11988,6 +12004,7 @@ MonoBehaviour:
   paintingName: "Temp\xEAte et neige en mer"
   year: 1842
   style: Romantisme
+  fitness: 1
 --- !u!1 &1765710756
 GameObject:
   m_ObjectHideFlags: 0
@@ -12758,6 +12775,7 @@ MonoBehaviour:
   paintingName: "T\xEAte de paysan catalan"
   year: 1924
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &1839063604
 GameObject:
   m_ObjectHideFlags: 0
@@ -13438,6 +13456,7 @@ MonoBehaviour:
   paintingName: Neige, pluie et vitesse
   year: 1844
   style: Romantisme
+  fitness: 1
 --- !u!1 &1930735552
 GameObject:
   m_ObjectHideFlags: 0
@@ -13664,6 +13683,7 @@ MonoBehaviour:
   paintingName: Guernica
   year: 1937
   style: Cubisme
+  fitness: 1
 --- !u!1 &1944135437
 GameObject:
   m_ObjectHideFlags: 0
@@ -13722,6 +13742,7 @@ MonoBehaviour:
   paintingName: "L'Enl\xE8vement des Sabines"
   year: 1627
   style: Baroque
+  fitness: 1
 --- !u!1 &1945243277
 GameObject:
   m_ObjectHideFlags: 0
@@ -13780,6 +13801,7 @@ MonoBehaviour:
   paintingName: Le rire
   year: 1911
   style: Futurisme
+  fitness: 1
 --- !u!1 &1969014448
 GameObject:
   m_ObjectHideFlags: 0
@@ -14198,6 +14220,7 @@ MonoBehaviour:
   paintingName: "La le\xE7on d'anatomie du docteur Tulp"
   year: 1632
   style: Baroque
+  fitness: 1
 --- !u!1 &2024989957
 GameObject:
   m_ObjectHideFlags: 0
@@ -14397,6 +14420,7 @@ MonoBehaviour:
   paintingName: Dynamisme d'un footballeur
   year: 1912
   style: Futurisme
+  fitness: 1
 --- !u!1 &2034624552
 GameObject:
   m_ObjectHideFlags: 0
@@ -14717,6 +14741,7 @@ MonoBehaviour:
   paintingName: "B\xE9atrice et Dante"
   year: 1827
   style: Romantisme
+  fitness: 1
 --- !u!1 &2051715112
 GameObject:
   m_ObjectHideFlags: 0
@@ -15920,6 +15945,7 @@ MonoBehaviour:
   paintingName: "La boh\xE9mienne"
   year: 1630
   style: Baroque
+  fitness: 1
 --- !u!1 &2139296009
 GameObject:
   m_ObjectHideFlags: 0
@@ -16062,6 +16088,7 @@ MonoBehaviour:
   paintingName: La Musique
   year: 1911
   style: Futurisme
+  fitness: 1
 --- !u!1 &2147221715
 GameObject:
   m_ObjectHideFlags: 0

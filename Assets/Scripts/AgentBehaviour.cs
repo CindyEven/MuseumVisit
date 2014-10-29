@@ -28,10 +28,10 @@ public class AgentBehaviour : MonoBehaviour {
 
 		steering = gameObject.GetComponent<SteeringBehaviour> ();
 
-		/*listPainting = GameObject.FindObjectsOfType <Painting>();
-		indexPainting = (int)Random.Range(0, listPainting.Length-1);
-		targetPainting = listPainting [indexPainting];*/
-		targetPainting = RouletteWheelSelection.getAPainting ();
+		listPainting = GameObject.FindObjectsOfType <Painting>();
+		//indexPainting = (int)Random.Range(0, listPainting.Length-1);
+		//targetPainting = listPainting [indexPainting];*/
+		targetPainting = RouletteWheelSelection.getAPainting (listPainting);
 		targetPoint = FindTheNearestPoint (targetPainting.gameObject);
 		startPoint = FindTheNearestPoint (gameObject);
 		path = AStar.search(startPoint, targetPoint);
@@ -70,7 +70,7 @@ public class AgentBehaviour : MonoBehaviour {
 
 				/*indexPainting = (int)Random.Range(0, listPainting.Length-1);
 				targetPainting = listPainting [indexPainting];*/
-				targetPainting = RouletteWheelSelection.getAPainting ();
+				targetPainting = RouletteWheelSelection.getAPainting (listPainting);
 
 				startPoint = FindTheNearestPoint (gameObject);
 				targetPoint = FindTheNearestPoint (targetPainting.gameObject);

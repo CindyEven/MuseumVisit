@@ -3,10 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 
 public static class RouletteWheelSelection {
+	
 
-	static Painting[] listPainting = GameObject.FindObjectsOfType<Painting> ();
-
-	public static Painting getAPainting(){
+	public static Painting getAPainting(Painting[] listPainting){
 		float sumFitness = 0.0f;
 
 		foreach(Painting p in listPainting){

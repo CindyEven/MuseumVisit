@@ -39,20 +39,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdda92d6ee8dc794fa7e495a6a9baa6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camVisitor: {fileID: 0}
-  camGlobal: {fileID: 0}
-  windowRect1:
+  camVisitor: {fileID: 2000000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+  camGlobal: {fileID: 2000000, guid: dc717e1b25f6b494685fe01bc50ed2d6, type: 2}
+  windowRect3a:
     serializedVersion: 2
     x: 20
     y: 50
     width: 250
-    height: 180
-  windowRect2:
-    serializedVersion: 2
-    x: 20
-    y: 20
-    width: 120
-    height: 100
+    height: 310
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

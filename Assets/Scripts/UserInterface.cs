@@ -5,15 +5,18 @@ public class UserInterface : MonoBehaviour {
 
 	public Camera camVisitor;
 	public Camera camGlobal;
+	public GameObject agentPrefab;
 
 	private Rect windowRect1 = new Rect (20, 50, 250, 180);
-	private Rect windowRect2 = new Rect (20, 50, 250, 310);
+	private Rect windowRect2 = new Rect (20, 50, 250, 335);
 	public Rect windowRect3a = new Rect (20, 50, 250, 310);
 //	private Rect windowRect3b = new Rect (20, 50, 250, 310);
 
 
 	private Painting paintingHit;
 	private float rayDist;
+
+	private int nbAgents = 1;
 
 	private int algoSelected = 1;
 	private float seekCoef = 1.25f, sepCoef = 1.20f, cohesionCoef = 0.60f, alignCoef = 1.0f;
@@ -74,6 +77,23 @@ public class UserInterface : MonoBehaviour {
 			}else{showInfoPainting = false;}
 		}
 
+		NbAgentsUpdate ();
+	}
+
+	void NbAgentsUpdate(){
+		Vector3 pos = Vector3.zero;
+		if (nbAgents > GameObject.Find ("Agents").transform.childCount) {
+			GameObject newAgent = (GameObject) Instantiate(agentPrefab, pos, Quaternion.Euler(new Vector3(0,90,0)));
+			newAgent.name = agentPrefab.name;
+			newAgent.transform.parent = GameObject.Find ("Agents").transform;
+			int i = newAgent.transform.GetSiblingIndex ();
+			Debug.Log("i:"+i+"  i%10:"+i%10+"  i/10:"+i/10);
+			pos = new Vector3((-9f+(i%10)*2),1f,(-15.5f-(i/10)));
+			Debug.Log(pos);
+			newAgent.transform.position = pos;
+		}else if (nbAgents < GameObject.Find ("Agents").transform.childCount) {
+			Destroy(GameObject.Find("Agents").transform.GetChild(1).gameObject);
+		}
 	}
 
 	void OnGUI () {
@@ -107,7 +127,7 @@ public class UserInterface : MonoBehaviour {
 	
 	void OptionsWindowFunction1 (int windowID) {
 		GlobalOptions ();
-		GUI.Label (new Rect (10, 95, 240, 50), "Vous pouvez choisir le tableau de destination de l'agent virtuel en cliquant dessus.");
+		GUI.Label (new Rect (10, 95, 240, 50), "Vous pouvez choisir le tableau de destination du visiteur en cliquant dessus.");
 		string[] algoChoices = new string[] { " ", " ", " " };
 		Rect position = new Rect(10, 150, 230, 30);
 		algoSelected = GUI.SelectionGrid(position, algoSelected, algoChoices, algoChoices.Length+1, GUI.skin.toggle);
@@ -118,25 +138,28 @@ public class UserInterface : MonoBehaviour {
 
 	void OptionsWindowFunction2 (int windowID) {
 		GlobalOptions ();
-		GUI.Label (new Rect (10, 95, 240, 50), "Vous pouvez choisir le tableau de destination de l'agent virtuel en cliquant dessus.");
+		GUI.Label (new Rect (10, 95, 240, 50), "Vous pouvez choisir le tableau de destination des visiteurs en cliquant dessus.");
+		GUI.Label(new Rect(10,150,230,30),"Nombre de visiteurs");
+		GUI.Label (new Rect (222, 150, 60, 30), nbAgents.ToString());
+		nbAgents = (int) GUI.HorizontalSlider (new Rect (135, 155, 80, 30), nbAgents, 1, 100);
 		string[] algoChoices = new string[] { " ", " ", " " };
-		Rect position = new Rect(10, 150, 230, 30);
+		Rect position = new Rect(10, 175, 230, 30);
 		algoSelected = GUI.SelectionGrid(position, algoSelected, algoChoices, algoChoices.Length+1, GUI.skin.toggle);
-		GUI.Label(new Rect(10,150,230,30),"     BFS        A*           A* sans lien");
+		GUI.Label(new Rect(10,175,230,30),"     BFS        A*           A* sans lien");
 		AgentSimpleGroupBehaviour.setAlgo (algoSelected);
-		GUI.Label(new Rect(10,175,230,30),"Modification des coeficients :");
-		GUI.Label(new Rect(10,200,230,30),"Seek");
-		GUI.Label (new Rect (200, 200, 60, 30), seekCoef.ToString("f2"));
-		seekCoef = GUI.HorizontalSlider (new Rect (90, 205, 100, 30), seekCoef, 0.0f, 5.0f);
-		GUI.Label(new Rect(10,225,230,30),"Séparation");
-		GUI.Label (new Rect (200, 225, 60, 30), sepCoef.ToString("f2"));
-		sepCoef = GUI.HorizontalSlider (new Rect (90, 230, 100, 30), sepCoef, 0.0f, 5.0f);
-		GUI.Label(new Rect(10,250,230,30),"Cohésion");
-		GUI.Label (new Rect (200, 250, 60, 30), cohesionCoef.ToString("f2"));
-		cohesionCoef = GUI.HorizontalSlider (new Rect (90, 255, 100, 30), cohesionCoef, 0.0f, 5.0f);
-		GUI.Label(new Rect(10,275,230,30),"Alignement");
-		GUI.Label (new Rect (200, 275, 60, 30), alignCoef.ToString("f2"));
-		alignCoef = GUI.HorizontalSlider (new Rect (90, 280, 100, 30), alignCoef, 0.0f, 5.0f);
+		GUI.Label(new Rect(10,200,230,30),"Modification des coeficients :");
+		GUI.Label(new Rect(10,225,230,30),"Seek");
+		GUI.Label (new Rect (200, 225, 60, 30), seekCoef.ToString("f2"));
+		seekCoef = GUI.HorizontalSlider (new Rect (90, 230, 100, 30), seekCoef, 0.0f, 5.0f);
+		GUI.Label(new Rect(10,250,230,30),"Séparation");
+		GUI.Label (new Rect (200, 250, 60, 30), sepCoef.ToString("f2"));
+		sepCoef = GUI.HorizontalSlider (new Rect (90, 255, 100, 30), sepCoef, 0.0f, 5.0f);
+		GUI.Label(new Rect(10,275,230,30),"Cohésion");
+		GUI.Label (new Rect (200, 275, 60, 30), cohesionCoef.ToString("f2"));
+		cohesionCoef = GUI.HorizontalSlider (new Rect (90, 280, 100, 30), cohesionCoef, 0.0f, 5.0f);
+		GUI.Label(new Rect(10,300,230,30),"Alignement");
+		GUI.Label (new Rect (200, 300, 60, 30), alignCoef.ToString("f2"));
+		alignCoef = GUI.HorizontalSlider (new Rect (90, 305, 100, 30), alignCoef, 0.0f, 5.0f);
 		SteeringBehaviour.updateSteeringCoeff (seekCoef, sepCoef, cohesionCoef, alignCoef);
 		GUI.DragWindow();
 	}

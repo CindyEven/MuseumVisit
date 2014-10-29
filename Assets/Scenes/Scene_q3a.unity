@@ -386,6 +386,7 @@ MonoBehaviour:
   paintingName: Femme avec un chat
   year: 1921
   style: Cubisme
+  fitness: 1
 --- !u!1 &35334902
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,7 +844,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b6f1a3c7b34b9bb44b2c842deeaa5319, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: b6f1a3c7b34b9bb44b2c842deeaa5319, type: 3}
@@ -973,6 +974,7 @@ MonoBehaviour:
   paintingName: "Persistance de la m\xE9moire"
   year: 1931
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &137042804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,6 +1119,7 @@ MonoBehaviour:
   paintingName: Violon et chandelier
   year: 1910
   style: Cubisme
+  fitness: 1
 --- !u!1 &138091669
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,6 +1484,7 @@ MonoBehaviour:
   paintingName: "Train blind\xE9 en action"
   year: 1915
   style: Futurisme
+  fitness: 1
 --- !u!1 &206508256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1871,6 +1875,7 @@ MonoBehaviour:
   paintingName: Les fusillades du 3 mai
   year: 1814
   style: Romantisme
+  fitness: 1
 --- !u!1 &277103466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,6 +1934,7 @@ MonoBehaviour:
   paintingName: "V\xE9nus \xE0 son miroir"
   year: 1650
   style: Baroque
+  fitness: 1
 --- !u!1 &279575402
 GameObject:
   m_ObjectHideFlags: 0
@@ -2147,6 +2153,7 @@ MonoBehaviour:
   paintingName: "La ballade de L\xE9nore"
   year: 1839
   style: Romantisme
+  fitness: 1
 --- !u!1 &305923439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,6 +2212,7 @@ MonoBehaviour:
   paintingName: Annonciation
   year: 1623
   style: Baroque
+  fitness: 1
 --- !u!1 &336488526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,6 +2409,7 @@ MonoBehaviour:
   paintingName: "La Libert\xE9 guidant le peuple"
   year: 1830
   style: Romantisme
+  fitness: 1
 --- !u!1 &354200331
 GameObject:
   m_ObjectHideFlags: 0
@@ -2550,7 +2559,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c2776c8b2e9d0243b3adca0b9549b55, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0c2776c8b2e9d0243b3adca0b9549b55, type: 2}
       propertyPath: m_IsActive
@@ -2619,6 +2628,7 @@ MonoBehaviour:
   paintingName: Dynamique d'un chien en laisse
   year: 1912
   style: Futurisme
+  fitness: 1
 --- !u!1 &421573104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2677,6 +2687,7 @@ MonoBehaviour:
   paintingName: Portrait de Picasso
   year: 1912
   style: Cubisme
+  fitness: 1
 --- !u!1 &441338044
 GameObject:
   m_ObjectHideFlags: 0
@@ -2818,6 +2829,7 @@ MonoBehaviour:
   paintingName: "R\xEAve caus\xE9 par le vol d'une abeille"
   year: 1944
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &449837049
 GameObject:
   m_ObjectHideFlags: 0
@@ -3072,6 +3084,7 @@ MonoBehaviour:
   paintingName: "La Jeune Fille \xE0 la perle"
   year: 1665
   style: Baroque
+  fitness: 1
 --- !u!1 &477978138
 GameObject:
   m_ObjectHideFlags: 0
@@ -3351,6 +3364,7 @@ MonoBehaviour:
   paintingName: "La femme \xE9quivoque"
   year: 1923
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &512237265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3521,6 +3535,7 @@ MonoBehaviour:
   paintingName: Quest
   year: 2014
   style: Cubisme
+  fitness: 1
 --- !u!1 &528119159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3579,6 +3594,7 @@ MonoBehaviour:
   paintingName: La charette de foin
   year: 1819
   style: Romantisme
+  fitness: 1
 --- !u!1 &531884044
 GameObject:
   m_ObjectHideFlags: 0
@@ -3960,6 +3976,55 @@ MonoBehaviour:
   paintingName: Jour de lenteur
   year: 1937
   style: "Surr\xE9alisme"
+  fitness: 1
+--- !u!1 &551927055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: dbb09d69a6be01742b1b9a6cafed364c, type: 2}
+  m_PrefabInternal: {fileID: 2047610392}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 551927057}
+  - 114: {fileID: 551927056}
+  m_Layer: 0
+  m_Name: UserInterface
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &551927056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: dbb09d69a6be01742b1b9a6cafed364c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2047610392}
+  m_GameObject: {fileID: 551927055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdda92d6ee8dc794fa7e495a6a9baa6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camVisitor: {fileID: 1331532627}
+  camGlobal: {fileID: 1030173816}
+  windowRect3a:
+    serializedVersion: 2
+    x: 20
+    y: 50
+    width: 250
+    height: 310
+--- !u!4 &551927057
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: dbb09d69a6be01742b1b9a6cafed364c, type: 2}
+  m_PrefabInternal: {fileID: 2047610392}
+  m_GameObject: {fileID: 551927055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1 &566608680
 GameObject:
   m_ObjectHideFlags: 0
@@ -4558,6 +4623,7 @@ MonoBehaviour:
   paintingName: Danseuse bleue
   year: 1912
   style: Futurisme
+  fitness: 1
 --- !u!1 &654983226
 GameObject:
   m_ObjectHideFlags: 0
@@ -4792,6 +4858,7 @@ MonoBehaviour:
   paintingName: Les Amants
   year: 1928
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &692298240
 GameObject:
   m_ObjectHideFlags: 0
@@ -5018,6 +5085,7 @@ MonoBehaviour:
   paintingName: Matin dans le Riesengebirge
   year: 1810
   style: Romantisme
+  fitness: 1
 --- !u!1 &735084547
 GameObject:
   m_ObjectHideFlags: 0
@@ -5188,6 +5256,7 @@ MonoBehaviour:
   paintingName: "T\xEAte de M\xE9duse"
   year: 1618
   style: Baroque
+  fitness: 1
 --- !u!1 &781286936
 GameObject:
   m_ObjectHideFlags: 0
@@ -5302,6 +5371,7 @@ MonoBehaviour:
   paintingName: Le Grand Bouquet
   year: 1607
   style: Baroque
+  fitness: 1
 --- !u!1 &799041171
 GameObject:
   m_ObjectHideFlags: 0
@@ -5500,6 +5570,7 @@ MonoBehaviour:
   paintingName: Nature morte au nautile
   year: 1662
   style: Baroque
+  fitness: 1
 --- !u!1 &808037290
 GameObject:
   m_ObjectHideFlags: 0
@@ -5922,6 +5993,7 @@ MonoBehaviour:
   paintingName: "D\xE9monstration"
   year: 1914
   style: Futurisme
+  fitness: 1
 --- !u!1 &879213200
 GameObject:
   m_ObjectHideFlags: 0
@@ -6067,6 +6139,7 @@ MonoBehaviour:
   paintingName: Vitesse de l'automobile
   year: 1913
   style: Futurisme
+  fitness: 1
 --- !u!1 &911229224
 GameObject:
   m_ObjectHideFlags: 0
@@ -6125,6 +6198,7 @@ MonoBehaviour:
   paintingName: Vol d'une hirondelle
   year: 1913
   style: Futurisme
+  fitness: 1
 --- !u!1 &916762799
 GameObject:
   m_ObjectHideFlags: 0
@@ -6264,6 +6338,94 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 919016428}
   m_Mesh: {fileID: 4300004, guid: f78ae229aafad784ebdb23b6439063e5, type: 3}
+--- !u!1001 &944476271
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: dc717e1b25f6b494685fe01bc50ed2d6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.37394714
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dc717e1b25f6b494685fe01bc50ed2d6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 31.8696003
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dc717e1b25f6b494685fe01bc50ed2d6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -24.5434113
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dc717e1b25f6b494685fe01bc50ed2d6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: .487534314
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dc717e1b25f6b494685fe01bc50ed2d6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dc717e1b25f6b494685fe01bc50ed2d6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dc717e1b25f6b494685fe01bc50ed2d6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .873103857
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dc717e1b25f6b494685fe01bc50ed2d6, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dc717e1b25f6b494685fe01bc50ed2d6, type: 2}
+  m_RootGameObject: {fileID: 1030173812}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1001 &951672375
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -7.07804775
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.30263615
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -22.2660294
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+  m_RootGameObject: {fileID: 1506480991}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &967559451
 GameObject:
   m_ObjectHideFlags: 0
@@ -6573,6 +6735,7 @@ MonoBehaviour:
   paintingName: Le Champs de Mars
   year: 1911
   style: Cubisme
+  fitness: 1
 --- !u!1 &1019522055
 GameObject:
   m_ObjectHideFlags: 0
@@ -6773,6 +6936,94 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1029098771}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1030173812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: dc717e1b25f6b494685fe01bc50ed2d6, type: 2}
+  m_PrefabInternal: {fileID: 944476271}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1030173817}
+  - 20: {fileID: 1030173816}
+  - 124: {fileID: 1030173815}
+  - 92: {fileID: 1030173814}
+  - 81: {fileID: 1030173813}
+  m_Layer: 0
+  m_Name: Global_Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1030173813
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8100000, guid: dc717e1b25f6b494685fe01bc50ed2d6,
+    type: 2}
+  m_PrefabInternal: {fileID: 944476271}
+  m_GameObject: {fileID: 1030173812}
+  m_Enabled: 0
+--- !u!92 &1030173814
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9200000, guid: dc717e1b25f6b494685fe01bc50ed2d6,
+    type: 2}
+  m_PrefabInternal: {fileID: 944476271}
+  m_GameObject: {fileID: 1030173812}
+  m_Enabled: 1
+--- !u!124 &1030173815
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 12400000, guid: dc717e1b25f6b494685fe01bc50ed2d6,
+    type: 2}
+  m_PrefabInternal: {fileID: 944476271}
+  m_GameObject: {fileID: 1030173812}
+  m_Enabled: 1
+--- !u!20 &1030173816
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2000000, guid: dc717e1b25f6b494685fe01bc50ed2d6,
+    type: 2}
+  m_PrefabInternal: {fileID: 944476271}
+  m_GameObject: {fileID: 1030173812}
+  m_Enabled: 0
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 69
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
+--- !u!4 &1030173817
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: dc717e1b25f6b494685fe01bc50ed2d6, type: 2}
+  m_PrefabInternal: {fileID: 944476271}
+  m_GameObject: {fileID: 1030173812}
+  m_LocalRotation: {x: .487534314, y: 0, z: 0, w: .873103857}
+  m_LocalPosition: {x: -2.37394714, y: 31.8696003, z: -24.5434113}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1 &1058252799
 GameObject:
   m_ObjectHideFlags: 0
@@ -7028,6 +7279,7 @@ MonoBehaviour:
   paintingName: Bonaparte au Pont d'Arcole
   year: 1796
   style: Romantisme
+  fitness: 1
 --- !u!1 &1099560771
 GameObject:
   m_ObjectHideFlags: 0
@@ -7225,6 +7477,7 @@ MonoBehaviour:
   paintingName: "L'\xE9toile du matin - Constellations"
   year: 1933
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &1128149400
 GameObject:
   m_ObjectHideFlags: 0
@@ -7701,6 +7954,7 @@ MonoBehaviour:
   paintingName: Le quotidien
   year: 1913
   style: Cubisme
+  fitness: 1
 --- !u!1 &1239921852
 GameObject:
   m_ObjectHideFlags: 0
@@ -8507,6 +8761,110 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1320981203}
   m_Mesh: {fileID: 4300004, guid: f78ae229aafad784ebdb23b6439063e5, type: 3}
+--- !u!1 &1331532622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1331532628}
+  - 20: {fileID: 1331532627}
+  - 124: {fileID: 1331532626}
+  - 92: {fileID: 1331532625}
+  - 81: {fileID: 1331532624}
+  - 114: {fileID: 1331532623}
+  m_Layer: 0
+  m_Name: Visitor_Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1331532623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: d1aa485c54a06e44c8c25dfb99693c37,
+    type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  m_GameObject: {fileID: 1331532622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ec2fe99d1108b9d0006a298d76c639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensitivityY: 15
+  minimumY: -60
+  maximumY: 60
+--- !u!81 &1331532624
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8100000, guid: d1aa485c54a06e44c8c25dfb99693c37,
+    type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  m_GameObject: {fileID: 1331532622}
+  m_Enabled: 1
+--- !u!92 &1331532625
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9200000, guid: d1aa485c54a06e44c8c25dfb99693c37,
+    type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  m_GameObject: {fileID: 1331532622}
+  m_Enabled: 1
+--- !u!124 &1331532626
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 12400000, guid: d1aa485c54a06e44c8c25dfb99693c37,
+    type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  m_GameObject: {fileID: 1331532622}
+  m_Enabled: 1
+--- !u!20 &1331532627
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2000000, guid: d1aa485c54a06e44c8c25dfb99693c37,
+    type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  m_GameObject: {fileID: 1331532622}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .00999999978
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
+--- !u!4 &1331532628
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  m_GameObject: {fileID: 1331532622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .537729442, z: -.401350647}
+  m_LocalScale: {x: 1.66666663, y: .769230783, z: 1.66666663}
+  m_Children: []
+  m_Father: {fileID: 1506480992}
+  m_RootOrder: 0
 --- !u!1 &1334003392
 GameObject:
   m_ObjectHideFlags: 0
@@ -8621,6 +8979,7 @@ MonoBehaviour:
   paintingName: Le Voyageur au-dessus de la mer de nuages
   year: 1818
   style: Romantisme
+  fitness: 1
 --- !u!1 &1357176761
 GameObject:
   m_ObjectHideFlags: 0
@@ -8817,6 +9176,7 @@ MonoBehaviour:
   paintingName: "Pr\xE9monition de la Guerre Civile"
   year: 1936
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &1384323456
 GameObject:
   m_ObjectHideFlags: 0
@@ -9848,6 +10208,7 @@ MonoBehaviour:
   paintingName: La trahison des images
   year: 1948
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &1499164915
 GameObject:
   m_ObjectHideFlags: 0
@@ -9934,6 +10295,112 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1499164915}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1506480991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1506480992}
+  - 33: {fileID: 1506480997}
+  - 136: {fileID: 1506480996}
+  - 23: {fileID: 1506480995}
+  - 114: {fileID: 1506480994}
+  - 54: {fileID: 1506480993}
+  m_Layer: 0
+  m_Name: Visitor
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1506480992
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: d1aa485c54a06e44c8c25dfb99693c37, type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  m_GameObject: {fileID: 1506480991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.07804775, y: 1.30263615, z: -22.2660294}
+  m_LocalScale: {x: .600000024, y: 1.29999995, z: .600000024}
+  m_Children:
+  - {fileID: 1331532628}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+--- !u!54 &1506480993
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: d1aa485c54a06e44c8c25dfb99693c37,
+    type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  m_GameObject: {fileID: 1506480991}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: Infinity
+  m_AngularDrag: Infinity
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 84
+  m_CollisionDetection: 0
+--- !u!114 &1506480994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: d1aa485c54a06e44c8c25dfb99693c37,
+    type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  m_GameObject: {fileID: 1506480991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccb37ab4479f9ce4192bf18b67ebced0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+  sensitivityX: 15
+--- !u!23 &1506480995
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: d1aa485c54a06e44c8c25dfb99693c37,
+    type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  m_GameObject: {fileID: 1506480991}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!136 &1506480996
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13600000, guid: d1aa485c54a06e44c8c25dfb99693c37,
+    type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  m_GameObject: {fileID: 1506480991}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1506480997
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: d1aa485c54a06e44c8c25dfb99693c37,
+    type: 2}
+  m_PrefabInternal: {fileID: 951672375}
+  m_GameObject: {fileID: 1506480991}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1510999180
 GameObject:
   m_ObjectHideFlags: 0
@@ -9992,6 +10459,7 @@ MonoBehaviour:
   paintingName: "Herminie et Tancr\xE8de"
   year: 1619
   style: Baroque
+  fitness: 1
 --- !u!1 &1521029438
 GameObject:
   m_ObjectHideFlags: 0
@@ -10303,6 +10771,7 @@ MonoBehaviour:
   paintingName: "Les fun\xE9railles de l'anarchiste Galli"
   year: 1910
   style: Futurisme
+  fitness: 1
 --- !u!1 &1575578274
 GameObject:
   m_ObjectHideFlags: 0
@@ -10783,6 +11252,7 @@ MonoBehaviour:
   paintingName: L'Ange du foyer
   year: 1937
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &1687341416
 GameObject:
   m_ObjectHideFlags: 0
@@ -10841,6 +11311,7 @@ MonoBehaviour:
   paintingName: "Homme \xE0 la guitare"
   year: 1914
   style: Cubisme
+  fitness: 1
 --- !u!1 &1688026590
 GameObject:
   m_ObjectHideFlags: 0
@@ -11039,6 +11510,7 @@ MonoBehaviour:
   paintingName: Les demoiselles d'Avignon
   year: 1907
   style: Cubisme
+  fitness: 1
 --- !u!1 &1732202848
 GameObject:
   m_ObjectHideFlags: 0
@@ -11269,6 +11741,7 @@ MonoBehaviour:
   paintingName: Fantomas
   year: 1913
   style: Cubisme
+  fitness: 1
 --- !u!1 &1748677697
 GameObject:
   m_ObjectHideFlags: 0
@@ -11547,6 +12020,7 @@ MonoBehaviour:
   paintingName: "Temp\xEAte et neige en mer"
   year: 1842
   style: Romantisme
+  fitness: 1
 --- !u!1 &1770618810
 GameObject:
   m_ObjectHideFlags: 0
@@ -11808,7 +12282,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b6c29ddafd3e46d499bd1cedb4d9ba6b, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6c29ddafd3e46d499bd1cedb4d9ba6b, type: 2}
@@ -12198,6 +12672,7 @@ MonoBehaviour:
   paintingName: "T\xEAte de paysan catalan"
   year: 1924
   style: "Surr\xE9alisme"
+  fitness: 1
 --- !u!1 &1839063604
 GameObject:
   m_ObjectHideFlags: 0
@@ -12878,6 +13353,7 @@ MonoBehaviour:
   paintingName: Neige, pluie et vitesse
   year: 1844
   style: Romantisme
+  fitness: 1
 --- !u!1 &1930735552
 GameObject:
   m_ObjectHideFlags: 0
@@ -13104,6 +13580,7 @@ MonoBehaviour:
   paintingName: Guernica
   year: 1937
   style: Cubisme
+  fitness: 1
 --- !u!1 &1944135437
 GameObject:
   m_ObjectHideFlags: 0
@@ -13162,6 +13639,7 @@ MonoBehaviour:
   paintingName: "L'Enl\xE8vement des Sabines"
   year: 1627
   style: Baroque
+  fitness: 1
 --- !u!1 &1945243277
 GameObject:
   m_ObjectHideFlags: 0
@@ -13220,6 +13698,7 @@ MonoBehaviour:
   paintingName: Le rire
   year: 1911
   style: Futurisme
+  fitness: 1
 --- !u!1 &1969014448
 GameObject:
   m_ObjectHideFlags: 0
@@ -13638,6 +14117,7 @@ MonoBehaviour:
   paintingName: "La le\xE7on d'anatomie du docteur Tulp"
   year: 1632
   style: Baroque
+  fitness: 1
 --- !u!1 &2024989957
 GameObject:
   m_ObjectHideFlags: 0
@@ -13837,6 +14317,7 @@ MonoBehaviour:
   paintingName: Dynamisme d'un footballeur
   year: 1912
   style: Futurisme
+  fitness: 1
 --- !u!1 &2034624552
 GameObject:
   m_ObjectHideFlags: 0
@@ -14099,6 +14580,58 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2045101977}
   m_Mesh: {fileID: 4300002, guid: f78ae229aafad784ebdb23b6439063e5, type: 3}
+--- !u!1001 &2047610392
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: dbb09d69a6be01742b1b9a6cafed364c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dbb09d69a6be01742b1b9a6cafed364c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dbb09d69a6be01742b1b9a6cafed364c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dbb09d69a6be01742b1b9a6cafed364c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dbb09d69a6be01742b1b9a6cafed364c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dbb09d69a6be01742b1b9a6cafed364c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dbb09d69a6be01742b1b9a6cafed364c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dbb09d69a6be01742b1b9a6cafed364c, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: dbb09d69a6be01742b1b9a6cafed364c, type: 2}
+      propertyPath: camVisitor
+      value: 
+      objectReference: {fileID: 1331532627}
+    - target: {fileID: 11400000, guid: dbb09d69a6be01742b1b9a6cafed364c, type: 2}
+      propertyPath: camGlobal
+      value: 
+      objectReference: {fileID: 1030173816}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dbb09d69a6be01742b1b9a6cafed364c, type: 2}
+  m_RootGameObject: {fileID: 551927055}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &2048521251
 GameObject:
   m_ObjectHideFlags: 0
@@ -14157,6 +14690,7 @@ MonoBehaviour:
   paintingName: "B\xE9atrice et Dante"
   year: 1827
   style: Romantisme
+  fitness: 1
 --- !u!1 &2051715112
 GameObject:
   m_ObjectHideFlags: 0
@@ -15360,6 +15894,7 @@ MonoBehaviour:
   paintingName: "La boh\xE9mienne"
   year: 1630
   style: Baroque
+  fitness: 1
 --- !u!1 &2139296009
 GameObject:
   m_ObjectHideFlags: 0
@@ -15502,6 +16037,7 @@ MonoBehaviour:
   paintingName: La Musique
   year: 1911
   style: Futurisme
+  fitness: 1
 --- !u!1 &2147221715
 GameObject:
   m_ObjectHideFlags: 0

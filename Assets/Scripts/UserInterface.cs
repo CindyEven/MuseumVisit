@@ -8,7 +8,7 @@ public class UserInterface : MonoBehaviour {
 	public GameObject agentPrefab;
 
 	private Rect windowRect1 = new Rect (20, 50, 250, 180);
-	private Rect windowRect2 = new Rect (20, 50, 250, 360);
+	private Rect windowRect2 = new Rect (20, 50, 250, 380);
 	public Rect windowRect3a = new Rect (20, 50, 250, 310);
 //	private Rect windowRect3b = new Rect (20, 50, 250, 310);
 
@@ -19,6 +19,7 @@ public class UserInterface : MonoBehaviour {
 	private int nbAgents = 1;
 
 	private int algoSelected = 1;
+	public float seekCoefDefault = 1.25f, sepCoefDefault = 1.20f, cohesionCoefDefault = 0.60f, alignCoefDefault = 1.0f;
 	private float seekCoef = 1.25f, sepCoef = 1.20f, cohesionCoef = 0.60f, alignCoef = 1.0f;
 
 	private bool showOptions = false;
@@ -148,16 +149,23 @@ public class UserInterface : MonoBehaviour {
 		GUI.Label(new Rect(10,225,230,30),"Modification des coeficients :");
 		GUI.Label(new Rect(10,250,230,30),"Seek");
 		GUI.Label (new Rect (200, 250, 60, 30), seekCoef.ToString("f2"));
-		seekCoef = GUI.HorizontalSlider (new Rect (90, 255, 100, 30), seekCoef, 0.0f, 5.0f);
 		GUI.Label(new Rect(10,275,230,30),"Séparation");
 		GUI.Label (new Rect (200, 275, 60, 30), sepCoef.ToString("f2"));
-		sepCoef = GUI.HorizontalSlider (new Rect (90, 280, 100, 30), sepCoef, 0.0f, 5.0f);
 		GUI.Label(new Rect(10,300,230,30),"Cohésion");
 		GUI.Label (new Rect (200, 300, 60, 30), cohesionCoef.ToString("f2"));
-		cohesionCoef = GUI.HorizontalSlider (new Rect (90, 305, 100, 30), cohesionCoef, 0.0f, 5.0f);
 		GUI.Label(new Rect(10,325,230,30),"Alignement");
 		GUI.Label (new Rect (200, 325, 60, 30), alignCoef.ToString("f2"));
-		alignCoef = GUI.HorizontalSlider (new Rect (90, 330, 100, 30), alignCoef, 0.0f, 5.0f);
+		if (GUI.Button (new Rect (10,350,60,20), "Reset")) {
+			seekCoef = GUI.HorizontalSlider (new Rect (90, 255, 100, 30), seekCoefDefault, 0.0f, 5.0f);
+			sepCoef = GUI.HorizontalSlider (new Rect (90, 280, 100, 30), sepCoefDefault, 0.0f, 5.0f);
+			cohesionCoef = GUI.HorizontalSlider (new Rect (90, 305, 100, 30), cohesionCoefDefault, 0.0f, 5.0f);
+			alignCoef = GUI.HorizontalSlider (new Rect (90, 330, 100, 30), alignCoefDefault, 0.0f, 5.0f);
+		}else{
+			seekCoef = GUI.HorizontalSlider (new Rect (90, 255, 100, 30), seekCoef, 0.0f, 5.0f);
+			sepCoef = GUI.HorizontalSlider (new Rect (90, 280, 100, 30), sepCoef, 0.0f, 5.0f);
+			cohesionCoef = GUI.HorizontalSlider (new Rect (90, 305, 100, 30), cohesionCoef, 0.0f, 5.0f);
+			alignCoef = GUI.HorizontalSlider (new Rect (90, 330, 100, 30), alignCoef, 0.0f, 5.0f);
+		}
 		SteeringBehaviour.updateSteeringCoeff (seekCoef, sepCoef, cohesionCoef, alignCoef);
 		GUI.DragWindow();
 	}

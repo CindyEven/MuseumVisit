@@ -8,15 +8,11 @@ public class Point : MonoBehaviour {
 	public Point parent;
 	public float scoreG;
 	public float score;
-	// Use this for initialization
-	void Start () {
 
-	}
-	
 	// Update is called once per frame
 	void Update () {
 		foreach(Point connected in ConnectedTo){
-			Debug.DrawLine(transform.position,connected.transform.position);
+			Debug.DrawLine(transform.position,connected.transform.position,Color.grey);
 		}
 	}
 }

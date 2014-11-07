@@ -20,6 +20,8 @@ public class AgentStateMachineBehavior : MonoBehaviour {
 	public SteeringBehaviour steering;
 	
 	public float distArrive = 1.5f;
+
+	StateMachine sm;
 	// Use this for initialization
 	void Start () {
 		
@@ -30,12 +32,15 @@ public class AgentStateMachineBehavior : MonoBehaviour {
 		visiteurs = new List<GameObject> ();
 		visiteursWithSameDestination = new List<GameObject> ();
 
+		sm = new StateMachine (this);
+
 		force = Vector3.zero;
 		direction = Vector3.zero;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		sm.Execute ();
 		transform.LookAt (new Vector3(direction.x,1.0f,direction.z));
 		rigidbody.AddForce(new Vector3(force.x,0.0f,force.z));
 	}

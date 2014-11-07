@@ -49,15 +49,15 @@ public class GoTo : States {
 				indexPath++;
 				agent.nextDestination = path [indexPath];
 				
+			}else{
+				Exit ();
 			}
-		}else{
-			Exit ();
 		}
 	}
 
 	public override void Exit() {
 		// ?
-		sm.changeState(new Watch(agent,sm));
+		sm.ChangeState(new Watch(agent,sm));
 	}
 }
 
@@ -91,7 +91,7 @@ public class Watch : States {
 
 		if(VisitorNearMe){
 			Exit ();
-		}else if(timer > 2000){
+		}else if(timer > 800){
 			Exit ();
 		}else if(nbAgents > 25){
 			Exit ();
@@ -99,7 +99,7 @@ public class Watch : States {
 	}
 	
 	public override void Exit() {
-		sm.changeState (new Wait (agent, sm));
+		sm.ChangeState (new GoTo (agent, sm));
 	}
 }
 

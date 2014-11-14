@@ -22,7 +22,7 @@ public class GoTo : States {
 
 	public override void Enter(){
 		// Find the next Painting to see
-		agent.targetPainting = RouletteWheelSelection.getAPainting (agent.listPainting);
+		agent.targetPainting = RouletteWheelSelection.getAPainting2 (agent.listPainting,agent.paintingsFitness);
 		agent.targetPoint = agent.FindTheNearestPoint (agent.targetPainting.gameObject);
 		startPoint = agent.FindTheNearestPoint (agent.gameObject);
 		path = AStar.search(startPoint, agent.targetPoint);
@@ -57,6 +57,7 @@ public class GoTo : States {
 
 	public override void Exit() {
 		// ?
+		agent.updateFitness ();
 		sm.ChangeState(new Watch(agent,sm));
 	}
 }

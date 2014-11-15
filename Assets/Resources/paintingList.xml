@@ -3,7 +3,7 @@
     <Painting name="painting1">
       <Transform>
         <Position>0.203727, 2.000000, -2.734337</Position>
-        <Rotation>0.000000, 90.000050, 0.000000</Rotation>
+        <Rotation>0.000000, 90.000060, 0.000000</Rotation>
         <Scale>1.770000, 1.220000, 1.000000</Scale>
       </Transform>
       <Material>PBaroque1Mat</Material>
@@ -113,7 +113,7 @@
     </Painting>
     <Painting name="painting7">
       <Transform>
-        <Position>24.875600, 2.000000, -5.095706</Position>
+        <Position>24.878310, 2.000000, -5.095706</Position>
         <Rotation>0.000000, 270.000000, 0.000000</Rotation>
         <Scale>4.230000, 2.750000, 1.000000</Scale>
       </Transform>
@@ -170,7 +170,7 @@
     <Painting name="painting10">
       <Transform>
         <Position>0.203727, 2.000000, -12.370090</Position>
-        <Rotation>0.000000, 90.000050, 0.000000</Rotation>
+        <Rotation>0.000000, 90.000060, 0.000000</Rotation>
         <Scale>1.120000, 1.280000, 1.000000</Scale>
       </Transform>
       <Material>PBaroque10Mat</Material>
@@ -198,6 +198,7 @@
         <Year>1911</Year>
         <Tags>
           <Tag>Cubisme</Tag>
+          <Tag>Urbanisme</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -215,6 +216,8 @@
         <Year>1921</Year>
         <Tags>
           <Tag>Cubisme</Tag>
+          <Tag>Femme</Tag>
+          <Tag>Animaux</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -232,6 +235,7 @@
         <Year>1914</Year>
         <Tags>
           <Tag>Cubisme</Tag>
+          <Tag>Musique</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -249,6 +253,7 @@
         <Year>1913</Year>
         <Tags>
           <Tag>Cubisme</Tag>
+          <Tag>Musique</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -266,6 +271,7 @@
         <Year>1910</Year>
         <Tags>
           <Tag>Cubisme</Tag>
+          <Tag>Musique</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -300,12 +306,13 @@
         <Year>1912</Year>
         <Tags>
           <Tag>Cubisme</Tag>
+          <Tag>Portrait</Tag>
         </Tags>
       </Informations>
     </Painting>
     <Painting name="painting18">
       <Transform>
-        <Position>-24.706370, 2.190561, -16.695830</Position>
+        <Position>-24.700600, 2.190561, -16.700000</Position>
         <Rotation>0.000000, 90.000080, 0.000000</Rotation>
         <Scale>7.800000, 3.000000, 1.000000</Scale>
       </Transform>
@@ -317,12 +324,14 @@
         <Year>1937</Year>
         <Tags>
           <Tag>Cubisme</Tag>
+          <Tag>Combat</Tag>
+          <Tag>Animaux</Tag>
         </Tags>
       </Informations>
     </Painting>
     <Painting name="painting19">
       <Transform>
-        <Position>-24.695550, 2.000000, -5.992091</Position>
+        <Position>-24.700000, 2.000000, -5.992091</Position>
         <Rotation>0.000000, 90.000080, 0.000000</Rotation>
         <Scale>2.340000, 2.440000, 1.000000</Scale>
       </Transform>
@@ -334,6 +343,7 @@
         <Year>1907</Year>
         <Tags>
           <Tag>Cubisme</Tag>
+          <Tag>Femme</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -351,6 +361,7 @@
         <Year>2014</Year>
         <Tags>
           <Tag>Cubisme</Tag>
+          <Tag>Animaux</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -375,7 +386,7 @@
       <Transform>
         <Position>-24.691750, 2.000000, 12.706600</Position>
         <Rotation>0.000000, 90.000080, 0.000000</Rotation>
-        <Scale>1.987000, 2.591000, 1.000000</Scale>
+        <Scale>2.591000, 1.987000, 1.000000</Scale>
       </Transform>
       <Material>PFuturisme2Mat</Material>
       <Informations>
@@ -385,6 +396,7 @@
         <Year>1910</Year>
         <Tags>
           <Tag>Futurisme</Tag>
+          <Tag>Combat</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -402,6 +414,8 @@
         <Year>1912</Year>
         <Tags>
           <Tag>Futurisme</Tag>
+          <Tag>Animaux</Tag>
+          <Tag>Science</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -419,6 +433,8 @@
         <Year>1913</Year>
         <Tags>
           <Tag>Futurisme</Tag>
+          <Tag>Science</Tag>
+          <Tag>Urbanisme</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -436,6 +452,8 @@
         <Year>1913</Year>
         <Tags>
           <Tag>Futurisme</Tag>
+          <Tag>Animaux</Tag>
+          <Tag>Science</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -453,6 +471,7 @@
         <Year>1912</Year>
         <Tags>
           <Tag>Futurisme</Tag>
+          <Tag>Femme</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -470,6 +489,8 @@
         <Year>1915</Year>
         <Tags>
           <Tag>Futurisme</Tag>
+          <Tag>Combat</Tag>
+          <Tag>Science</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -487,6 +508,7 @@
         <Year>1911</Year>
         <Tags>
           <Tag>Futurisme</Tag>
+          <Tag>Musique</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -504,6 +526,7 @@
         <Year>1912</Year>
         <Tags>
           <Tag>Futurisme</Tag>
+          <Tag>Science</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -538,6 +561,8 @@
         <Year>1796</Year>
         <Tags>
           <Tag>Romantisme</Tag>
+          <Tag>Portrait</Tag>
+          <Tag>Combat</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -555,6 +580,7 @@
         <Year>1810</Year>
         <Tags>
           <Tag>Romantisme</Tag>
+          <Tag>Nature</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -572,6 +598,7 @@
         <Year>1818</Year>
         <Tags>
           <Tag>Romantisme</Tag>
+          <Tag>Nature</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -589,6 +616,8 @@
         <Year>1830</Year>
         <Tags>
           <Tag>Romantisme</Tag>
+          <Tag>Combat</Tag>
+          <Tag>Femme</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -606,6 +635,7 @@
         <Year>1814</Year>
         <Tags>
           <Tag>Romantisme</Tag>
+          <Tag>Combat</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -623,6 +653,7 @@
         <Year>1839</Year>
         <Tags>
           <Tag>Romantisme</Tag>
+          <Tag>Femme</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -640,6 +671,7 @@
         <Year>1819</Year>
         <Tags>
           <Tag>Romantisme</Tag>
+          <Tag>Nature</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -674,6 +706,7 @@
         <Year>1844</Year>
         <Tags>
           <Tag>Romantisme</Tag>
+          <Tag>Nature</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -691,13 +724,14 @@
         <Year>1842</Year>
         <Tags>
           <Tag>Romantisme</Tag>
+          <Tag>Nature</Tag>
         </Tags>
       </Informations>
     </Painting>
     <Painting name="painting41">
       <Transform>
         <Position>7.676502, 2.000000, 3.039472</Position>
-        <Rotation>0.000000, 90.000040, 0.000000</Rotation>
+        <Rotation>0.000000, 90.000050, 0.000000</Rotation>
         <Scale>0.920000, 0.760000, 1.000000</Scale>
       </Transform>
       <Material>PSurrealisme1Mat</Material>
@@ -708,13 +742,14 @@
         <Year>1933</Year>
         <Tags>
           <Tag>Surrealisme</Tag>
+          <Tag>Science</Tag>
         </Tags>
       </Informations>
     </Painting>
     <Painting name="painting42">
       <Transform>
         <Position>7.673619, 2.000000, 7.121017</Position>
-        <Rotation>0.000000, 90.000040, 0.000000</Rotation>
+        <Rotation>0.000000, 90.000050, 0.000000</Rotation>
         <Scale>1.142000, 1.460000, 1.000000</Scale>
       </Transform>
       <Material>PSurrealisme2Mat</Material>
@@ -725,13 +760,14 @@
         <Year>1924</Year>
         <Tags>
           <Tag>Surrealisme</Tag>
+          <Tag>Portrait</Tag>
         </Tags>
       </Informations>
     </Painting>
     <Painting name="painting43">
       <Transform>
         <Position>7.675395, 2.000000, 19.664590</Position>
-        <Rotation>0.000000, 90.000040, 0.000000</Rotation>
+        <Rotation>0.000000, 90.000050, 0.000000</Rotation>
         <Scale>1.460000, 1.140000, 1.000000</Scale>
       </Transform>
       <Material>PSurrealisme3Mat</Material>
@@ -759,6 +795,7 @@
         <Year>1923</Year>
         <Tags>
           <Tag>Surrealisme</Tag>
+          <Tag>Femme</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -793,6 +830,7 @@
         <Year>1928</Year>
         <Tags>
           <Tag>Surrealisme</Tag>
+          <Tag>Portrait</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -810,6 +848,7 @@
         <Year>1936</Year>
         <Tags>
           <Tag>Surrealisme</Tag>
+          <Tag>Combat</Tag>
         </Tags>
       </Informations>
     </Painting>
@@ -844,6 +883,8 @@
         <Year>1944</Year>
         <Tags>
           <Tag>Surrealisme</Tag>
+          <Tag>Femme</Tag>
+          <Tag>Animaux</Tag>
         </Tags>
       </Informations>
     </Painting>

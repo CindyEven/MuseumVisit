@@ -9,7 +9,17 @@ public class Painting : MonoBehaviour {
 	public enum Tags{
 		Femme,
 		Combat,
-		Animaux
+		Animaux,
+		Portrait,
+		Science,
+		Musique,
+		Nature,
+		Urbanisme,
+		Baroque,
+		Cubisme,
+		Futurisme,
+		Surrealisme,
+		Romantisme
 	}
 
 	public string artist;

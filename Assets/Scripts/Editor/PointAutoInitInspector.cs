@@ -45,14 +45,18 @@ public class PointAutoInitInspector : Editor {
 	
 	// Following method reads the xml file and display its content 
 	private void readXml(){
-		string name="", position="";
+		string name="", position="", type ="";
 		foreach(XmlElement node in xmlDoc.SelectNodes("SceneObjects/Points/Point")){
 			name = node.GetAttribute("name");
 			XmlNode transformNode = node.SelectSingleNode("Transform");
 			if(transformNode != null){
 				position = transformNode.SelectSingleNode("Position").InnerText;
 			}
-			instanciateNewPoint(name,position);
+			XmlNode typeNode = node.SelectSingleNode("Type");
+			if(typeNode != null){
+				type = typeNode.InnerText;
+			}
+			instanciateNewPoint(name,position,type);
 			name=""; position="";
 		}
 	}
@@ -80,6 +84,14 @@ public class PointAutoInitInspector : Editor {
 			if(transformNode != null){
 				char[] charsToTrim = { ' ', '(', ')'};
 				transformNode.SelectSingleNode("Position").InnerText = newTransform.position.ToString("f6").Trim(charsToTrim);
+			}
+			XmlNode typeNode = node.SelectSingleNode("Type");
+			if(typeNode != null){
+				typeNode.InnerText = newTransform.GetComponent<Point>().typePoint.ToString();
+			}else{
+				typeNode = xmlDoc.CreateNode("element","Type","");
+				node.AppendChild(typeNode);
+				typeNode.InnerText = newTransform.GetComponent<Point>().typePoint.ToString();
 			}
 		}
 		xmlDoc.Save(Application.dataPath +"/Resources/"+fileName+".xml");
@@ -111,11 +123,24 @@ public class PointAutoInitInspector : Editor {
 		xmlDoc.Save (Application.dataPath + "/Resources/" + fileName + ".xml");
 	}
 
-	private void instanciateNewPoint(string name,string positionString){
+	private void instanciateNewPoint(string name,string positionString,string type){
 		GameObject go = (GameObject)Instantiate(Resources.Load("Point", typeof(GameObject)));
 		go.transform.parent = GameObject.Find ("Point Graph").transform;
 		go.name = name;
 		go.transform.position = StringToVect3 (positionString);
+		Point p = go.GetComponent<Point>();
+
+		switch(type){
+			case "Observation":
+				p.typePoint = Point.Type.Observation;
+				break;
+			case "Attente":
+				p.typePoint = Point.Type.Attente;
+				break;
+			case "Passage" :
+				p.typePoint = Point.Type.Passage;
+				break;
+		}
 	}
 
 	private void addLink(string name,string connectedTo){

@@ -70,6 +70,10 @@ public class Watch : States {
 	protected int nbAgents;
 	protected bool VisitorNearMe;
 
+	public static bool timerCond = true;
+	public static bool visitorNearCond = false;
+	public static bool nbAgentsNearCond = false;
+
 	public Watch (AgentStateMachineBehavior a, StateMachine s){
 		agent = a;
 		sm = s;
@@ -89,12 +93,11 @@ public class Watch : States {
 		timer ++;
 		nbAgents = agent.visiteursWithSameDestination.Count;
 		VisitorNearMe = agent.visiteurs.Contains (GameObject.Find ("Visitor"));
-
-		if(VisitorNearMe){
+		if(visitorNearCond && VisitorNearMe){
 			Exit ();
-		}else if(timer > 800){
+		}else if(timerCond && timer > 800){
 			Exit ();
-		}else if(nbAgents > 25){
+		}else if(nbAgentsNearCond && nbAgents > 25){
 			Exit ();
 		}
 	}

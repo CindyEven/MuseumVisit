@@ -10,7 +10,7 @@ public class UserInterface : MonoBehaviour {
 	private Rect windowRect1 = new Rect (20, 50, 250, 180);
 	private Rect windowRect2 = new Rect (20, 50, 250, 380);
 	private Rect windowRect3 = new Rect (20, 50, 250, 300);
-//	private Rect windowRect3b = new Rect (20, 50, 250, 310);
+	private Rect windowRect4 = new Rect (20, 50, 250, 220);
 
 
 	private Painting paintingHit;
@@ -25,7 +25,8 @@ public class UserInterface : MonoBehaviour {
 	private bool showOptions = false;
 	private bool visitorPOV = true;
 	private bool showInfoPainting = false;
-	
+
+
 	void Update () {
 		// On Space key pressed, the movement of the camera is stopped and the GUI Window with the options appears
 		// If the key is pressed again it does the opposite
@@ -112,6 +113,9 @@ public class UserInterface : MonoBehaviour {
 			case 4: // Scene_q3b
 				windowRect3 = GUI.Window (0, windowRect3, OptionsWindowFunction3, "Options");
 				break;
+			case 5: // Scene_visit1
+				windowRect4 = GUI.Window (0, windowRect4, OptionsWindowFunction4, "Options");
+				break;
 			default:
 				//Console.WriteLine("Default case");
 				break;
@@ -119,7 +123,7 @@ public class UserInterface : MonoBehaviour {
 		}
 		if (showInfoPainting) {
 			string text = "Artiste : "+paintingHit.artist + "\nOeuvre : " + paintingHit.paintingName + "\nAnnée : "+paintingHit.year;
-			GUI.Box (new Rect (Screen.width - 300,Screen.height - 100,250,50), text);
+			GUI.Box (new Rect (10,Screen.height - 60,Screen.width-20,50), text);
 		}
 
 	}
@@ -205,6 +209,14 @@ public class UserInterface : MonoBehaviour {
 		GUI.DragWindow();
 	}
 
+	void OptionsWindowFunction4 (int windowID) {
+		GlobalOptions ();
+		GUI.Label (new Rect (10, 95, 230, 42), "Choisissez les critères de fin d'observation : ");
+		Watch.timerCond = GUI.Toggle(new Rect(10,135,230,30), Watch.timerCond, "Timer");
+		Watch.visitorNearCond = GUI.Toggle(new Rect(10,160,230,30), Watch.visitorNearCond, "Visiteur à coté");
+		Watch.nbAgentsNearCond = GUI.Toggle(new Rect(10,185,230,30), Watch.nbAgentsNearCond, "Nombre d'agents limite");
+		GUI.DragWindow();
+	}
 	// Elements of the options Window common for all the scenes :
 	void GlobalOptions(){
 		if(GUI.Button(new Rect(10, 20, 100, 30), "Menu Principal")) {

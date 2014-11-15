@@ -8,6 +8,7 @@
       <Connected>
         <To>DoorBA</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorBA">
       <Transform>
@@ -24,6 +25,7 @@
         <To>DoorBD</To>
         <To>DoorAB</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorBD">
       <Transform>
@@ -46,13 +48,14 @@
         <To>DoorBE</To>
         <To>DoorBA</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorBE">
       <Transform>
         <Position>4.105742, 0.500000, -2.465451</Position>
       </Transform>
       <Connected>
-      	<To>Tab10</To>
+        <To>Tab10</To>
         <To>Tab9</To>
         <To>Tab8</To>
         <To>Tab7</To>
@@ -65,13 +68,14 @@
         <To>DoorBC</To>
         <To>DoorBD</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorBC">
       <Transform>
         <Position>2.257418, 0.500000, -7.395182</Position>
       </Transform>
       <Connected>
-      	<To>Tab10</To>
+        <To>Tab10</To>
         <To>Tab9</To>
         <To>Tab8</To>
         <To>Tab7</To>
@@ -84,6 +88,7 @@
         <To>DoorBE</To>
         <To>DoorBD</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorCB">
       <Transform>
@@ -102,6 +107,7 @@
         <To>DoorCE</To>
         <To>DoorBC</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorCE">
       <Transform>
@@ -120,6 +126,7 @@
         <To>DoorCF</To>
         <To>DoorCB</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorCF">
       <Transform>
@@ -141,6 +148,7 @@
         <To>DoorCE</To>
         <To>DoorCB</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorDB">
       <Transform>
@@ -161,6 +169,7 @@
         <To>DoorDE</To>
         <To>DoorBD</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorDE">
       <Transform>
@@ -181,6 +190,7 @@
         <To>DoorED</To>
         <To>DoorDB</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorED">
       <Transform>
@@ -203,6 +213,7 @@
         <To>DoorEB</To>
         <To>DoorDE</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorEB">
       <Transform>
@@ -225,6 +236,7 @@
         <To>DoorED</To>
         <To>DoorBE</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorEC">
       <Transform>
@@ -246,6 +258,7 @@
         <To>DoorED</To>
         <To>DoorCE</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorEF">
       <Transform>
@@ -267,6 +280,7 @@
         <To>DoorEB</To>
         <To>DoorED</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorFE">
       <Transform>
@@ -287,6 +301,7 @@
         <To>DoorFC</To>
         <To>DoorEF</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="DoorFC">
       <Transform>
@@ -306,6 +321,7 @@
         <To>DoorFE</To>
         <To>DoorCF</To>
       </Connected>
+      <Type>Passage</Type>
     </Point>
     <Point name="CenterB">
       <Transform>
@@ -327,6 +343,7 @@
         <To>DoorBD</To>
         <To>DoorBA</To>
       </Connected>
+      <Type>Attente</Type>
     </Point>
     <Point name="CenterC">
       <Transform>
@@ -347,6 +364,7 @@
         <To>DoorCE</To>
         <To>DoorCB</To>
       </Connected>
+      <Type>Attente</Type>
     </Point>
     <Point name="CenterD">
       <Transform>
@@ -366,6 +384,7 @@
         <To>DoorDE</To>
         <To>DoorDB</To>
       </Connected>
+      <Type>Attente</Type>
     </Point>
     <Point name="CenterE">
       <Transform>
@@ -387,6 +406,7 @@
         <To>DoorEB</To>
         <To>DoorED</To>
       </Connected>
+      <Type>Attente</Type>
     </Point>
     <Point name="CenterF">
       <Transform>
@@ -406,6 +426,7 @@
         <To>DoorFC</To>
         <To>DoorFE</To>
       </Connected>
+      <Type>Attente</Type>
     </Point>
     <Point name="Tab1">
       <Transform>
@@ -421,13 +442,14 @@
         <To>DoorBD</To>
         <To>DoorBA</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab2">
       <Transform>
         <Position>19.941280, 0.500000, -24.043100</Position>
       </Transform>
       <Connected>
-     	<To>Tab7</To>
+        <To>Tab7</To>
         <To>Tab6</To>
         <To>Tab5</To>
         <To>Tab4</To>
@@ -438,13 +460,14 @@
         <To>DoorBD</To>
         <To>DoorBA</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab3">
       <Transform>
         <Position>24.134970, 0.500000, -21.155050</Position>
       </Transform>
       <Connected>
-      	<To>Tab8</To>
+        <To>Tab8</To>
         <To>Tab7</To>
         <To>Tab6</To>
         <To>Tab5</To>
@@ -456,6 +479,7 @@
         <To>DoorBD</To>
         <To>DoorBA</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab4">
       <Transform>
@@ -477,6 +501,7 @@
         <To>DoorBD</To>
         <To>DoorBA</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab5">
       <Transform>
@@ -498,13 +523,14 @@
         <To>DoorBD</To>
         <To>DoorBA</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab6">
       <Transform>
         <Position>21.176080, 0.500000, -1.002190</Position>
       </Transform>
       <Connected>
-     	<To>Tab10</To>
+        <To>Tab10</To>
         <To>Tab9</To>
         <To>Tab8</To>
         <To>Tab7</To>
@@ -519,6 +545,7 @@
         <To>DoorBD</To>
         <To>DoorBA</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab7">
       <Transform>
@@ -539,13 +566,14 @@
         <To>DoorBE</To>
         <To>DoorBD</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab8">
       <Transform>
         <Position>1.101730, 0.500000, -2.865484</Position>
       </Transform>
       <Connected>
-      	<To>Tab10</To>
+        <To>Tab10</To>
         <To>Tab9</To>
         <To>Tab7</To>
         <To>Tab6</To>
@@ -557,13 +585,14 @@
         <To>DoorBE</To>
         <To>DoorBD</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab9">
       <Transform>
         <Position>0.996090, 0.500000, -12.701020</Position>
       </Transform>
       <Connected>
-      	<To>Tab10</To>
+        <To>Tab10</To>
         <To>Tab8</To>
         <To>Tab7</To>
         <To>Tab6</To>
@@ -574,13 +603,14 @@
         <To>DoorBE</To>
         <To>DoorBD</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab10">
       <Transform>
         <Position>4.909134, 0.500000, -14.192240</Position>
       </Transform>
       <Connected>
-      	<To>Tab9</To>
+        <To>Tab9</To>
         <To>Tab8</To>
         <To>Tab7</To>
         <To>Tab6</To>
@@ -591,6 +621,7 @@
         <To>DoorBE</To>
         <To>DoorBC</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab11">
       <Transform>
@@ -610,6 +641,7 @@
         <To>DoorCE</To>
         <To>DoorCB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab12">
       <Transform>
@@ -629,6 +661,7 @@
         <To>DoorCE</To>
         <To>DoorCB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab13">
       <Transform>
@@ -649,6 +682,7 @@
         <To>DoorCB</To>
         <To>DoorCE</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab14">
       <Transform>
@@ -668,6 +702,7 @@
         <To>DoorCF</To>
         <To>DoorCE</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab15">
       <Transform>
@@ -686,6 +721,7 @@
         <To>DoorCE</To>
         <To>DoorCB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab16">
       <Transform>
@@ -703,6 +739,7 @@
         <To>DoorCF</To>
         <To>DoorCE</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab17">
       <Transform>
@@ -719,13 +756,14 @@
         <To>CenterC</To>
         <To>DoorCF</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab18">
       <Transform>
         <Position>-10.604720, 0.500000, -20.759310</Position>
       </Transform>
       <Connected>
-      	<To>Tab17</To>
+        <To>Tab17</To>
         <To>Tab16</To>
         <To>Tab15</To>
         <To>Tab14</To>
@@ -733,6 +771,7 @@
         <To>CenterC</To>
         <To>DoorCF</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab19">
       <Transform>
@@ -749,6 +788,7 @@
         <To>DoorCE</To>
         <To>DoorCB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab20">
       <Transform>
@@ -765,6 +805,7 @@
         <To>DoorCE</To>
         <To>DoorCB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab21">
       <Transform>
@@ -782,6 +823,7 @@
         <To>DoorDE</To>
         <To>DoorDB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab22">
       <Transform>
@@ -799,6 +841,7 @@
         <To>DoorDE</To>
         <To>DoorDB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab23">
       <Transform>
@@ -818,6 +861,7 @@
         <To>DoorDE</To>
         <To>DoorDB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab24">
       <Transform>
@@ -837,6 +881,7 @@
         <To>DoorDE</To>
         <To>DoorDB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab25">
       <Transform>
@@ -855,6 +900,7 @@
         <To>DoorDE</To>
         <To>DoorDB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab26">
       <Transform>
@@ -872,6 +918,7 @@
         <To>DoorDE</To>
         <To>DoorDB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab27">
       <Transform>
@@ -890,6 +937,7 @@
         <To>DoorDE</To>
         <To>DoorDB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab28">
       <Transform>
@@ -908,6 +956,7 @@
         <To>DoorDE</To>
         <To>DoorDB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab29">
       <Transform>
@@ -927,6 +976,7 @@
         <To>DoorDE</To>
         <To>DoorDB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab30">
       <Transform>
@@ -945,6 +995,7 @@
         <To>DoorDE</To>
         <To>DoorDB</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab31">
       <Transform>
@@ -966,6 +1017,7 @@
         <To>DoorEB</To>
         <To>DoorED</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab32">
       <Transform>
@@ -984,6 +1036,7 @@
         <To>DoorEB</To>
         <To>DoorED</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab33">
       <Transform>
@@ -1004,6 +1057,7 @@
         <To>DoorEB</To>
         <To>DoorED</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab34">
       <Transform>
@@ -1025,6 +1079,7 @@
         <To>DoorEB</To>
         <To>DoorED</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab35">
       <Transform>
@@ -1046,6 +1101,7 @@
         <To>DoorEB</To>
         <To>DoorED</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab36">
       <Transform>
@@ -1067,6 +1123,7 @@
         <To>DoorEB</To>
         <To>DoorED</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab37">
       <Transform>
@@ -1087,6 +1144,7 @@
         <To>DoorEB</To>
         <To>DoorED</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab38">
       <Transform>
@@ -1105,6 +1163,7 @@
         <To>DoorEB</To>
         <To>DoorED</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab39">
       <Transform>
@@ -1125,6 +1184,7 @@
         <To>DoorEB</To>
         <To>DoorED</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab40">
       <Transform>
@@ -1146,6 +1206,7 @@
         <To>DoorEB</To>
         <To>DoorED</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab41">
       <Transform>
@@ -1164,6 +1225,7 @@
         <To>DoorFC</To>
         <To>DoorFE</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab42">
       <Transform>
@@ -1183,6 +1245,7 @@
         <To>DoorFC</To>
         <To>DoorFE</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab43">
       <Transform>
@@ -1202,6 +1265,7 @@
         <To>DoorFC</To>
         <To>DoorFE</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab44">
       <Transform>
@@ -1220,6 +1284,7 @@
         <To>DoorFC</To>
         <To>DoorFE</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab45">
       <Transform>
@@ -1239,6 +1304,7 @@
         <To>DoorFC</To>
         <To>DoorFE</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab46">
       <Transform>
@@ -1258,6 +1324,7 @@
         <To>DoorFC</To>
         <To>DoorFE</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab47">
       <Transform>
@@ -1277,6 +1344,7 @@
         <To>DoorFC</To>
         <To>DoorFE</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab48">
       <Transform>
@@ -1295,6 +1363,7 @@
         <To>DoorFC</To>
         <To>DoorFE</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab49">
       <Transform>
@@ -1313,6 +1382,7 @@
         <To>DoorFC</To>
         <To>DoorFE</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
     <Point name="Tab50">
       <Transform>
@@ -1330,6 +1400,7 @@
         <To>DoorFC</To>
         <To>DoorFE</To>
       </Connected>
+      <Type>Observation</Type>
     </Point>
   </Points>
 </SceneObjects>

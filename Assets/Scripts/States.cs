@@ -58,6 +58,7 @@ public class GoTo : States {
 	public override void Exit() {
 		// ?
 		agent.updateFitness ();
+//		agent.targetPainting = RouletteWheelSelection.getAPainting2 (agent.listPainting,agent.paintingsFitness);
 		sm.ChangeState(new Watch(agent,sm));
 	}
 }
@@ -111,18 +112,26 @@ public class Wait : States {
 
 	StateMachine sm;
 	AgentStateMachineBehavior agent;
-
+	Point meetingPoint;
+	Vector3 position;
 	public Wait (AgentStateMachineBehavior a, StateMachine s){
 		agent = a;
 		sm = s;
 	}
 
 	public override void Enter(){
-		
+		meetingPoint = agent.FindTheNearestMeetingPoint ();
+		position = meetingPoint.transform.position;
 	}
 	
 	public override void Execute(){
-		
+
+		if((position - agent.transform.position).sqrMagnitude < agent.distArrive){
+
+		}else{
+			agent.force = agent.steering.getForce (agent.gameObject, position, agent.visiteurs, agent.visiteursWithSameDestination);
+			agent.direction = agent.steering.getDirection (agent.gameObject);
+		}
 	}
 	
 	public override void Exit() {

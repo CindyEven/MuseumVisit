@@ -27,7 +27,9 @@ public class AgentStateMachineBehavior : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
+		//targetPainting = RouletteWheelSelection.getAPainting2 (listPainting,paintingsFitness);
+
 		steering = gameObject.GetComponent<SteeringBehaviour> ();
 		
 		listPainting = GameObject.FindObjectsOfType <Painting>();
@@ -67,6 +69,30 @@ public class AgentStateMachineBehavior : MonoBehaviour {
 		
 		return nearPoint;
 	}
+
+	public Point FindTheNearestMeetingPoint(){
+
+		GameObject go = gameObject;
+		Point[] listPoints = GameObject.FindObjectsOfType <Point>();
+		Point nearPoint = null;
+		float distMin = float.PositiveInfinity;
+		
+		foreach (Point p in listPoints) {
+
+			if(p.typePoint == Point.Type.Attente){
+
+				float dist = Vector3.Distance(p.transform.position,go.transform.position);
+			
+				if(dist < distMin && !Physics.Raycast (go.transform.position, p.transform.position - go.transform.position, dist)){
+				
+					distMin = dist;
+					nearPoint = p;
+				}
+			}
+		}
+		
+		return nearPoint;
+	}
 	
 	public bool isBlock(){
 		Vector3 pos = transform.position;
@@ -80,7 +106,7 @@ public class AgentStateMachineBehavior : MonoBehaviour {
 		return false;
 	}
 
-	void initFitness(){
+	public void initFitness(){
 		paintingsFitness = new Dictionary<Painting, float>();
 		foreach (Painting p in listPainting) {
 			paintingsFitness.Add(p,p.fitness);

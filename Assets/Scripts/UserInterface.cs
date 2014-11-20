@@ -11,6 +11,7 @@ public class UserInterface : MonoBehaviour {
 	private Rect windowRect2 = new Rect (20, 50, 250, 380);
 	private Rect windowRect3 = new Rect (20, 50, 250, 300);
 	private Rect windowRect4 = new Rect (20, 50, 250, 220);
+	private Rect windowProfilUser = new Rect (20, 50, 250, 315);
 
 
 	private Painting paintingHit;
@@ -23,9 +24,11 @@ public class UserInterface : MonoBehaviour {
 	private float seekCoef = 1.25f, sepCoef = 1.20f, cohesionCoef = 0.60f, alignCoef = 1.0f;
 
 	private bool showOptions = false;
+	private bool showChoiceProfil = true;
 	private bool visitorPOV = true;
 	private bool showInfoPainting = false;
 
+	bool[] tagsToggles = new bool[13]{false,false,false,false,false,false,false,false,false,false,false,false,false};
 
 	void Update () {
 		// On Space key pressed, the movement of the camera is stopped and the GUI Window with the options appears
@@ -94,6 +97,11 @@ public class UserInterface : MonoBehaviour {
 	}
 
 	void OnGUI () {
+		if (Application.loadedLevel == 7 && showChoiceProfil) {
+			windowProfilUser = GUI.Window (0, windowProfilUser, OptionsWindowFunctionProfil, "Options");
+			camVisitor.GetComponent<MouseLook> ().enabled = false;
+			GameObject.Find ("Visitor").GetComponent<VisitorMouvement> ().enabled = false;
+		}
 		if (!showOptions) {
 			GUI.Label (new Rect (10, 10, 175, 30), "Espace : afficher les options.");
 		}else{
@@ -215,6 +223,61 @@ public class UserInterface : MonoBehaviour {
 		Watch.timerCond = GUI.Toggle(new Rect(10,135,230,30), Watch.timerCond, "Timer");
 		Watch.visitorNearCond = GUI.Toggle(new Rect(10,160,230,30), Watch.visitorNearCond, "Visiteur à coté");
 		Watch.nbAgentsNearCond = GUI.Toggle(new Rect(10,185,230,30), Watch.nbAgentsNearCond, "Nombre d'agents limite");
+		GUI.DragWindow();
+	}
+
+	void OptionsWindowFunctionProfil (int windowID){
+		GlobalOptions ();
+		VisitorProfil pr = GameObject.FindObjectOfType<VisitorProfil> ();
+		GUI.Label (new Rect (10, 95, 230, 42), "Choisissez vos préférences : ");
+		tagsToggles[0] = GUI.Toggle(new Rect(10,135,100,30), tagsToggles[0], "Femme");
+		tagsToggles[1] = GUI.Toggle(new Rect(10,160,100,30), tagsToggles[1], "Combat");
+		tagsToggles[2] = GUI.Toggle(new Rect(10,185,100,30), tagsToggles[2], "Animaux");
+		tagsToggles[3] = GUI.Toggle(new Rect(10,210,100,30), tagsToggles[3], "Portrait");
+		tagsToggles[4] = GUI.Toggle(new Rect(10,235,100,30), tagsToggles[4], "Science");
+		tagsToggles[5] = GUI.Toggle(new Rect(10,260,100,30), tagsToggles[5], "Musique");
+		tagsToggles[6] = GUI.Toggle(new Rect(10,285,100,30), tagsToggles[6], "Nature");
+
+		tagsToggles[7] = GUI.Toggle(new Rect(125,135,100,30), tagsToggles[7], "Urbanisme");
+		tagsToggles[8] = GUI.Toggle(new Rect(125,160,100,30), tagsToggles[8], "Baroque");
+		tagsToggles[9] = GUI.Toggle(new Rect(125,185,100,30), tagsToggles[9], "Cubisme");
+		tagsToggles[10] = GUI.Toggle(new Rect(125,210,100,30), tagsToggles[10], "Futurisme");
+		tagsToggles[11] = GUI.Toggle(new Rect(125,235,100,30), tagsToggles[11], "Surrealisme");
+		tagsToggles[12] = GUI.Toggle(new Rect(125,260,100,30), tagsToggles[12], "Romantisme");
+
+		if (tagsToggles [0] && !pr.profil.Contains(Painting.Tags.Femme)) pr.profil.Add (Painting.Tags.Femme);
+		else pr.profil.Remove(Painting.Tags.Femme);
+		if (tagsToggles [1] && !pr.profil.Contains(Painting.Tags.Combat)) pr.profil.Add (Painting.Tags.Combat);
+		else pr.profil.Remove(Painting.Tags.Combat);
+		if (tagsToggles [2] && !pr.profil.Contains(Painting.Tags.Animaux)) pr.profil.Add (Painting.Tags.Animaux);
+		else pr.profil.Remove(Painting.Tags.Animaux);
+		if (tagsToggles [3] && !pr.profil.Contains(Painting.Tags.Portrait)) pr.profil.Add (Painting.Tags.Portrait);
+		else pr.profil.Remove(Painting.Tags.Portrait);
+		if (tagsToggles [4] && !pr.profil.Contains(Painting.Tags.Science)) pr.profil.Add (Painting.Tags.Science);
+		else pr.profil.Remove(Painting.Tags.Science);
+		if (tagsToggles [5] && !pr.profil.Contains(Painting.Tags.Musique)) pr.profil.Add (Painting.Tags.Musique);
+		else pr.profil.Remove(Painting.Tags.Musique);
+		if (tagsToggles [6] && !pr.profil.Contains(Painting.Tags.Nature)) pr.profil.Add (Painting.Tags.Nature);
+		else pr.profil.Remove(Painting.Tags.Nature);
+		if (tagsToggles [7] && !pr.profil.Contains(Painting.Tags.Urbanisme)) pr.profil.Add (Painting.Tags.Urbanisme);
+		else pr.profil.Remove(Painting.Tags.Urbanisme);
+		if (tagsToggles [8] && !pr.profil.Contains(Painting.Tags.Baroque)) pr.profil.Add (Painting.Tags.Baroque);
+		else pr.profil.Remove(Painting.Tags.Baroque);
+		if (tagsToggles [9] && !pr.profil.Contains(Painting.Tags.Cubisme)) pr.profil.Add (Painting.Tags.Cubisme);
+		else pr.profil.Remove(Painting.Tags.Cubisme);
+		if (tagsToggles [10] && !pr.profil.Contains(Painting.Tags.Futurisme)) pr.profil.Add (Painting.Tags.Futurisme);
+		else pr.profil.Remove(Painting.Tags.Futurisme);
+		if (tagsToggles [11] && !pr.profil.Contains(Painting.Tags.Surrealisme)) pr.profil.Add (Painting.Tags.Surrealisme);
+		else pr.profil.Remove(Painting.Tags.Surrealisme);
+		if (tagsToggles [12] && !pr.profil.Contains(Painting.Tags.Romantisme)) pr.profil.Add (Painting.Tags.Romantisme);
+		else pr.profil.Remove(Painting.Tags.Romantisme);
+
+		if(GUI.Button(new Rect(125,285,75,25),"Valider")){
+			camVisitor.GetComponent<MouseLook> ().enabled = true;
+			GameObject.Find ("Visitor").GetComponent<VisitorMouvement> ().enabled = true;
+			showChoiceProfil = false;
+			pr.updateFitness();
+		}
 		GUI.DragWindow();
 	}
 	// Elements of the options Window common for all the scenes :

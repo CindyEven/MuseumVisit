@@ -44,5 +44,10 @@ public class Menu : MonoBehaviour {
 
 		// Label with our names
 		GUI.Label (new Rect (20,320,Screen.width-40,50), "Cindy Even et Guillaume Biannic\nModule CRV, décembre 2014");
+
+		// Exit button
+		if (GUI.Button (new Rect (Screen.width-100,Screen.height-50,80,30), "Quitter")) {
+			Application.Quit();
+		}
 	}
 }

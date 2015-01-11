@@ -12,7 +12,7 @@ public class UserInterface : MonoBehaviour {
 	private Rect windowRect3 = new Rect (20, 50, 250, 300);
 	private Rect windowRect4 = new Rect (20, 50, 250, 220);
 	private Rect windowProfilUser = new Rect (20, 50, 250, 315);
-
+	private Rect windowRatePainting = new Rect (20,50,250,150);
 
 	private Painting paintingHit;
 	private float rayDist;
@@ -27,6 +27,7 @@ public class UserInterface : MonoBehaviour {
 	private bool showChoiceProfil = true;
 	private bool visitorPOV = true;
 	private bool showInfoPainting = false;
+	private bool showRatingMenu = false;
 
 	bool[] tagsToggles = new bool[13]{false,false,false,false,false,false,false,false,false,false,false,false,false};
 
@@ -74,6 +75,11 @@ public class UserInterface : MonoBehaviour {
 							break;
 						case 2:
 							AgentSimpleGroupBehaviour.setTargetPainting(paintingHit);
+							break;
+						case 7:
+							showRatingMenu = true;
+							camVisitor.GetComponent<MouseLook> ().enabled = false;
+							GameObject.Find ("Visitor").GetComponent<VisitorMouvement> ().enabled = false;
 							break;
 					}
 				}
@@ -133,7 +139,9 @@ public class UserInterface : MonoBehaviour {
 			string text = "Artiste : "+paintingHit.artist + "\nOeuvre : " + paintingHit.paintingName + "\nAnnée : "+paintingHit.year;
 			GUI.Box (new Rect (10,Screen.height - 60,Screen.width-20,50), text);
 		}
-
+		if (showRatingMenu) {
+			windowRatePainting = GUI.Window (0, windowRatePainting, OptionsWindowRatePainting, "Avis");
+		}
 	}
 	
 	void OptionsWindowFunction1 (int windowID) {
@@ -280,6 +288,23 @@ public class UserInterface : MonoBehaviour {
 		}
 		GUI.DragWindow();
 	}
+
+	void OptionsWindowRatePainting (int windowID) {
+		GUI.Label (new Rect (25,50,430,40), "Aimez-vous cette peinture ?");
+		if (GUI.Button (new Rect (50,100,50,40), "Oui")) {
+			showRatingMenu = false;
+			camVisitor.GetComponent<MouseLook> ().enabled = true;
+			GameObject.Find ("Visitor").GetComponent<VisitorMouvement> ().enabled = true;
+			paintingHit.IsLiked();
+		}
+		if (GUI.Button (new Rect (150,100,50,40), "Non")) {
+			showRatingMenu = false;
+			camVisitor.GetComponent<MouseLook> ().enabled = true;
+			GameObject.Find ("Visitor").GetComponent<VisitorMouvement> ().enabled = true;
+		}
+		GUI.DragWindow();
+	}
+
 	// Elements of the options Window common for all the scenes :
 	void GlobalOptions(){
 		if(GUI.Button(new Rect(10, 20, 100, 30), "Menu Principal")) {

@@ -92,6 +92,9 @@ public class Watch : States {
 	
 	public override void Execute(){
 		timer ++;
+		Vector3 position = agent.nextDestination.transform.position;
+		agent.force = agent.steering.getForce (agent.gameObject, position, agent.visiteurs, agent.visiteursWithSameDestination);
+		agent.direction = agent.steering.getDirection (agent.gameObject);
 		nbAgents = agent.visiteursWithSameDestination.Count;
 		VisitorNearMe = agent.visiteurs.Contains (GameObject.Find ("Visitor"));
 		if(visitorNearCond && VisitorNearMe){

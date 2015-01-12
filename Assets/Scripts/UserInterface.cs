@@ -11,6 +11,7 @@ public class UserInterface : MonoBehaviour {
 	private Rect windowRect2 = new Rect (20, 50, 250, 380);
 	private Rect windowRect3 = new Rect (20, 50, 250, 300);
 	private Rect windowRect4 = new Rect (20, 50, 250, 220);
+	private Rect windowRect5 = new Rect (20, 50, 250, 100);
 	private Rect windowProfilUser = new Rect (20, 50, 250, 315);
 	private Rect windowRatePainting = new Rect (20,50,250,150);
 
@@ -130,6 +131,9 @@ public class UserInterface : MonoBehaviour {
 			case 5: // Scene_visit1
 				windowRect4 = GUI.Window (0, windowRect4, OptionsWindowFunction4, "Options");
 				break;
+			case 6: // Scene_visit2
+				windowRect5 = GUI.Window (0, windowRect5, OptionsWindowFunction5, "Options");
+				break;
 			default:
 				//Console.WriteLine("Default case");
 				break;
@@ -231,6 +235,11 @@ public class UserInterface : MonoBehaviour {
 		Watch.timerCond = GUI.Toggle(new Rect(10,135,230,30), Watch.timerCond, "Timer");
 		Watch.visitorNearCond = GUI.Toggle(new Rect(10,160,230,30), Watch.visitorNearCond, "Visiteur à coté");
 		Watch.nbAgentsNearCond = GUI.Toggle(new Rect(10,185,230,30), Watch.nbAgentsNearCond, "Nombre d'agents limite");
+		GUI.DragWindow();
+	}
+
+	void OptionsWindowFunction5 (int windowID) {
+		GlobalOptions ();
 		GUI.DragWindow();
 	}
 

@@ -20,8 +20,8 @@ public class UserInterface : MonoBehaviour {
 	private int nbAgents = 1;
 
 	private int algoSelected = 1;
-	public float seekCoefDefault = 1.25f, sepCoefDefault = 1.20f, cohesionCoefDefault = 0.60f, alignCoefDefault = 1.0f;
-	private float seekCoef = 1.25f, sepCoef = 1.20f, cohesionCoef = 0.60f, alignCoef = 1.0f;
+	public float seekCoefDefault = 1.25f, sepCoefDefault = 2.0f, cohesionCoefDefault = 0.60f, alignCoefDefault = 1.0f;
+	private float seekCoef = 1.25f, sepCoef = 2.0f, cohesionCoef = 0.60f, alignCoef = 1.0f;
 
 	private bool showOptions = false;
 	private bool showChoiceProfil = true;

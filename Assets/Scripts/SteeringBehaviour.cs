@@ -8,12 +8,12 @@ public class SteeringBehaviour : MonoBehaviour {
 	Vector3 direction;
 
 	static float seekCoef = 1.25f;
-	static float sepCoef = 1.20f;
+	static float sepCoef = 2.0f;
 	static float cohCoef = 0.60f;
 	static float alCoef = 1.0f;
 
 	public float maxSpeed = 4.0f;
-	public float slowDistance = 2.0f;
+	public float slowDistance = 4.0f;
 
 	// Use this for initialization
 	void Start () {

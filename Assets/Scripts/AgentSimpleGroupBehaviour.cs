@@ -28,7 +28,6 @@ public class AgentSimpleGroupBehaviour : MonoBehaviour {
 	void Start () {
 
 		steering = gameObject.GetComponent<SteeringBehaviour> ();
-
 		visiteurs = new List<GameObject> ();
 
 		oldPainting = targetPainting;
@@ -128,7 +127,7 @@ public class AgentSimpleGroupBehaviour : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag == "Agent" && !gameObject.Equals(other.gameObject)) {
+		if (other.gameObject.tag == "Agent" && !gameObject.Equals(other.gameObject) && isVisible(gameObject, other.gameObject)) {
 			
 			if(!visiteurs.Contains(other.gameObject)){
 				
@@ -136,7 +135,7 @@ public class AgentSimpleGroupBehaviour : MonoBehaviour {
 			}
 		}
 		
-		if (other.gameObject.tag == "Agent"){
+		if (other.gameObject.tag == "Player" && isVisible(gameObject, other.gameObject)){
 			
 			if(!visiteurs.Contains(other.gameObject)){
 				
@@ -156,6 +155,20 @@ public class AgentSimpleGroupBehaviour : MonoBehaviour {
 			
 			visiteurs.Remove (other.gameObject);
 		}
+	}
+	
+	bool isVisible(GameObject me, GameObject target){
+		
+		Vector3 myPosition = me.transform.position;
+		Vector3 targetPosition = target.transform.position;
+		float dist = Vector3.Distance (targetPosition, myPosition);
+		
+		if(!Physics.Raycast (myPosition, targetPosition - myPosition, dist)){
+			
+			return true;
+		}
+		
+		return false;
 	}
 
 	public static void setTargetPainting(Painting newpaint){

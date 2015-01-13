@@ -11,7 +11,7 @@ public class UserInterface : MonoBehaviour {
 	private Rect windowRect2 = new Rect (20, 50, 250, 380);
 	private Rect windowRect3 = new Rect (20, 50, 250, 300);
 	private Rect windowRect4 = new Rect (20, 50, 250, 220);
-	private Rect windowRect5 = new Rect (20, 50, 250, 100);
+	private Rect windowRect5 = new Rect (20, 50, 250, 220);
 	private Rect windowProfilUser = new Rect (20, 50, 250, 315);
 	private Rect windowRatePainting = new Rect (20,50,250,150);
 
@@ -134,6 +134,9 @@ public class UserInterface : MonoBehaviour {
 			case 6: // Scene_visit2
 				windowRect5 = GUI.Window (0, windowRect5, OptionsWindowFunction5, "Options");
 				break;
+			case 7 :
+				showChoiceProfil = true;
+				break;
 			default:
 				//Console.WriteLine("Default case");
 				break;
@@ -240,6 +243,10 @@ public class UserInterface : MonoBehaviour {
 
 	void OptionsWindowFunction5 (int windowID) {
 		GlobalOptions ();
+		GUI.Label (new Rect (10, 95, 230, 42), "Choisissez les critères de fin d'observation : ");
+		WatchFitness.timerCond = GUI.Toggle(new Rect(10,135,230,30), WatchFitness.timerCond, "Timer");
+		WatchFitness.visitorNearCond = GUI.Toggle(new Rect(10,160,230,30), WatchFitness.visitorNearCond, "Visiteur à coté");
+		WatchFitness.nbAgentsNearCond = GUI.Toggle(new Rect(10,185,230,30), WatchFitness.nbAgentsNearCond, "Nombre d'agents limite");
 		GUI.DragWindow();
 	}
 
@@ -293,6 +300,7 @@ public class UserInterface : MonoBehaviour {
 			camVisitor.GetComponent<MouseLook> ().enabled = true;
 			GameObject.Find ("Visitor").GetComponent<VisitorMouvement> ().enabled = true;
 			showChoiceProfil = false;
+			showOptions = false;
 			pr.updateFitness();
 		}
 		GUI.DragWindow();

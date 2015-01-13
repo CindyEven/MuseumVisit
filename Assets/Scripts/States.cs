@@ -11,43 +11,41 @@ abstract public class States {
 public class GoTo : States {
 
 	StateMachine sm;
-	AgentStateMachineBehavior agent;
 	Point startPoint;
 	List<Point> path;
 	int indexPath = 0;
-	public GoTo (AgentStateMachineBehavior a, StateMachine s){
-		agent = a;
+	public GoTo (StateMachine s){
 		sm = s;
 	}
 
 	public override void Enter(){
 		// Find the next Painting to see
-		agent.targetPainting = RouletteWheelSelection.getAPainting2 (agent.listPainting,agent.paintingsFitness);
-		agent.targetPoint = agent.FindTheNearestPoint (agent.targetPainting.gameObject);
-		startPoint = agent.FindTheNearestPoint (agent.gameObject);
-		path = AStar.search(startPoint, agent.targetPoint);
-		agent.nextDestination = path [indexPath];
+		sm.agent.targetPainting = RouletteWheelSelection.getAPainting (sm.agent.listPainting);
+		sm.agent.targetPoint = sm.agent.FindTheNearestPoint (sm.agent.targetPainting.gameObject);
+		startPoint = sm.agent.FindTheNearestPoint (sm.agent.gameObject);
+		path = AStar.search(startPoint, sm.agent.targetPoint);
+		sm.agent.nextDestination = path [indexPath];
 	}
 
 	public override void Execute(){
 		// Go to see the Painting
-		if(agent.isBlock()){
-			startPoint = agent.FindTheNearestPoint (agent.gameObject);
+		if(sm.agent.isBlock()){
+			startPoint = sm.agent.FindTheNearestPoint (sm.agent.gameObject);
 			indexPath=0;
-			path = AStar.search(startPoint, agent.targetPoint);
-			agent.nextDestination = path [indexPath];
+			path = AStar.search(startPoint, sm.agent.targetPoint);
+			sm.agent.nextDestination = path [indexPath];
 		}
 		
-		Vector3 position = agent.nextDestination.transform.position;
+		Vector3 position = sm.agent.nextDestination.transform.position;
 		
-		agent.force = agent.steering.getForce (agent.gameObject, position, agent.visiteurs, agent.visiteursWithSameDestination);
-		agent.direction = agent.steering.getDirection (agent.gameObject);
+		sm.agent.force = sm.agent.steering.getForce (sm.agent.gameObject, position, sm.agent.visiteurs, sm.agent.visiteursWithSameDestination);
+		sm.agent.direction = sm.agent.steering.getDirection (sm.agent.gameObject);
 		
-		if((position - agent.transform.position).sqrMagnitude < agent.distArrive){
+		if((position - sm.agent.transform.position).sqrMagnitude < sm.agent.distArrive){
 			if(indexPath < path.Count-1){
 				
 				indexPath++;
-				agent.nextDestination = path [indexPath];
+				sm.agent.nextDestination = path [indexPath];
 				
 			}else{
 				Exit ();
@@ -56,17 +54,14 @@ public class GoTo : States {
 	}
 
 	public override void Exit() {
-		// ?
-		agent.updateFitness ();
-//		agent.targetPainting = RouletteWheelSelection.getAPainting2 (agent.listPainting,agent.paintingsFitness);
-		sm.ChangeState(new Watch(agent,sm));
+//		sm.agent.targetPainting = RouletteWheelSelection.getAPainting2 (sm.agent.listPainting,sm.agent.paintingsFitness);
+		sm.ChangeState(new Watch(sm));
 	}
 }
 
 public class Watch : States {
 
 	StateMachine sm;
-	AgentStateMachineBehavior agent;
 	protected int timer;
 	protected int nbAgents;
 	protected bool VisitorNearMe;
@@ -75,8 +70,7 @@ public class Watch : States {
 	public static bool visitorNearCond = false;
 	public static bool nbAgentsNearCond = false;
 
-	public Watch (AgentStateMachineBehavior a, StateMachine s){
-		agent = a;
+	public Watch (StateMachine s){
 		sm = s;
 		timer = 0;
 		nbAgents = 0;
@@ -84,60 +78,155 @@ public class Watch : States {
 	}
 
 	public override void Enter(){
-		agent.rigidbody.velocity = Vector3.zero;
-		agent.rigidbody.angularVelocity = Vector3.zero;
-		agent.force = Vector3.zero;
-		agent.direction = agent.targetPainting.transform.position;
+		sm.agent.rigidbody.velocity = Vector3.zero;
+		sm.agent.rigidbody.angularVelocity = Vector3.zero;
+		sm.agent.force = Vector3.zero;
+		sm.agent.direction = sm.agent.targetPainting.transform.position;
 	}
 	
 	public override void Execute(){
 		timer ++;
-		Vector3 position = agent.nextDestination.transform.position;
-		agent.force = agent.steering.getForce (agent.gameObject, position, agent.visiteurs, agent.visiteursWithSameDestination);
-		agent.direction = agent.steering.getDirection (agent.gameObject);
-		nbAgents = agent.visiteursWithSameDestination.Count;
-		VisitorNearMe = agent.visiteurs.Contains (GameObject.Find ("Visitor"));
+		Vector3 position = sm.agent.nextDestination.transform.position;
+		sm.agent.force = sm.agent.steering.getForce (sm.agent.gameObject, position, sm.agent.visiteurs, sm.agent.visiteursWithSameDestination);
+		nbAgents = sm.agent.visiteursWithSameDestination.Count;
+		VisitorNearMe = sm.agent.visiteurs.Contains (GameObject.Find ("Visitor"));
 		if(visitorNearCond && VisitorNearMe){
 			Exit ();
 		}else if(timerCond && timer > 800){
 			Exit ();
-		}else if(nbAgentsNearCond && nbAgents > 25){
+		}else if(nbAgentsNearCond && nbAgents > 4){
 			Exit ();
 		}
 	}
 	
 	public override void Exit() {
-		sm.ChangeState (new GoTo (agent, sm));
+		sm.ChangeState (new GoTo (sm));
 	}
 }
 
 public class Wait : States {
 
 	StateMachine sm;
-	AgentStateMachineBehavior agent;
 	Point meetingPoint;
 	Vector3 position;
-	public Wait (AgentStateMachineBehavior a, StateMachine s){
-		agent = a;
+	public Wait (StateMachine s){
 		sm = s;
 	}
 
 	public override void Enter(){
-		meetingPoint = agent.FindTheNearestMeetingPoint ();
+		meetingPoint = sm.agent.FindTheNearestMeetingPoint ();
 		position = meetingPoint.transform.position;
 	}
 	
 	public override void Execute(){
 
-		if((position - agent.transform.position).sqrMagnitude < agent.distArrive){
+		if((position - sm.agent.transform.position).sqrMagnitude < sm.agent.distArrive){
 
 		}else{
-			agent.force = agent.steering.getForce (agent.gameObject, position, agent.visiteurs, agent.visiteursWithSameDestination);
-			agent.direction = agent.steering.getDirection (agent.gameObject);
+			sm.agent.force = sm.agent.steering.getForce (sm.agent.gameObject, position, sm.agent.visiteurs, sm.agent.visiteursWithSameDestination);
+			sm.agent.direction = sm.agent.steering.getDirection (sm.agent.gameObject);
 		}
 	}
 	
 	public override void Exit() {
 		
+	}
+}
+
+public class GoToFitness : States {
+	
+	StateMachineFitness sm;
+	Point startPoint;
+	List<Point> path;
+	int indexPath = 0;
+	public GoToFitness (StateMachineFitness s){
+		sm = s;
+	}
+	
+	public override void Enter(){
+		// Find the next Painting to see
+		sm.agent.targetPainting = RouletteWheelSelection.getAPainting2 (sm.agent.listPainting,sm.agent.paintingsFitness);	
+		sm.agent.targetPoint = sm.agent.FindTheNearestPoint (sm.agent.targetPainting.gameObject);
+		startPoint = sm.agent.FindTheNearestPoint (sm.agent.gameObject);
+		path = AStar.search(startPoint, sm.agent.targetPoint);
+		sm.agent.nextDestination = path [indexPath];
+	}
+	
+	public override void Execute(){
+		// Go to see the Painting
+		if(sm.agent.isBlock()){
+			startPoint = sm.agent.FindTheNearestPoint (sm.agent.gameObject);
+			indexPath=0;
+			path = AStar.search(startPoint, sm.agent.targetPoint);
+			sm.agent.nextDestination = path [indexPath];
+		}
+		
+		Vector3 position = sm.agent.nextDestination.transform.position;
+		
+		sm.agent.force = sm.agent.steering.getForce (sm.agent.gameObject, position, sm.agent.visiteurs, sm.agent.visiteursWithSameDestination);
+		sm.agent.direction = sm.agent.steering.getDirection (sm.agent.gameObject);
+		
+		if((position - sm.agent.transform.position).sqrMagnitude < sm.agent.distArrive){
+			if(indexPath < path.Count-1){
+				
+				indexPath++;
+				sm.agent.nextDestination = path [indexPath];
+				
+			}else{
+				Exit ();
+			}
+		}
+	}
+	
+	public override void Exit() {
+		// ?
+		sm.agent.updateFitness ();
+		//		sm.agent.targetPainting = RouletteWheelSelection.getAPainting2 (sm.agent.listPainting,sm.agent.paintingsFitness);
+		sm.ChangeState(new WatchFitness(sm));
+	}
+}
+
+public class WatchFitness : States {
+	
+	StateMachineFitness sm;
+	protected int timer;
+	protected int nbAgents;
+	protected bool VisitorNearMe;
+	
+	public static bool timerCond = true;
+	public static bool visitorNearCond = false;
+	public static bool nbAgentsNearCond = false;
+	
+	public WatchFitness (StateMachineFitness s){
+		sm = s;
+		timer = 0;
+		nbAgents = 0;
+		VisitorNearMe = false;
+	}
+	
+	public override void Enter(){
+		sm.agent.rigidbody.velocity = Vector3.zero;
+		sm.agent.rigidbody.angularVelocity = Vector3.zero;
+		sm.agent.force = Vector3.zero;
+		sm.agent.direction = sm.agent.targetPainting.transform.position;
+	}
+	
+	public override void Execute(){
+		timer ++;
+		Vector3 position = sm.agent.nextDestination.transform.position;
+		sm.agent.force = sm.agent.steering.getForce (sm.agent.gameObject, position, sm.agent.visiteurs, sm.agent.visiteursWithSameDestination);
+		nbAgents = sm.agent.visiteursWithSameDestination.Count;
+		VisitorNearMe = sm.agent.visiteurs.Contains (GameObject.Find ("Visitor"));
+		if(visitorNearCond && VisitorNearMe){
+			Exit ();
+		}else if(timerCond && timer > 800){
+			Exit ();
+		}else if(nbAgentsNearCond && nbAgents > 4){
+			Exit ();
+		}
+	}
+	
+	public override void Exit() {
+		sm.ChangeState (new GoToFitness (sm));
 	}
 }

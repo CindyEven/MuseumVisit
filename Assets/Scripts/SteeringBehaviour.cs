@@ -7,9 +7,9 @@ public class SteeringBehaviour : MonoBehaviour {
 	Vector3 force;
 	Vector3 direction;
 
-	static float seekCoef = 1.25f;
-	static float sepCoef = 2.0f;
-	static float cohCoef = 0.60f;
+	static float seekCoef = 3.0f;
+	static float sepCoef = 2.5f;
+	static float cohCoef = 1.0f;
 	static float alCoef = 1.0f;
 
 	public float maxSpeed = 4.0f;

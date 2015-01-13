@@ -177,6 +177,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &16336652
 Transform:
   m_ObjectHideFlags: 0
@@ -387,6 +388,7 @@ MonoBehaviour:
   year: 1921
   style: Cubisme
   fitness: 1
+  tagList: 
 --- !u!1 &35334902
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +545,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &55497257
 Transform:
   m_ObjectHideFlags: 0
@@ -712,6 +715,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &69667801
 Transform:
   m_ObjectHideFlags: 0
@@ -975,6 +979,7 @@ MonoBehaviour:
   year: 1931
   style: "Surr\xE9alisme"
   fitness: 1
+  tagList: 
 --- !u!1 &137042804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,6 +1027,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &137042806
 Transform:
   m_ObjectHideFlags: 0
@@ -1119,7 +1125,8 @@ MonoBehaviour:
   paintingName: Violon et chandelier
   year: 1910
   style: Cubisme
-  fitness: 1
+  fitness: 50
+  tagList: 
 --- !u!1 &138091669
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,6 +1394,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &169983713
 Transform:
   m_ObjectHideFlags: 0
@@ -1485,6 +1493,7 @@ MonoBehaviour:
   year: 1915
   style: Futurisme
   fitness: 1
+  tagList: 
 --- !u!1001 &198512544
 Prefab:
   m_ObjectHideFlags: 0
@@ -1625,6 +1634,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &217387111
 Transform:
   m_ObjectHideFlags: 0
@@ -1766,6 +1776,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &230670553
 Transform:
   m_ObjectHideFlags: 0
@@ -1920,6 +1931,7 @@ MonoBehaviour:
   year: 1814
   style: Romantisme
   fitness: 1
+  tagList: 
 --- !u!1 &277103466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,6 +1991,7 @@ MonoBehaviour:
   year: 1650
   style: Baroque
   fitness: 1
+  tagList: 
 --- !u!1 &279575402
 GameObject:
   m_ObjectHideFlags: 0
@@ -2022,6 +2035,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &279575404
 Transform:
   m_ObjectHideFlags: 0
@@ -2197,7 +2211,8 @@ MonoBehaviour:
   paintingName: "La ballade de L\xE9nore"
   year: 1839
   style: Romantisme
-  fitness: 1
+  fitness: 25
+  tagList: 
 --- !u!1 &305923439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2256,7 +2271,8 @@ MonoBehaviour:
   paintingName: Annonciation
   year: 1623
   style: Baroque
-  fitness: 1
+  fitness: 25
+  tagList: 
 --- !u!1 &332076193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2317,6 +2333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea59bffbb1e80241bd46bf74a1e413c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetPoint: {fileID: 0}
+  nextDestination: {fileID: 0}
   distArrive: 1.5
 --- !u!135 &332076197
 SphereCollider:
@@ -2488,6 +2506,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &337610194
 Transform:
   m_ObjectHideFlags: 0
@@ -2586,6 +2605,7 @@ MonoBehaviour:
   year: 1830
   style: Romantisme
   fitness: 1
+  tagList: 
 --- !u!1 &354200331
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,6 +2913,7 @@ MonoBehaviour:
   year: 1912
   style: Futurisme
   fitness: 1
+  tagList: 
 --- !u!1 &421573104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2952,6 +2973,7 @@ MonoBehaviour:
   year: 1912
   style: Cubisme
   fitness: 1
+  tagList: 
 --- !u!1 &441338044
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,6 +3018,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &441338046
 Transform:
   m_ObjectHideFlags: 0
@@ -3094,6 +3117,7 @@ MonoBehaviour:
   year: 1944
   style: "Surr\xE9alisme"
   fitness: 1
+  tagList: 
 --- !u!1 &449837049
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,6 +3275,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &472810792
 Transform:
   m_ObjectHideFlags: 0
@@ -3349,6 +3374,7 @@ MonoBehaviour:
   year: 1665
   style: Baroque
   fitness: 1
+  tagList: 
 --- !u!1 &477978138
 GameObject:
   m_ObjectHideFlags: 0
@@ -3391,6 +3417,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &477978140
 Transform:
   m_ObjectHideFlags: 0
@@ -3531,6 +3558,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &496945774
 Transform:
   m_ObjectHideFlags: 0
@@ -3628,7 +3656,8 @@ MonoBehaviour:
   paintingName: "La femme \xE9quivoque"
   year: 1923
   style: "Surr\xE9alisme"
-  fitness: 1
+  fitness: 25
+  tagList: 
 --- !u!1 &512237265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3800,6 +3829,7 @@ MonoBehaviour:
   year: 2014
   style: Cubisme
   fitness: 1
+  tagList: 
 --- !u!1 &528119159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3859,6 +3889,7 @@ MonoBehaviour:
   year: 1819
   style: Romantisme
   fitness: 1
+  tagList: 
 --- !u!1 &531884044
 GameObject:
   m_ObjectHideFlags: 0
@@ -3903,6 +3934,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &531884046
 Transform:
   m_ObjectHideFlags: 0
@@ -4241,6 +4273,7 @@ MonoBehaviour:
   year: 1937
   style: "Surr\xE9alisme"
   fitness: 1
+  tagList: 
 --- !u!1 &566608680
 GameObject:
   m_ObjectHideFlags: 0
@@ -4288,6 +4321,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &566608682
 Transform:
   m_ObjectHideFlags: 0
@@ -4371,6 +4405,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &576283900
 Transform:
   m_ObjectHideFlags: 0
@@ -4674,6 +4709,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &615985830
 Transform:
   m_ObjectHideFlags: 0
@@ -4883,7 +4919,8 @@ MonoBehaviour:
   paintingName: Danseuse bleue
   year: 1912
   style: Futurisme
-  fitness: 1
+  fitness: 25
+  tagList: 
 --- !u!1 &654983226
 GameObject:
   m_ObjectHideFlags: 0
@@ -5064,6 +5101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea59bffbb1e80241bd46bf74a1e413c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetPoint: {fileID: 0}
+  nextDestination: {fileID: 0}
   distArrive: 1.5
 --- !u!135 &670046487
 SphereCollider:
@@ -5338,7 +5377,8 @@ MonoBehaviour:
   paintingName: Les Amants
   year: 1928
   style: "Surr\xE9alisme"
-  fitness: 1
+  fitness: 25
+  tagList: 
 --- !u!1 &692298240
 GameObject:
   m_ObjectHideFlags: 0
@@ -5566,6 +5606,7 @@ MonoBehaviour:
   year: 1810
   style: Romantisme
   fitness: 1
+  tagList: 
 --- !u!1 &735084547
 GameObject:
   m_ObjectHideFlags: 0
@@ -5738,6 +5779,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea59bffbb1e80241bd46bf74a1e413c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetPoint: {fileID: 0}
+  nextDestination: {fileID: 0}
   distArrive: 1.5
 --- !u!135 &766270390
 SphereCollider:
@@ -5869,6 +5912,7 @@ MonoBehaviour:
   year: 1618
   style: Baroque
   fitness: 1
+  tagList: 
 --- !u!1 &781286936
 GameObject:
   m_ObjectHideFlags: 0
@@ -5983,7 +6027,8 @@ MonoBehaviour:
   paintingName: Le Grand Bouquet
   year: 1607
   style: Baroque
-  fitness: 1
+  fitness: 25
+  tagList: 
 --- !u!1 &799041171
 GameObject:
   m_ObjectHideFlags: 0
@@ -6085,6 +6130,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &803123937
 Transform:
   m_ObjectHideFlags: 0
@@ -6183,6 +6229,7 @@ MonoBehaviour:
   year: 1662
   style: Baroque
   fitness: 1
+  tagList: 
 --- !u!1 &808037290
 GameObject:
   m_ObjectHideFlags: 0
@@ -6226,6 +6273,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &808037292
 Transform:
   m_ObjectHideFlags: 0
@@ -6422,6 +6470,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &862750050
 Transform:
   m_ObjectHideFlags: 0
@@ -6508,6 +6557,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &866259853
 Transform:
   m_ObjectHideFlags: 0
@@ -6606,6 +6656,7 @@ MonoBehaviour:
   year: 1914
   style: Futurisme
   fitness: 1
+  tagList: 
 --- !u!1001 &875689331
 Prefab:
   m_ObjectHideFlags: 0
@@ -6698,6 +6749,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &879213202
 Transform:
   m_ObjectHideFlags: 0
@@ -6796,6 +6848,7 @@ MonoBehaviour:
   year: 1913
   style: Futurisme
   fitness: 1
+  tagList: 
 --- !u!1 &911229224
 GameObject:
   m_ObjectHideFlags: 0
@@ -6855,6 +6908,7 @@ MonoBehaviour:
   year: 1913
   style: Futurisme
   fitness: 1
+  tagList: 
 --- !u!1 &916762799
 GameObject:
   m_ObjectHideFlags: 0
@@ -6899,6 +6953,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &916762801
 Transform:
   m_ObjectHideFlags: 0
@@ -7206,6 +7261,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1015841595
 Transform:
   m_ObjectHideFlags: 0
@@ -7303,7 +7359,8 @@ MonoBehaviour:
   paintingName: Le Champs de Mars
   year: 1911
   style: Cubisme
-  fitness: 1
+  fitness: 25
+  tagList: 
 --- !u!1 &1019522055
 GameObject:
   m_ObjectHideFlags: 0
@@ -7380,6 +7437,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1026220840
 Transform:
   m_ObjectHideFlags: 0
@@ -7465,6 +7523,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1029098773
 Transform:
   m_ObjectHideFlags: 0
@@ -7662,6 +7721,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1071564862
 Transform:
   m_ObjectHideFlags: 0
@@ -7760,6 +7820,7 @@ MonoBehaviour:
   year: 1796
   style: Romantisme
   fitness: 1
+  tagList: 
 --- !u!1 &1099560771
 GameObject:
   m_ObjectHideFlags: 0
@@ -7860,6 +7921,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1114520406
 Transform:
   m_ObjectHideFlags: 0
@@ -7958,6 +8020,7 @@ MonoBehaviour:
   year: 1933
   style: "Surr\xE9alisme"
   fitness: 1
+  tagList: 
 --- !u!1 &1128149400
 GameObject:
   m_ObjectHideFlags: 0
@@ -8337,6 +8400,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1211122385
 Transform:
   m_ObjectHideFlags: 0
@@ -8435,6 +8499,7 @@ MonoBehaviour:
   year: 1913
   style: Cubisme
   fitness: 1
+  tagList: 
 --- !u!1 &1239921852
 GameObject:
   m_ObjectHideFlags: 0
@@ -8536,6 +8601,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1243236906
 Transform:
   m_ObjectHideFlags: 0
@@ -8729,6 +8795,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1291570636
 Transform:
   m_ObjectHideFlags: 0
@@ -8924,6 +8991,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1297820888
 Transform:
   m_ObjectHideFlags: 0
@@ -9355,7 +9423,8 @@ MonoBehaviour:
   paintingName: Le Voyageur au-dessus de la mer de nuages
   year: 1818
   style: Romantisme
-  fitness: 1
+  fitness: 50
+  tagList: 
 --- !u!1001 &1349393501
 Prefab:
   m_ObjectHideFlags: 0
@@ -9455,6 +9524,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1357176763
 Transform:
   m_ObjectHideFlags: 0
@@ -9609,6 +9679,7 @@ MonoBehaviour:
   year: 1936
   style: "Surr\xE9alisme"
   fitness: 1
+  tagList: 
 --- !u!1 &1384323456
 GameObject:
   m_ObjectHideFlags: 0
@@ -9781,6 +9852,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea59bffbb1e80241bd46bf74a1e413c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetPoint: {fileID: 0}
+  nextDestination: {fileID: 0}
   distArrive: 1.5
 --- !u!135 &1389747380
 SphereCollider:
@@ -10031,6 +10104,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1397086171
 Transform:
   m_ObjectHideFlags: 0
@@ -10173,6 +10247,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1403731147
 Transform:
   m_ObjectHideFlags: 0
@@ -10257,6 +10332,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1405098229
 Transform:
   m_ObjectHideFlags: 0
@@ -10340,6 +10416,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1408671192
 Transform:
   m_ObjectHideFlags: 0
@@ -10442,6 +10519,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1426836491
 Transform:
   m_ObjectHideFlags: 0
@@ -10681,6 +10759,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1469610255
 Transform:
   m_ObjectHideFlags: 0
@@ -10767,6 +10846,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!23 &1481343592
 Renderer:
   m_ObjectHideFlags: 0
@@ -10921,6 +11001,7 @@ MonoBehaviour:
   year: 1948
   style: "Surr\xE9alisme"
   fitness: 1
+  tagList: 
 --- !u!1 &1499164915
 GameObject:
   m_ObjectHideFlags: 0
@@ -10968,6 +11049,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1499164917
 Transform:
   m_ObjectHideFlags: 0
@@ -11100,6 +11182,7 @@ MonoBehaviour:
   year: 1619
   style: Baroque
   fitness: 1
+  tagList: 
 --- !u!1 &1521029438
 GameObject:
   m_ObjectHideFlags: 0
@@ -11258,6 +11341,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1533432148
 Transform:
   m_ObjectHideFlags: 0
@@ -11412,6 +11496,7 @@ MonoBehaviour:
   year: 1910
   style: Futurisme
   fitness: 50
+  tagList: 
 --- !u!1 &1559602502
 GameObject:
   m_ObjectHideFlags: 0
@@ -11472,6 +11557,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea59bffbb1e80241bd46bf74a1e413c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetPoint: {fileID: 0}
+  nextDestination: {fileID: 0}
   distArrive: 1.5
 --- !u!135 &1559602506
 SphereCollider:
@@ -11927,6 +12014,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1675913587
 Transform:
   m_ObjectHideFlags: 0
@@ -12025,6 +12113,7 @@ MonoBehaviour:
   year: 1937
   style: "Surr\xE9alisme"
   fitness: 1
+  tagList: 
 --- !u!1 &1687341416
 GameObject:
   m_ObjectHideFlags: 0
@@ -12083,7 +12172,8 @@ MonoBehaviour:
   paintingName: "Homme \xE0 la guitare"
   year: 1914
   style: Cubisme
-  fitness: 1
+  fitness: 25
+  tagList: 
 --- !u!1 &1688026590
 GameObject:
   m_ObjectHideFlags: 0
@@ -12185,6 +12275,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1696217171
 Transform:
   m_ObjectHideFlags: 0
@@ -12283,6 +12374,7 @@ MonoBehaviour:
   year: 1907
   style: Cubisme
   fitness: 1
+  tagList: 
 --- !u!1 &1732202848
 GameObject:
   m_ObjectHideFlags: 0
@@ -12330,6 +12422,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1732202850
 Transform:
   m_ObjectHideFlags: 0
@@ -12416,6 +12509,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1734159919
 Transform:
   m_ObjectHideFlags: 0
@@ -12514,6 +12608,7 @@ MonoBehaviour:
   year: 1913
   style: Cubisme
   fitness: 1
+  tagList: 
 --- !u!1 &1748677697
 GameObject:
   m_ObjectHideFlags: 0
@@ -12562,6 +12657,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1748677699
 Transform:
   m_ObjectHideFlags: 0
@@ -12738,6 +12834,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea59bffbb1e80241bd46bf74a1e413c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetPoint: {fileID: 0}
+  nextDestination: {fileID: 0}
   distArrive: 1.5
 --- !u!135 &1752289997
 SphereCollider:
@@ -12924,7 +13022,8 @@ MonoBehaviour:
   paintingName: "Temp\xEAte et neige en mer"
   year: 1842
   style: Romantisme
-  fitness: 1
+  fitness: 50
+  tagList: 
 --- !u!1 &1770618810
 GameObject:
   m_ObjectHideFlags: 0
@@ -13026,6 +13125,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1771697407
 Transform:
   m_ObjectHideFlags: 0
@@ -13110,6 +13210,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1776167918
 Transform:
   m_ObjectHideFlags: 0
@@ -13238,6 +13339,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1779981049
 Transform:
   m_ObjectHideFlags: 0
@@ -13320,6 +13422,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1792024832
 Transform:
   m_ObjectHideFlags: 0
@@ -13407,6 +13510,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1796446804
 Transform:
   m_ObjectHideFlags: 0
@@ -13577,6 +13681,7 @@ MonoBehaviour:
   year: 1924
   style: "Surr\xE9alisme"
   fitness: 1
+  tagList: 
 --- !u!1 &1839063604
 GameObject:
   m_ObjectHideFlags: 0
@@ -13623,6 +13728,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1839063606
 Transform:
   m_ObjectHideFlags: 0
@@ -13853,6 +13959,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1847476232
 Transform:
   m_ObjectHideFlags: 0
@@ -13905,7 +14012,7 @@ GameObject:
   - 23: {fileID: 1852171254}
   - 114: {fileID: 1852171253}
   - 54: {fileID: 1852171252}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Visitor
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -14096,6 +14203,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1890278590
 Transform:
   m_ObjectHideFlags: 0
@@ -14182,6 +14290,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1895279337
 Transform:
   m_ObjectHideFlags: 0
@@ -14266,6 +14375,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1906659679
 Transform:
   m_ObjectHideFlags: 0
@@ -14364,6 +14474,7 @@ MonoBehaviour:
   year: 1844
   style: Romantisme
   fitness: 1
+  tagList: 
 --- !u!1 &1930735552
 GameObject:
   m_ObjectHideFlags: 0
@@ -14591,6 +14702,7 @@ MonoBehaviour:
   year: 1937
   style: Cubisme
   fitness: 1
+  tagList: 
 --- !u!1 &1939995447
 GameObject:
   m_ObjectHideFlags: 0
@@ -14623,7 +14735,7 @@ MonoBehaviour:
   camGlobal: {fileID: 1393400323}
   agentPrefab: {fileID: 100000, guid: 95f8cd94fdc3a1d4e8ae0907b61ba4a4, type: 2}
   seekCoefDefault: 1.25
-  sepCoefDefault: 1.20000005
+  sepCoefDefault: 2
   cohesionCoefDefault: .600000024
   alignCoefDefault: 1
 --- !u!4 &1939995449
@@ -14697,6 +14809,7 @@ MonoBehaviour:
   year: 1627
   style: Baroque
   fitness: 50
+  tagList: 
 --- !u!1 &1945243277
 GameObject:
   m_ObjectHideFlags: 0
@@ -14756,6 +14869,7 @@ MonoBehaviour:
   year: 1911
   style: Futurisme
   fitness: 1
+  tagList: 
 --- !u!1 &1967811467
 GameObject:
   m_ObjectHideFlags: 0
@@ -14816,6 +14930,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea59bffbb1e80241bd46bf74a1e413c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetPoint: {fileID: 0}
+  nextDestination: {fileID: 0}
   distArrive: 1.5
 --- !u!135 &1967811471
 SphereCollider:
@@ -14989,6 +15105,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1976381877
 Transform:
   m_ObjectHideFlags: 0
@@ -15073,6 +15190,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &1998925752
 Transform:
   m_ObjectHideFlags: 0
@@ -15209,6 +15327,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &2012159252
 Transform:
   m_ObjectHideFlags: 0
@@ -15307,6 +15426,7 @@ MonoBehaviour:
   year: 1632
   style: Baroque
   fitness: 1
+  tagList: 
 --- !u!1 &2024989957
 GameObject:
   m_ObjectHideFlags: 0
@@ -15353,6 +15473,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &2024989959
 Transform:
   m_ObjectHideFlags: 0
@@ -15506,7 +15627,8 @@ MonoBehaviour:
   paintingName: Dynamisme d'un footballeur
   year: 1912
   style: Futurisme
-  fitness: 1
+  fitness: 25
+  tagList: 
 --- !u!1 &2034624552
 GameObject:
   m_ObjectHideFlags: 0
@@ -15554,6 +15676,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &2034624554
 Transform:
   m_ObjectHideFlags: 0
@@ -15827,7 +15950,8 @@ MonoBehaviour:
   paintingName: "B\xE9atrice et Dante"
   year: 1827
   style: Romantisme
-  fitness: 1
+  fitness: 25
+  tagList: 
 --- !u!1 &2051715112
 GameObject:
   m_ObjectHideFlags: 0
@@ -15872,6 +15996,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &2051715114
 Transform:
   m_ObjectHideFlags: 0
@@ -16066,6 +16191,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &2057163239
 Transform:
   m_ObjectHideFlags: 0
@@ -16262,6 +16388,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &2060489680
 Transform:
   m_ObjectHideFlags: 0
@@ -16401,6 +16528,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &2068398964
 Transform:
   m_ObjectHideFlags: 0
@@ -16486,6 +16614,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &2078223393
 Transform:
   m_ObjectHideFlags: 0
@@ -16567,6 +16696,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &2084328028
 Transform:
   m_ObjectHideFlags: 0
@@ -16708,6 +16838,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &2090435645
 Transform:
   m_ObjectHideFlags: 0
@@ -16878,6 +17009,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &2117151251
 Transform:
   m_ObjectHideFlags: 0
@@ -17031,7 +17163,8 @@ MonoBehaviour:
   paintingName: "La boh\xE9mienne"
   year: 1630
   style: Baroque
-  fitness: 1
+  fitness: 50
+  tagList: 
 --- !u!1 &2139296009
 GameObject:
   m_ObjectHideFlags: 0
@@ -17077,6 +17210,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scoreG: 0
   score: 0
+  typePoint: 0
 --- !u!4 &2139296011
 Transform:
   m_ObjectHideFlags: 0
@@ -17175,6 +17309,7 @@ MonoBehaviour:
   year: 1911
   style: Futurisme
   fitness: 1
+  tagList: 
 --- !u!1 &2140709041
 GameObject:
   m_ObjectHideFlags: 0
@@ -17188,7 +17323,7 @@ GameObject:
   - 92: {fileID: 2140709044}
   - 81: {fileID: 2140709043}
   - 114: {fileID: 2140709042}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Visitor_Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}

@@ -114,44 +114,58 @@ public class AgentBehaviour : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag == "Agent" && !gameObject.Equals(other.gameObject)) {
-
+		if (other.gameObject.tag == "Agent" && !gameObject.Equals(other.gameObject) && isVisible(gameObject, other.gameObject)) {
+			
 			if(!visiteurs.Contains(other.gameObject)){
-
+				
 				visiteurs.Add (other.gameObject);
 			}
-
+			
 			AgentBehaviour a = other.gameObject.GetComponent<AgentBehaviour>();
-
+			
 			if(targetPoint == a.targetPoint || nextDestination == a.nextDestination){
-
+				
 				if(!visiteursWithSameDestination.Contains(other.gameObject)){
-
+					
 					visiteursWithSameDestination.Add(other.gameObject);
 				}
 			}
 		}
-
-		if (other.gameObject.tag == "Agent"){
-
+		
+		if (other.gameObject.tag == "Player" && isVisible(gameObject, other.gameObject)){
+			
 			if(!visiteurs.Contains(other.gameObject)){
-
+				
 				visiteurs.Add (other.gameObject);
 			}
 		}
 	}
 	
 	void OnTriggerExit(Collider other) {
-
+		
 		if (other.gameObject.tag == "Agent") {
-
+			
 			visiteurs.Remove (other.gameObject);
 			visiteursWithSameDestination.Remove(other.gameObject);
 		}
-
+		
 		if (other.gameObject.tag == "Player"){
-
+			
 			visiteurs.Remove (other.gameObject);
 		}
+	}
+	
+	bool isVisible(GameObject me, GameObject target){
+		
+		Vector3 myPosition = me.transform.position;
+		Vector3 targetPosition = target.transform.position;
+		float dist = Vector3.Distance (targetPosition, myPosition);
+		
+		if(!Physics.Raycast (myPosition, targetPosition - myPosition, dist)){
+			
+			return true;
+		}
+		
+		return false;
 	}
 }

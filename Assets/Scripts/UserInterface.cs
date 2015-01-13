@@ -254,9 +254,9 @@ public class UserInterface : MonoBehaviour {
 		GlobalOptions ();
 		VisitorProfil pr = GameObject.FindObjectOfType<VisitorProfil> ();
 		GUI.Label (new Rect (10, 95, 230, 42), "Choisissez les critères de fin d'observation : ");
-		WatchFitness.timerCond = GUI.Toggle(new Rect(10,135,230,30), WatchFitness.timerCond, "Timer");
-		WatchFitness.visitorNearCond = GUI.Toggle(new Rect(10,160,230,30), WatchFitness.visitorNearCond, "Visiteur à coté");
-		WatchFitness.nbAgentsNearCond = GUI.Toggle(new Rect(10,185,230,30), WatchFitness.nbAgentsNearCond, "Nombre d'agents limite");
+		Watch.timerCond = GUI.Toggle(new Rect(10,135,230,30), Watch.timerCond, "Timer");
+		Watch.visitorNearCond = GUI.Toggle(new Rect(10,160,230,30), Watch.visitorNearCond, "Visiteur à coté");
+		Watch.nbAgentsNearCond = GUI.Toggle(new Rect(10,185,230,30), Watch.nbAgentsNearCond, "Nombre d'agents limite");
 		int i = 100;
 		GUI.Label (new Rect (10, 110+i, 230, 42), "Choisissez vos préférences : ");
 		tagsToggles[0] = GUI.Toggle(new Rect(10,135+i,100,30), tagsToggles[0], "Femme");

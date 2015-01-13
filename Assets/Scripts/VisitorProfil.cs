@@ -10,14 +10,13 @@ public class VisitorProfil : MonoBehaviour {
 		foreach( Painting.Tags t in profil){
 			foreach(Painting p in paintingList){
 				if (p.tagList.Contains(t)){
-					p.fitness += 500.0f;
+					p.fitness += 5.0f;
 				}
 			}
 		}
-		AgentStateMachineBehavior[] agentList = GameObject.FindObjectsOfType <AgentStateMachineBehavior>();
+/*		AgentStateMachineBehavior[] agentList = GameObject.FindObjectsOfType <AgentStateMachineBehavior>();
 		foreach(AgentStateMachineBehavior a in agentList){
 			a.initFitness();
-		}
+		}*/
 	}
-
 }

@@ -120,8 +120,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &3462366
 MonoBehaviour:
@@ -2906,8 +2913,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &369842993
 MonoBehaviour:
@@ -3113,8 +3127,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &372853073
 MonoBehaviour:
@@ -5488,8 +5509,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &636218370
 MonoBehaviour:
@@ -6840,9 +6868,9 @@ MonoBehaviour:
   camVisitor: {fileID: 1128930515}
   camGlobal: {fileID: 26669888}
   agentPrefab: {fileID: 100000, guid: 95f8cd94fdc3a1d4e8ae0907b61ba4a4, type: 2}
-  seekCoefDefault: 1.25
-  sepCoefDefault: 2
-  cohesionCoefDefault: .600000024
+  seekCoefDefault: 3
+  sepCoefDefault: 2.5
+  cohesionCoefDefault: 1
   alignCoefDefault: 1
 --- !u!4 &788435438
 Transform:
@@ -7119,8 +7147,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &812053180
 MonoBehaviour:
@@ -9611,8 +9646,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &1115652907
 MonoBehaviour:
@@ -9768,7 +9810,7 @@ GameObject:
   - 92: {fileID: 1128930519}
   - 81: {fileID: 1128930518}
   - 114: {fileID: 1128930517}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Visitor_Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -9905,8 +9947,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &1135595050
 MonoBehaviour:
@@ -10384,8 +10433,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &1158365927
 MonoBehaviour:
@@ -12523,8 +12579,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &1443636341
 MonoBehaviour:
@@ -12929,7 +12992,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 8102a3b096f4f8f48a10e8a004e3ca52, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.85405064
+      value: 6.18321657
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8102a3b096f4f8f48a10e8a004e3ca52, type: 2}
       propertyPath: m_LocalPosition.y
@@ -12937,7 +13000,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8102a3b096f4f8f48a10e8a004e3ca52, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -21.6853409
+      value: -21.0631695
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8102a3b096f4f8f48a10e8a004e3ca52, type: 2}
       propertyPath: m_LocalRotation.x
@@ -12957,7 +13020,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8102a3b096f4f8f48a10e8a004e3ca52, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8102a3b096f4f8f48a10e8a004e3ca52, type: 2}
@@ -14702,8 +14765,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &1673512085
 MonoBehaviour:
@@ -15446,7 +15516,7 @@ Transform:
   m_PrefabInternal: {fileID: 1494018555}
   m_GameObject: {fileID: 1761273728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.85405064, y: 1, z: -21.6853409}
+  m_LocalPosition: {x: 6.18321657, y: 1, z: -21.0631695}
   m_LocalScale: {x: .5, y: 2, z: .5}
   m_Children: []
   m_Father: {fileID: 517001869}
@@ -15463,8 +15533,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &1761273731
 MonoBehaviour:
@@ -15685,8 +15762,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &1769283543
 MonoBehaviour:
@@ -16273,8 +16357,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &1802437073
 MonoBehaviour:
@@ -16724,8 +16815,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &1863467363
 MonoBehaviour:
@@ -16989,7 +17087,7 @@ GameObject:
   - 23: {fileID: 1903430054}
   - 114: {fileID: 1903430053}
   - 54: {fileID: 1903430052}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Visitor
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -17997,8 +18095,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af070a67c8d131d41bf42b0e1433c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 0}
   nextDestination: {fileID: 0}
+  targetPoint: {fileID: 0}
+  targetPainting: {fileID: 0}
+  listPainting: []
+  visiteurs: []
+  visiteursWithSameDestination: []
+  force: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  steering: {fileID: 0}
   distArrive: 1.5
 --- !u!114 &2078486238
 MonoBehaviour:

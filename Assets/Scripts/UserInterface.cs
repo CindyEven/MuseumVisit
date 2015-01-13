@@ -12,7 +12,7 @@ public class UserInterface : MonoBehaviour {
 	private Rect windowRect3 = new Rect (20, 50, 250, 300);
 	private Rect windowRect4 = new Rect (20, 50, 250, 220);
 	private Rect windowRect5 = new Rect (20, 50, 250, 220);
-	private Rect windowProfilUser = new Rect (20, 50, 250, 315);
+	private Rect windowProfilUser = new Rect (20, 50, 250, 415);
 	private Rect windowRatePainting = new Rect (20,50,250,150);
 
 	private Painting paintingHit;
@@ -253,21 +253,26 @@ public class UserInterface : MonoBehaviour {
 	void OptionsWindowFunctionProfil (int windowID){
 		GlobalOptions ();
 		VisitorProfil pr = GameObject.FindObjectOfType<VisitorProfil> ();
-		GUI.Label (new Rect (10, 95, 230, 42), "Choisissez vos préférences : ");
-		tagsToggles[0] = GUI.Toggle(new Rect(10,135,100,30), tagsToggles[0], "Femme");
-		tagsToggles[1] = GUI.Toggle(new Rect(10,160,100,30), tagsToggles[1], "Combat");
-		tagsToggles[2] = GUI.Toggle(new Rect(10,185,100,30), tagsToggles[2], "Animaux");
-		tagsToggles[3] = GUI.Toggle(new Rect(10,210,100,30), tagsToggles[3], "Portrait");
-		tagsToggles[4] = GUI.Toggle(new Rect(10,235,100,30), tagsToggles[4], "Science");
-		tagsToggles[5] = GUI.Toggle(new Rect(10,260,100,30), tagsToggles[5], "Musique");
-		tagsToggles[6] = GUI.Toggle(new Rect(10,285,100,30), tagsToggles[6], "Nature");
+		GUI.Label (new Rect (10, 95, 230, 42), "Choisissez les critères de fin d'observation : ");
+		WatchFitness.timerCond = GUI.Toggle(new Rect(10,135,230,30), WatchFitness.timerCond, "Timer");
+		WatchFitness.visitorNearCond = GUI.Toggle(new Rect(10,160,230,30), WatchFitness.visitorNearCond, "Visiteur à coté");
+		WatchFitness.nbAgentsNearCond = GUI.Toggle(new Rect(10,185,230,30), WatchFitness.nbAgentsNearCond, "Nombre d'agents limite");
+		int i = 100;
+		GUI.Label (new Rect (10, 110+i, 230, 42), "Choisissez vos préférences : ");
+		tagsToggles[0] = GUI.Toggle(new Rect(10,135+i,100,30), tagsToggles[0], "Femme");
+		tagsToggles[1] = GUI.Toggle(new Rect(10,160+i,100,30), tagsToggles[1], "Combat");
+		tagsToggles[2] = GUI.Toggle(new Rect(10,185+i,100,30), tagsToggles[2], "Animaux");
+		tagsToggles[3] = GUI.Toggle(new Rect(10,210+i,100,30), tagsToggles[3], "Portrait");
+		tagsToggles[4] = GUI.Toggle(new Rect(10,235+i,100,30), tagsToggles[4], "Science");
+		tagsToggles[5] = GUI.Toggle(new Rect(10,260+i,100,30), tagsToggles[5], "Musique");
+		tagsToggles[6] = GUI.Toggle(new Rect(10,285+i,100,30), tagsToggles[6], "Nature");
 
-		tagsToggles[7] = GUI.Toggle(new Rect(125,135,100,30), tagsToggles[7], "Urbanisme");
-		tagsToggles[8] = GUI.Toggle(new Rect(125,160,100,30), tagsToggles[8], "Baroque");
-		tagsToggles[9] = GUI.Toggle(new Rect(125,185,100,30), tagsToggles[9], "Cubisme");
-		tagsToggles[10] = GUI.Toggle(new Rect(125,210,100,30), tagsToggles[10], "Futurisme");
-		tagsToggles[11] = GUI.Toggle(new Rect(125,235,100,30), tagsToggles[11], "Surrealisme");
-		tagsToggles[12] = GUI.Toggle(new Rect(125,260,100,30), tagsToggles[12], "Romantisme");
+		tagsToggles[7] = GUI.Toggle(new Rect(125,135+i,100,30), tagsToggles[7], "Urbanisme");
+		tagsToggles[8] = GUI.Toggle(new Rect(125,160+i,100,30), tagsToggles[8], "Baroque");
+		tagsToggles[9] = GUI.Toggle(new Rect(125,185+i,100,30), tagsToggles[9], "Cubisme");
+		tagsToggles[10] = GUI.Toggle(new Rect(125,210+i,100,30), tagsToggles[10], "Futurisme");
+		tagsToggles[11] = GUI.Toggle(new Rect(125,235+i,100,30), tagsToggles[11], "Surrealisme");
+		tagsToggles[12] = GUI.Toggle(new Rect(125,260+i,100,30), tagsToggles[12], "Romantisme");
 
 		if (tagsToggles [0] && !pr.profil.Contains(Painting.Tags.Femme)) pr.profil.Add (Painting.Tags.Femme);
 		else pr.profil.Remove(Painting.Tags.Femme);
@@ -296,7 +301,7 @@ public class UserInterface : MonoBehaviour {
 		if (tagsToggles [12] && !pr.profil.Contains(Painting.Tags.Romantisme)) pr.profil.Add (Painting.Tags.Romantisme);
 		else pr.profil.Remove(Painting.Tags.Romantisme);
 
-		if(GUI.Button(new Rect(125,285,75,25),"Valider")){
+		if(GUI.Button(new Rect(125,285+i,75,25),"Valider")){
 			camVisitor.GetComponent<MouseLook> ().enabled = true;
 			GameObject.Find ("Visitor").GetComponent<VisitorMouvement> ().enabled = true;
 			showChoiceProfil = false;

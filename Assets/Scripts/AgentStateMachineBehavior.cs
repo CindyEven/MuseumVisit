@@ -21,8 +21,6 @@ public class AgentStateMachineBehavior : MonoBehaviour {
 	
 	public float distArrive = 1.5f;
 
-	public Dictionary<Painting,float> paintingsFitness;
-
 	StateMachine sm;
 
 	// Use this for initialization
@@ -33,7 +31,6 @@ public class AgentStateMachineBehavior : MonoBehaviour {
 		steering = gameObject.GetComponent<SteeringBehaviour> ();
 		
 		listPainting = GameObject.FindObjectsOfType <Painting>();
-		initFitness ();
 		visiteurs = new List<GameObject> ();
 		visiteursWithSameDestination = new List<GameObject> ();
 
@@ -105,26 +102,10 @@ public class AgentStateMachineBehavior : MonoBehaviour {
 		
 		return false;
 	}
-
-	public void initFitness(){
-		paintingsFitness = new Dictionary<Painting, float>();
-		foreach (Painting p in listPainting) {
-			paintingsFitness.Add(p,p.fitness);
-		}
-	}
-
-	public void updateFitness(){
-		foreach(Painting.Tags t in targetPainting.tagList){
-			foreach(Painting p in listPainting){
-				if(p.tagList.Contains(t)){
-					paintingsFitness[p] += 1.0f;
-				}
-			}
-		}
-	}
+	
 
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag == "Agent" && !gameObject.Equals(other.gameObject)) {
+		if (other.gameObject.tag == "Agent" && !gameObject.Equals(other.gameObject) && isVisible(gameObject, other.gameObject)) {
 			
 			if(!visiteurs.Contains(other.gameObject)){
 				
@@ -142,7 +123,7 @@ public class AgentStateMachineBehavior : MonoBehaviour {
 			}
 		}
 		
-		if (other.gameObject.tag == "Agent"){
+		if (other.gameObject.tag == "Player" && isVisible(gameObject, other.gameObject)){
 			
 			if(!visiteurs.Contains(other.gameObject)){
 				
@@ -163,5 +144,19 @@ public class AgentStateMachineBehavior : MonoBehaviour {
 			
 			visiteurs.Remove (other.gameObject);
 		}
+	}
+
+	bool isVisible(GameObject me, GameObject target){
+		
+		Vector3 myPosition = me.transform.position;
+		Vector3 targetPosition = target.transform.position;
+		float dist = Vector3.Distance (targetPosition, myPosition);
+		
+		if(!Physics.Raycast (myPosition, targetPosition - myPosition, dist)){
+			
+			return true;
+		}
+		
+		return false;
 	}
 }

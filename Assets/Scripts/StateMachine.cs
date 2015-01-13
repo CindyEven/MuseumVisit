@@ -3,12 +3,12 @@ using System.Collections;
 
 public class StateMachine {
 
-	AgentStateMachineBehavior agent;
+	public AgentStateMachineBehavior agent;
 	States currentState;
-
+	
 	public StateMachine(AgentStateMachineBehavior a){
 		agent = a;
-		ChangeState(new GoTo (a, this));
+		ChangeState(new GoTo (this));
 	}
 
 	public void ChangeState(States state){
